@@ -1,0 +1,146 @@
+.centered {
+  position: fixed;
+  top: 40%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+.centered1 {
+  position: fixed;
+  top: 70%;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+.teacher {
+	font-family: 'Roboto';
+	font-size: 50;
+	color: #000000;
+}
+.header {
+  position: top;
+}
+body {
+  color: black;
+  font-size: 15;
+  font-family: Arial;
+}
+
+h1 {
+  color: rgba(0,0,0,.9);
+  font-size: 50;
+  font-family: Arial;
+}
+
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+/* Global */
+html{
+  min-height: 100%;
+  overflow: hidden;
+}
+body{
+  height: calc(100vh - 8em);
+  padding: 4em;
+  color: #9A0000;
+  font-family: 'Anonymous Pro', monospace;  
+  background-color: #ffffff;
+}
+
+.{
+  font-family: 'Anonymous Pro', monospace;  
+}
+.line-1{
+    position: relative;
+    top: 50%;  
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(0,0,0,.75);
+    font-size: 180%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 4s steps(44) 1s 1 normal both,
+             blinkTextCursor 500ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(0,0,0,1);}
+  to{border-right-color: transparent;}
+}
+
+.overlay {
+  height: 0;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  right: 0;
+  background-color: rgba(25,25,25, 1);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a{
+	padding: 8px;
+	text-decoration: none;
+    color: #818181;
+  	display: block;
+  	transition: 0.3s;
+}
+.overlay p{
+	padding: 8px;
+	text-decoration: none;
+	font-size: 25px;
+	color: #f1f1f1;
+	display: block;
+	transition: 0.3s;
+	padding-left: 10%;
+	padding-right: 10%;
+}
+
+span{
+	font-size:23px;
+    cursor:pointer;
+    float:right;
+}
+
+span:hover{
+	opacity: .5;
+}
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}

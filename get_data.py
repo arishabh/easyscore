@@ -24,11 +24,10 @@ next_sem = ["https://registrar.indiana.edu/browser/soc4202/", ".shtml"]
 last_sem = ["https://registrar.indiana.edu/browser/soc4198/", ".shtml"]
 last_last_sem = ["https://registrar.indiana.edu/browser/soc4195/", ".shtml"]
 url = [next_sem, last_sem, last_last_sem]
-#a = []
-#black = []
-credit_file = open("info/course_credits.txt", "a") 
-#black = open("info/black_list.txt", "w+") 
-"""
+a = []
+black = []
+credit_file = open("info/misc/course_credits.txt", "a") 
+black = open("info/misc/black_list.txt", "w+") 
 def get_cred(b):
     b = b[1].get_text().split("\r\n")
     b = [a.strip() for a in b]
@@ -36,13 +35,15 @@ def get_cred(b):
         if (cont.startswith("COLL (CASE)")):
                 if cont not in a:
                     return cont
+"""
 
-for c in all_courses:
+print(len(all_courses))
+for i in range(len(all_courses)):
+    c = all_courses[i]
     for i in range(len(url)):
         u = url[i][0] + c.department + "/" + c.name + url[i][1]
         b = bs(get(u).content, "lxml").findAll("pre")
-        if (b != []):
-            i = len(url)
+        if (b != []):break
         elif(i == (len(url)-1)):
             black.write(c.name+"\n")
     print(all_courses.index(c))

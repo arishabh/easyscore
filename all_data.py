@@ -4,7 +4,7 @@ from time import time
 
 VERSION = "v3"
 
-data_file = "info/scrape_"+VERSION+".txt"
+data_file = "info/scrape/scrape_"+VERSION+".txt"
 
 start = time()
 

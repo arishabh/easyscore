@@ -1,10 +1,13 @@
 from classes import *
 from ast import literal_eval
 from time import time
+from cgi import FieldStorage
 
-VERSION = "v5.1"
 
-data_file = "info/scrape_"+VERSION+".txt"
+
+VERSION = "v6"
+
+data_file = "info/scrape/scrape_"+VERSION+".txt"
 search_op_file = "info/search_op_"+VERSION+".txt"
 
 credits = {'A&H Breadth of Inquiry credit':0,
@@ -34,7 +37,6 @@ def search_all(dep='', sub='', code='', inst='', credit=''):
     if(sub != ''): filtered = list(filter(lambda d: (d.split('|')[1] == sub), filtered))
     if(code != ''): filtered = list(filter(lambda d: (d.split('|')[2] == code), filtered))
     if(credit != ''):
-        credit = credits[c]
         filtered = list(filter(lambda d: (credit not in list(map(int, literal_eval(d.split('\t')[0].split('|')[5])))), filtered))
     if(inst != ''):
         filtered2=[]
@@ -49,11 +51,13 @@ def search_all(dep='', sub='', code='', inst='', credit=''):
         new_course = Course()
         new_course.set_all(c[0], c[1], int(c[2]), c[3], c[4])
         new_course.credit = list(map(int, literal_eval(c[5])))
+        new_course.rating = float(c[6])
         for i in range(len(raw1)-1):
             raw2 = raw1[i+1].split('\\z')
             i = raw2[0].split('|')
             new_inst = Instructor(i[0])
             new_inst.rating = float(i[1])
+            new_inst.avg_grades = list(map(float, literal_eval(i[2])))
             for j in range(len(raw2)-1):
                 t = raw2[j+1].split('|')
                 new_term = Term(t[0])
@@ -67,3 +71,25 @@ def search_all(dep='', sub='', code='', inst='', credit=''):
         for c in all_courses:
             f.write(c.to_string())
     print("Time taken: " + str(time()-start))
+
+
+
+query = FieldStorage()
+department = query.getvalue('department')
+subject = query.getvalue('subject')
+code = query.getvalue('code')
+instructor = query.getvalue('instructor')
+credit = query.getvalue('credit')
+print(department)
+print(subject)
+print(code)
+print(instructor)
+print(credit)
+"""
+with open("blah.txt", "w+") as f:
+    f.write("AA gaya bsdk")
+"""
+if(department == None and subject == None and code == None and instructor == None and credit == None):
+    search_all(inst = 'Bhutta,Adeel A')
+else:
+    search_all(department, subject, code, instructor, credit)

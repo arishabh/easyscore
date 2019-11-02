@@ -13,7 +13,7 @@ from time import time
 from statistics import mean, median, stdev
 from ast import literal_eval
 
-VERSION = "v6"
+VERSION = "v7"
 
 credits = {'A&H Breadth of Inquiry credit':0,
         'Diversity in U.S. credit':1,
@@ -30,9 +30,12 @@ url = ["https://registrar.indiana.edu/browser/soc4198/", ".shtml"]
 
 path = "info/"
 total_files = 10
-main_file = path+"data_"+VERSION+".txt"
-stat_file = path+"stat_"+VERSION+".txt"
-scrape_file = path+"scrape_"+VERSION+".txt"
+raw_data_file = path+"raw_data/"
+main_file = path+"data/data_"+VERSION+".txt"
+stat_file = path+"stat/stat_"+VERSION+".txt"
+scrape_file = path+"scrape/scrape_"+VERSION+".txt"
+course_credit_file = path+"misc/course_credits.txt"
+black_list_file = path+"misc/black_list.txt"
 
 all_courses = []
 all_course_names = []
@@ -41,12 +44,12 @@ black_list = []
 course_credits = {}
 all_scores = []
 
-with open("info/course_credits.txt", "r") as f:
+with open(course_credit_file, "r") as f:
     for line in f:
         d = line[:-1].split('\t')
         course_credits[d[0]] = literal_eval(d[1])
 
-with open("info/black_list.txt", "r") as f:
+with open(black_list_file, "r") as f:
     black_list = [l.strip("\n") for l in f]
 
 def add_instructor(data, course):
@@ -65,7 +68,7 @@ def add_term(data, inst):
 
 start = time()
 for i in range(1, total_files+1):
-    info = read_csv(path+str(i)+".csv", low_memory=False, header=0).values
+    info = read_csv(raw_data_file+str(i)+".csv", low_memory=False, header=0).values
     for raw_data in info:
         for elem in raw_data:
             try:
@@ -73,7 +76,7 @@ for i in range(1, total_files+1):
             except:
                 data.append(elem)
         name = data[5]+str(data[6])
-        if(data[10]>5) and (name not in black_list):
+        if(data[10]>5):# and (name not in black_list):
             if(name not in all_course_names):
                 all_course_names.append(name)
                 new_course = Course()
@@ -92,11 +95,13 @@ for i in range(1, total_files+1):
         data = []
 
 for c in all_courses:
-    c.credit = course_credits[c.name]
+    #c.credit = course_credits[c.name]
     for i in c.instructors:
         i.rate()
+        i.avg_grade()
         all_scores.append(i.rating)
     c.instructors.sort(reverse=True)
+    c.rate()
 """
 all_scores.sort()
 

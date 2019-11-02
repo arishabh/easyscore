@@ -13,7 +13,7 @@ from time import time
 from statistics import mean, median, stdev
 from ast import literal_eval
 
-VERSION = "v7"
+VERSION = "v8"
 
 credits = {'A&H Breadth of Inquiry credit':0,
         'Diversity in U.S. credit':1,
@@ -76,7 +76,7 @@ for i in range(1, total_files+1):
             except:
                 data.append(elem)
         name = data[5]+str(data[6])
-        if(data[10]>5):# and (name not in black_list):
+        if(data[10]>5) and (name not in black_list):
             if(name not in all_course_names):
                 all_course_names.append(name)
                 new_course = Course()
@@ -95,11 +95,11 @@ for i in range(1, total_files+1):
         data = []
 
 for c in all_courses:
-    #c.credit = course_credits[c.name]
+    c.credit = course_credits[c.name]
     for i in c.instructors:
-        i.rate()
-        i.avg_grade()
+        i.calc_data()
         all_scores.append(i.rating)
+        c.sems += len(i.terms)
     c.instructors.sort(reverse=True)
     c.rate()
 """

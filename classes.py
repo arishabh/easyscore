@@ -27,6 +27,9 @@ class Instructor:
         self.terms = []
         self.rating = 0
         self.avg_grades = [0,0,0,0]
+        self.range = ""
+        self.sems = 0
+        self.avg_std = 0
     
     def add_term(self, term):
         self.terms.append(term)
@@ -37,14 +40,6 @@ class Instructor:
     def __lt__(self, other):
         return self.rating < other.rating
 
-    def avg_grade(self):
-        for i in self.terms:
-            self.avg_grades[0] += float(i.grades_perc[0])
-            self.avg_grades[1] += float(i.grades_perc[1])
-            self.avg_grades[2] += float(i.grades_perc[2])
-            self.avg_grades[3] += float(i.grades_perc[3])
-        for i in range(4):
-            self.avg_grades[i] = round(self.avg_grades[i]/len(self.terms), 2)
     """
     def rate(self):
         factor = 10
@@ -106,14 +101,34 @@ class Instructor:
         if (self.rating>100): self.rating = 100
         elif (self.rating<0): self.rating = 0
     
+    def calc_data(self):
+        lowest = 3000
+        highest = 0
+        self.sems = len(self.terms)
+        self.rate()
+        for i in self.terms:
+            self.avg_std += i.total_students
+            year = int(i.term[-4:])
+            if year>highest: highest=year
+            if year<lowest: lowest=year
+            self.avg_grades[0] += float(i.grades_perc[0])
+            self.avg_grades[1] += float(i.grades_perc[1])
+            self.avg_grades[2] += float(i.grades_perc[2])
+            self.avg_grades[3] += float(i.grades_perc[3])
+        if(lowest == highest): self.range=str(highest)
+        else: self.range=str(lowest)+"-"+str(highest)
+        for i in range(4):
+            self.avg_grades[i] = round(self.avg_grades[i]/len(self.terms), 2)
+        self.avg_std = round(self.avg_std/len(self.terms), 2)
+
     def to_string(self):
-        out = "\t" + str(self.name) + " " + str(self.rating) + " " + str(self.avg_grades) + ":\n"
+        out = "\t" + str(self.name) + " " + str(self.rating) + " " + str(self.avg_grades) + " " + self.range + " " + str(self.sems) + " sem." + str(self.avg_std) + ":\n"
         for term in self.terms:
             out += term.to_string()
         return out
 
     def to_string2(self):
-        out = "\t" + str(self.name) + "|" + str(self.rating) + "|" + str(self.avg_grades)
+        out = "\t" + str(self.name) + "|" + str(self.rating) + "|" + str(self.avg_grades) + "|" + self.range + "|" + str(self.sems) + "|" + str(self.avg_std)
         for term in self.terms:
             out += term.to_string2()
         return out
@@ -128,9 +143,12 @@ class Course:
         self.instructor_names = []
         self.credit = []
         self.rating = 0;
+        self.sems = 0
     
     def __lt__(self, other):
-        return (self.instructors[0].rating < other.instructors[0].rating)
+        if (self.rating == other.rating):
+            return(self.sems < other.sems)
+        else: return self.rating < other.rating
 
     def set_sub(self, sub):
         self.sub = sub
@@ -158,13 +176,13 @@ class Course:
         flag = (self.department == c.department) and (self.name == c.name)
 
     def to_string(self):
-        out = self.name + " " + self.desc + " " + str(self.credit) + " " + str(self.rating) + ":\n"
+        out = self.name + " " + self.desc + " " + str(self.credit) + " " + str(self.rating) + " " + str(self.sems) + ":\n"
         for inst in self.instructors:
             out += inst.to_string()
         return out
 
     def to_string2(self):
-        out = self.department + "|" + self.sub + "|" + str(self.code) + "|" + self.desc + "|" + self.name + "|" + str(self.credit) + "|" + str(self.rating)
+        out = self.department + "|" + self.sub + "|" + str(self.code) + "|" + self.desc + "|" + self.name + "|" + str(self.credit) + "|" + str(self.rating) + "|" + str(self.sems)
         for inst in self.instructors:
             out += inst.to_string2()
         out += "\n"

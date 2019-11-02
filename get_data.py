@@ -50,7 +50,7 @@ for i in range(len(all_courses)):
 
 """
 print(len(all_courses))
-for i in range(len(all_courses)):
+for i in range(3631,len(all_courses)):
     c = all_courses[i]
     credit = []
     if(c.code >= 300 and c.code <= 399): credit.append(credits['300+'])

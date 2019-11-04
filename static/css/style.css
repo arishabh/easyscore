@@ -273,6 +273,7 @@ span{
   font-size: 17px;
   text-align: left;
   padding-right: 5px;
+  width: auto;
 }
 
 input[type=text] {

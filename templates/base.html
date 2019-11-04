@@ -7,9 +7,44 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">  
     <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto&display=swap" rel="stylesheet">
+    <link rel="icon" href="100.png">
     {% block head %} {% endblock %}
 </head>
-<body>
+<body onload="main();">
     {% block body %} {% endblock %}
 </body>
 </html>
+
+<script>
+    function main(){
+        var arr_rating = document.getElementsByClassName('rating');
+        var arr_bar = document.getElementsByClassName('bar');
+        var i = 0;
+        for(i=0; i<arr_bar.length; i++){
+            move(arr_rating[i], arr_bar[i]);
+        }
+    }
+    function move(elem1, elem2) {
+        var score = elem1.innerHTML
+        var width = 0;
+        var id = setInterval(frame, 15);
+        function frame() {
+            if (width >= score) {
+                elem1.innerHTML = score;
+                clearInterval(id);
+            } 
+            else {
+                width++; 
+                elem2.style.width = width + '%' 
+                elem1.innerHTML = width;
+                if (width <= 50){
+                    elem2.style.backgroundColor = 'rgb(255,' + (width*5.1) + ', 0)';
+                } 
+                else{
+                    elem2.style.backgroundColor = 'rgb('+ (255-((width-50)*5.1)) + ', 255, 0)';	
+                } 
+                
+            }
+        }
+    }
+</script>

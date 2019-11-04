@@ -12,42 +12,28 @@ from bs4 import BeautifulSoup as bs
 from time import time
 from statistics import mean, median, stdev
 from ast import literal_eval
-
-VERSION = "v8"
-
-credits = {'A&H Breadth of Inquiry credit':0,
-        'Diversity in U.S. credit':1,
-        'S&H Breadth of Inquiry credit':2,
-        'N&M Breadth of Inquiry credit':3,
-        'Global Civ & Culture credit':4,
-        'Public Oral Communication credit':5,
-        'English Composition credit':6,
-        'Mathematical Modeling credit':7,
-        '300+':8,
-        '400+':9}
-
-url = ["https://registrar.indiana.edu/browser/soc4198/", ".shtml"]
-
-path = "info/"
-total_files = 10
-raw_data_file = path+"raw_data/"
-main_file = path+"data/data_"+VERSION+".txt"
-stat_file = path+"stat/stat_"+VERSION+".txt"
-scrape_file = path+"scrape/scrape_"+VERSION+".txt"
-course_credit_file = path+"misc/course_credits.txt"
-black_list_file = path+"misc/black_list.txt"
+from general import *
+start = time()
 
 all_courses = []
 all_course_names = []
 data = []
 black_list = []
 course_credits = {}
+course_preqs = {}
+course_urls = {}
+course_cr = {}
+course_next_sem = {}
 all_scores = []
 
 with open(course_credit_file, "r") as f:
     for line in f:
         d = line[:-1].split('\t')
         course_credits[d[0]] = literal_eval(d[1])
+        course_preqs[d[0]] = d[2]
+        course_urls[d[0]] = d[3]
+        course_cr[d[0]] = d[4]
+        course_next_sem[d[0]] = d[5]
 
 with open(black_list_file, "r") as f:
     black_list = [l.strip("\n") for l in f]
@@ -66,7 +52,6 @@ def add_term(data, inst):
     inst.add_term(new_term)
     return inst
 
-start = time()
 for i in range(1, total_files+1):
     info = read_csv(raw_data_file+str(i)+".csv", low_memory=False, header=0).values
     for raw_data in info:
@@ -95,13 +80,18 @@ for i in range(1, total_files+1):
         data = []
 
 for c in all_courses:
-    c.credit = course_credits[c.name]
     for i in c.instructors:
         i.calc_data()
         all_scores.append(i.rating)
         c.sems += len(i.terms)
+    c.credit = course_credits[c.name]
+    c.preq = course_preqs[c.name]
+    c.url = course_urls[c.name]
+    c.cr = course_cr[c.name]
+    c.next_sem = course_next_sem[c.name]
     c.instructors.sort(reverse=True)
     c.rate()
+
 """
 all_scores.sort()
 

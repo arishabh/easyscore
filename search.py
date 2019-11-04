@@ -1,48 +1,39 @@
 from classes import *
 from ast import literal_eval
 from time import time
-
-VERSION = "v8"
-
-data_file = "info/scrape/scrape_"+VERSION+".txt"
-search_op_file = "info/search_op_"+VERSION+".txt"
-
-credits = {'A&H Breadth of Inquiry credit':0,
-        'Diversity in U.S. credit':1,
-        'S&H Breadth of Inquiry credit':2,
-        'N&M Breadth of Inquiry credit':3,
-        'Global Civ & Culture credit':4,
-        'Public Oral Communication credit':5,
-        'English Composition credit':6,
-        'Mathematical Modeling credit':7,
-        '300+':8,
-        '400+':9}
-
+from general import *
 
 all_courses = []
 raw_data = []
 filtered = []
-with open(data_file, "r") as f:
+with open(scrape_file, "r") as f:
     for lines in f:
         raw_data.append(lines[:-1])
 
-def search_all(dep='', sub='', code='', inst='', credit=''):
+def search_all(dep='', sub='', code='', inst='', credit='', cr=''):
     all_courses = []
     start = time()
     filtered = raw_data
     sub = str.upper(sub)
-    if(dep != ''): filtered = list(filter(lambda d: (d.split('|')[0] == dep), filtered))
-    if(sub != ''): filtered = list(filter(lambda d: (d.split('|')[1] == sub), filtered))
+    print(cr)
+    if(dep != '' and dep != 'ANY'): filtered = list(filter(lambda d: (d.split('|')[0] == dep), filtered))
+    if(sub != ''): 
+        if(len(sub) > 2):
+            filtered = list(filter(lambda d: (d.split('|')[1] == sub), filtered))
+        else:
+            filtered = list(filter(lambda d: (d.split('|')[1][-1] == sub), filtered))
     if(code != ''): filtered = list(filter(lambda d: (d.split('|')[2] == code), filtered))
-    if(credit != ''):
-        filtered = list(filter(lambda d: (credit not in list(map(int, literal_eval(d.split('\t')[0].split('|')[5])))), filtered))
+    if(credit != '' and credit != 'ANY'):
+        filtered = list(filter(lambda d: (credits[credit] in list(map(int, literal_eval(d.split('\t')[0].split('|')[5])))), filtered))
     if(inst != ''):
         filtered2=[]
+        inst = "".join((char if char.isalpha() else " ") for char in inst).split()
         for d in filtered:
-            f=list(filter(lambda x: (x.split('|')[0] == inst), d.split('\t')[1:]))
+            f=list(filter(lambda x: all((str.upper(word) in str.upper(x.split('|')[0])) for word in inst), d.split('\t')[1:]))
             if f != []:
                 filtered2.append(d.split('\t')[0] + '\t' + f[0])
         filtered = filtered2
+    if(cr != '' and cr != "ANY"): filtered=list(filter(lambda x: (int(x.split('|')[10].split('\t')[0]) >= int(cr)), filtered))
     for raw in filtered:
         raw1 = raw.split('\t')
         c = raw1[0].split('|')
@@ -51,6 +42,9 @@ def search_all(dep='', sub='', code='', inst='', credit=''):
         new_course.credit = list(map(int, literal_eval(c[5])))
         new_course.rating = float(c[6])
         new_course.sems = int(c[7])
+        new_course.preq = c[8]
+        new_course.url = c[9]
+        new_course.cr = int(c[10])
         for i in range(len(raw1)-1):
             raw2 = raw1[i+1].split('\\z')
             i = raw2[0].split('|')

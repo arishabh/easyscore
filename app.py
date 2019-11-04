@@ -1,5 +1,6 @@
-from flask import Flask, render_template, url_for, request, redirect
+from flask import Flask, render_template, request, redirect
 from search import search_all
+from general import credits_inv
 
 app = Flask(__name__)
 
@@ -11,8 +12,11 @@ def index():
         sub = request.form['subject']
         code = request.form['code']
         inst = request.form['instrname']
-        all_courses = search_all(dep, sub, code, inst, req)
-        return render_template('result.html', all_courses=all_courses)
+        cr = request.form['cr']
+        all_courses = search_all(dep, sub, code, inst, req, cr)
+        if len(all_courses)>40:
+            all_courses = all_courses[:40]
+        return render_template('result.html', all_courses=all_courses, credits_inv=credits_inv)
     else:
         return render_template('index.html')
 
@@ -24,8 +28,11 @@ def output():
         sub = request.form['subject']
         code = request.form['code']
         inst = request.form['instrname']
-        all_courses = search_all(dep, sub, code, inst, req)
-        return render_template('result.html', all_courses=all_courses)
+        cr = request.form['cr']
+        all_courses = search_all(dep, sub, code, inst, req, cr)
+        if len(all_courses)>40:
+            all_courses = all_courses[:40]
+        return render_template('result.html', all_courses=all_courses, credits_inv=credits_inv)
     else:
         return render_template('result.html')
 

@@ -95,9 +95,9 @@ body{
 .overlay a{
 	padding: 8px;
 	text-decoration: none;
-    color: #818181;
-  	display: block;
-  	transition: 0.3s;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
 .overlay p{
 	padding: 8px;
@@ -112,11 +112,23 @@ body{
 
 span{
 	font-size:23px;
-    cursor:pointer;
-    float:right;
+  cursor:pointer;
+  float:right;
 }
 
-span:hover{
+.feedback{
+  font-size:23px;
+  cursor:pointer;
+  float:right;
+  width: 150px;
+  text-decoration: none;
+  color: #9A0000;
+}
+.feedback:hover{
+  opacity: .5;
+}
+
+.how-we-rate:hover {
 	opacity: .5;
 }
 .overlay a:hover, .overlay a:focus {
@@ -141,15 +153,51 @@ span:hover{
 
 .column1 {
   position: relative;
-  height: 220px;
+  height: 330px;
   float: left;
   width: 65%;
 }
 
 .column2 {
+  position: relative;
   text-align: left;
   float: left;
-  width: 35%;
+  width: 25%;
+}
+
+.columns3{
+  height:24px;
+  width: 25%
+}
+.column11 {
+  position: relative;
+  float: left;
+  width: 65%;
+}
+
+.column12 {
+  text-align: left;
+  float: left;
+  width: 6%;
+  color: #9A0000; 
+  font-size: 20px;
+}
+
+.column13{
+  height: 45px;
+  float: right;
+  text-align: center;
+  width: 28%;
+  border-style: solid;
+  border-color: #000000;
+  border-width: 1px;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+#myBar{
+  height: 45px;
+  margin: 0;
+  border-radius: 20px;
 }
 .row:after {
   content: "";
@@ -171,10 +219,34 @@ span:hover{
   margin-bottom: 0;
 }
 
+.web-name{
+  position: absolute;
+  margin-top: 0;
+  top: 0;
+  left: 0;
+  font-size: 40pt; 
+  color:black; 
+  margin-bottom: 0;
+  font-size: 80px;
+}
+
+.web-name:hover{
+  opacity: .5;
+}
+
 .new_search{
-  font-size: 19pt; 
-  padding-bottom: 15px;
-  text-align: center;
+  font-size: 17pt; 
+  padding-bottom: 10px;
+  text-align: left;
+}
+
+.course-name{
+  color: black; 
+  margin-bottom: 0pt;
+}
+
+.course-name:hover{
+  opacity: .5;
 }
 
 .teacher{
@@ -182,14 +254,29 @@ span:hover{
   font-size: 21px;
   margin-bottom: 10px;
   margin-top: 10px;
+  color: #9A0000;
 }
 
 .rating{
-  font-size: 23px;
+  font-size: 27px;
 }
 
 .avg_grades{
   text-indent: 70px; 
   font-size: 17px;
   margin-top: 5px;
+  color: #000000;
+}
+
+.faker{
+  font-size: 17px;
+  text-align: left;
+  padding-right: 5px;
+}
+
+input[type=text] {
+  margin: 1px 0;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 4px;
 }

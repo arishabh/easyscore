@@ -1,8 +1,7 @@
 from classes import *
 from ast import literal_eval
 from time import time
-
-VERSION = "v3"
+from general import *
 
 data_file = "info/scrape/scrape_"+VERSION+".txt"
 

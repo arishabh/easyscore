@@ -120,10 +120,9 @@ span{
   position: fixed;
   font-size:23px;
   cursor:pointer;
-  width: 150px;
   text-decoration: none;
   color: #9A0000;
-  left: 0;
+  right: 0;
 }
 .feedback:hover{
   opacity: .5;

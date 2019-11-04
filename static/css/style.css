@@ -238,6 +238,7 @@ span{
   font-size: 17pt; 
   padding-bottom: 10px;
   text-align: left;
+  width: auto;
 }
 
 .course-name{

@@ -123,6 +123,7 @@ span{
   width: 150px;
   text-decoration: none;
   color: #9A0000;
+  left: 0;
 }
 .feedback:hover{
   opacity: .5;

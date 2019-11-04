@@ -25,17 +25,6 @@ AAAD-A100 AF AM DANCE COMPNY FOUNDATIONS [] 99.52 16 :
 		Fall 2018 - Regular Academic Session - 13 [92.3, 7.7, 0.0, 0.0] [3, 5, 4, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 2.895 Sect: 3.854
 		Spring 2018 - Regular Academic Session - 15 [60.0, 40.0, 0.0, 0.0] [0, 3, 6, 4, 0, 2, 0, 0, 0, 0, 0, 0, 0] CGPA: 2.856 Sect: 3.52
 		Fall 2017 - Regular Academic Session - 12 [100.0, 0.0, 0.0, 0.0] [0, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 2.953 Sect: 4.0
-AAAD-A278 CONTEMPORARY BLACK FILM [] 96.08 8 :
-	Horsley,Marsha Nicole 98.16 [74.32, 20.02, 4.76, 0.0] 2013-2016 5 sem.22.0:
-		Summer 2016 - Four Week - First - 17 [94.1, 5.9, 0.0, 0.0] [8, 6, 2, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0] CGPA: 2.952 Sect: 3.888
-		Summer 2015 - Four Week - First - 18 [50.0, 44.4, 5.6, 0.0] [1, 5, 3, 4, 3, 1, 1, 0, 0, 0, 0, 0, 0] CGPA: 2.824 Sect: 3.461
-		Summer 2014 - Four Week - Second - 25 [72.0, 28.0, 0.0, 0.0] [4, 9, 5, 3, 3, 1, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.374 Sect: 3.684
-		Spring 2014 - Regular Academic Session - 28 [96.4, 3.6, 0.0, 0.0] [1, 9, 17, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 2.984 Sect: 3.782
-		Summer 2013 - Four Week - Second - 22 [59.1, 18.2, 18.2, 0.0] [8, 2, 3, 3, 0, 1, 2, 1, 1, 0, 0, 0, 1] CGPA: 2.699 Sect: 3.273
-	Smith,April Faye 94.0 [77.83, 17.1, 2.67, 0.0] 2012-2013 3 sem.26.67:
-		Spring 2013 - Regular Academic Session - 31 [74.2, 22.6, 0.0, 0.0] [7, 12, 4, 1, 4, 2, 0, 0, 0, 0, 0, 0, 1] CGPA: 2.99 Sect: 3.597
-		Summer 2012 - Four Week - First - 24 [83.3, 16.7, 0.0, 0.0] [14, 3, 3, 0, 3, 1, 0, 0, 0, 0, 0, 0, 0] CGPA: 2.972 Sect: 3.783
-		Spring 2012 - Regular Academic Session - 25 [76.0, 12.0, 8.0, 0.0] [8, 7, 4, 0, 2, 1, 0, 2, 0, 0, 0, 0, 1] CGPA: 2.918 Sect: 3.5
 AAAD-A120 SOUL REVUE FOUNDATIONS [] 94.8 14 Vocalists are required to attend a weekly lab at a ...:
 	Cooper,Tyron 100.0 [100.0, 0.0, 0.0, 0.0] 2013-2016 7 sem.17.57:
 		Spring 2016 - Regular Academic Session - 19 [100.0, 0.0, 0.0, 0.0] [12, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 2.734 Sect: 4.0
@@ -56,18 +45,6 @@ AAAD-A120 SOUL REVUE FOUNDATIONS [] 94.8 14 Vocalists are required to attend a w
 		Fall 2012 - Regular Academic Session - 13 [100.0, 0.0, 0.0, 0.0] [0, 7, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.073 Sect: 3.862
 	Taliefero,Crystal Louise 92.0 [100.0, 0.0, 0.0, 0.0] 2017 1 sem.9.0:
 		Spring 2017 - Regular Academic Session - 9 [100.0, 0.0, 0.0, 0.0] [3, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.219 Sect: 4.0
-AAAD-A104 GROUPS THEATRE WORKSHOP [] 94.0 6 :
-	Kote,David Paul 94.0 [95.0, 0.0, 0.0, 0.0] 2014-2015 2 sem.13.0:
-		Summer 2015 - Six Week - Second - 16 [100.0, 0.0, 0.0, 0.0] [16, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.239 Sect: 4.0
-		Summer 2014 - Six Week - Second - 10 [90.0, 0.0, 0.0, 0.0] [9, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1] CGPA: 2.965 Sect: 3.6
-	Smith,Amelia Grace 94.0 [96.7, 3.3, 0.0, 0.0] 2016 1 sem.30.0:
-		Summer 2016 - Six Week - Second - 30 [96.7, 3.3, 0.0, 0.0] [15, 10, 4, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.371 Sect: 3.937
-	Wise,Raymond 94.0 [90.0, 10.0, 0.0, 0.0] 2013 1 sem.20.0:
-		Summer 2013 - Six Week - Second - 20 [90.0, 10.0, 0.0, 0.0] [0, 16, 2, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.048 Sect: 3.87
-	McCutchen,Keith D. 94.0 [100.0, 0.0, 0.0, 0.0] 2012 1 sem.12.0:
-		Summer 2012 - Six Week - Second - 12 [100.0, 0.0, 0.0, 0.0] [12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.18 Sect: 4.0
-	Mahluli,Nathanael Fareed 94.0 [92.6, 7.4, 0.0, 0.0] 2011 1 sem.27.0:
-		Second Summer Session 2011 - nan - 27 [92.6, 7.4, 0.0, 0.0] [10, 9, 6, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 2.762 Sect: 3.87
 AAAD-A277 IMGS BLACKS FILMS: 1903-1950'S [0] 94.0 3 :
 	Horsley,Marsha Nicole 94.0 [80.6, 13.3, 6.15, 0.0] 2013-2014 2 sem.25.5:
 		Fall 2014 - Regular Academic Session - 28 [78.6, 17.9, 3.6, 0.0] [13, 7, 2, 4, 1, 0, 0, 1, 0, 0, 0, 0, 0] CGPA: 2.947 Sect: 3.771
@@ -77,9 +54,6 @@ AAAD-A277 IMGS BLACKS FILMS: 1903-1950'S [0] 94.0 3 :
 AAAD-A339 AACE ADV STU AND PRACT [8] 94.0 1 :
 	Wise,Raymond 94.0 [75.0, 25.0, 0.0, 0.0] 2019 1 sem.12.0:
 		Spring 2019 - Regular Academic Session - 12 [75.0, 25.0, 0.0, 0.0] [5, 2, 2, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.051 Sect: 3.725
-AAAD-A201 INTRO AFR-AMER & AFR DIASPORA [] 94.0 1 :
-	Doss,Adeyemi Oduwale 94.0 [76.7, 16.7, 3.3, 3.3] 2015 1 sem.30.0:
-		Spring 2015 - Regular Academic Session - 30 [76.7, 16.7, 3.3, 3.3] [1, 21, 1, 4, 1, 0, 1, 0, 0, 0, 1, 0, 0] CGPA: 2.619 Sect: 3.707
 AAAD-A110 AF AM CHORAL ENSEMBL FOUNDATNS [] 93.45 14 :
 	Wise,Raymond 94.91 [81.12, 15.49, 2.63, 0.0] 2013-2019 13 sem.18.92:
 		Spring 2019 - Regular Academic Session - 16 [62.5, 31.3, 6.3, 0.0] [6, 2, 2, 3, 1, 1, 1, 0, 0, 0, 0, 0, 0] CGPA: 3.069 Sect: 3.581
@@ -97,9 +71,6 @@ AAAD-A110 AF AM CHORAL ENSEMBL FOUNDATNS [] 93.45 14 :
 		Spring 2013 - Regular Academic Session - 14 [92.9, 7.1, 0.0, 0.0] [0, 8, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.103 Sect: 3.843
 	McCutchen,Keith D. 92.0 [83.3, 16.7, 0.0, 0.0] 2012 1 sem.6.0:
 		Spring 2012 - Regular Academic Session - 6 [83.3, 16.7, 0.0, 0.0] [4, 1, 0, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.104 Sect: 3.783
-AAAD-A557 RACE&POLITICS-AFRICAN DIASPORA [9] 93.22 1 :
-	Grim,Valerie 93.22 [100.0, 0.0, 0.0, 0.0] 2016 1 sem.11.0:
-		Spring 2016 - Regular Academic Session - 11 [100.0, 0.0, 0.0, 0.0] [0, 7, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.852 Sect: 3.891
 AAAD-A337 SOUL REVUE ADV STU PRACT [8] 92.0 5 :
 	Strong Jr,James Augustas 92.0 [100.0, 0.0, 0.0, 0.0] 2017-2019 3 sem.6.0:
 		Spring 2019 - Regular Academic Session - 6 [100.0, 0.0, 0.0, 0.0] [3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.158 Sect: 4.0
@@ -108,148 +79,16 @@ AAAD-A337 SOUL REVUE ADV STU PRACT [8] 92.0 5 :
 	Taliefero,Crystal Louise 92.0 [100.0, 0.0, 0.0, 0.0] 2016-2017 2 sem.8.0:
 		Spring 2017 - Regular Academic Session - 6 [100.0, 0.0, 0.0, 0.0] [3, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 2.824 Sect: 4.0
 		Fall 2016 - Regular Academic Session - 10 [100.0, 0.0, 0.0, 0.0] [0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 2.98 Sect: 4.0
-AAAD-A493 SENIOR SEMINAR IN AAADS [9] 92.0 4 P - Must be AAAD major and senior status to enroll:
-	McElroy,Frederick L. 92.0 [75.22, 24.77, 0.0, 0.0] 2011-2015 4 sem.8.0:
-		Fall 2015 - Regular Academic Session - 7 [71.4, 28.6, 0.0, 0.0] [0, 2, 3, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 2.833 Sect: 3.671
-		Fall 2014 - Regular Academic Session - 6 [100.0, 0.0, 0.0, 0.0] [1, 3, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 2.665 Sect: 3.9
-		Fall 2013 - Regular Academic Session - 8 [75.0, 25.0, 0.0, 0.0] [0, 3, 3, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 2.941 Sect: 3.713
-		Fall 2011 - nan - 11 [54.5, 45.5, 0.0, 0.0] [0, 2, 4, 2, 3, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 2.953 Sect: 3.491
 AAAD-A338 AF AM DANCE CO ADV STDIES PRAC [8] 92.0 3 :
 	Berry Jr,Stafford C 92.0 [83.33, 11.1, 5.57, 0.0] 2018-2019 3 sem.7.33:
 		Spring 2019 - Regular Academic Session - 10 [100.0, 0.0, 0.0, 0.0] [0, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 2.984 Sect: 4.0
 		Fall 2018 - Regular Academic Session - 6 [100.0, 0.0, 0.0, 0.0] [2, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 2.903 Sect: 4.0
 		Spring 2018 - Regular Academic Session - 6 [50.0, 33.3, 16.7, 0.0] [0, 1, 2, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0] CGPA: 2.552 Sect: 3.283
-AAAD-A556 RACE&CULTURE-AFRICAN DIASPORA [9] 92.0 3 :
-	Calloway-Thomas,Carolyn 92.0 [88.9, 11.1, 0.0, 0.0] 2015-2017 2 sem.8.0:
-		Fall 2017 - Regular Academic Session - 7 [100.0, 0.0, 0.0, 0.0] [0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.927 Sect: 4.0
-		Fall 2015 - Regular Academic Session - 9 [77.8, 22.2, 0.0, 0.0] [0, 5, 2, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.729 Sect: 3.744
-	Grim,Valerie 92.0 [100.0, 0.0, 0.0, 0.0] 2015 1 sem.7.0:
-		Spring 2015 - Regular Academic Session - 7 [100.0, 0.0, 0.0, 0.0] [0, 6, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.775 Sect: 3.957
-AAAD-A579 EARLY BLACK AMERICAN WRITING [9] 92.0 2 :
-	McElroy,Frederick L. 92.0 [100.0, 0.0, 0.0, 0.0] 2015-2016 2 sem.7.0:
-		Fall 2016 - Regular Academic Session - 7 [100.0, 0.0, 0.0, 0.0] [0, 7, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.882 Sect: 4.0
-		Fall 2015 - Regular Academic Session - 7 [100.0, 0.0, 0.0, 0.0] [0, 6, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.977 Sect: 3.957
-AAAD-A594 ISSUES IN AFRICAN AMERICAN MUS [9] 92.0 1 :
-	Cooper,Tyron 92.0 [100.0, 0.0, 0.0, 0.0] 2018 1 sem.8.0:
-		Spring 2018 - Regular Academic Session - 8 [100.0, 0.0, 0.0, 0.0] [2, 6, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.683 Sect: 4.0
-AAAD-A132 RECENT AAAD LITERATURE [0, 1] 90.92 6 :
-	Doss,Adeyemi Oduwale 91.83 [75.0, 22.5, 2.5, 0.0] 2019 1 sem.40.0:
-		Summer 2019 - Six Week - Second - 40 [75.0, 22.5, 2.5, 0.0] [2, 22, 6, 3, 6, 0, 1, 0, 0, 0, 0, 0, 0] CGPA: 3.383 Sect: 3.71
-	Khan-Thomas,Zeba Yvonne 91.25 [74.45, 24.48, 1.07, 0.0] 2015-2018 4 sem.22.75:
-		Summer 2018 - Six Week - Second - 32 [71.9, 28.1, 0.0, 0.0] [8, 10, 5, 4, 5, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.496 Sect: 3.709
-		Summer 2017 - Six Week - Second - 19 [100.0, 0.0, 0.0, 0.0] [6, 10, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.287 Sect: 3.953
-		Summer 2016 - Six Week - Second - 17 [82.4, 17.6, 0.0, 0.0] [3, 5, 6, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.468 Sect: 3.771
-		Fall 2015 - Regular Academic Session - 23 [43.5, 52.2, 4.3, 0.0] [0, 5, 5, 2, 6, 4, 1, 0, 0, 0, 0, 0, 0] CGPA: 2.76 Sect: 3.313
-	McElroy,Frederick L. 89.68 [52.2, 43.5, 4.3, 0.0] 2012 1 sem.23.0:
-		Spring 2012 - Regular Academic Session - 23 [52.2, 43.5, 4.3, 0.0] [0, 8, 4, 6, 3, 1, 0, 1, 0, 0, 0, 0, 0] CGPA: 2.795 Sect: 3.491
-AAAD-A169 INTRO TO AFRICAN AMERICAN LIT [0] 90.18 9 :
-	Wise,Raymond 94.0 [98.6, 1.4, 0.0, 0.0] 2018-2019 2 sem.35.5:
-		Summer 2019 - Six Week - Second - 36 [97.2, 2.8, 0.0, 0.0] [20, 10, 5, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.64 Sect: 3.939
-		Summer 2018 - Six Week - Second - 35 [100.0, 0.0, 0.0, 0.0] [12, 20, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.523 Sect: 3.974
-	Smith,Amelia Grace 94.0 [88.0, 12.0, 0.0, 0.0] 2017 1 sem.25.0:
-		Summer 2017 - Six Week - Second - 25 [88.0, 12.0, 0.0, 0.0] [2, 15, 5, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.387 Sect: 3.844
-	Dieter,Katie Eleanor 94.0 [81.8, 18.2, 0.0, 0.0] 2016 1 sem.33.0:
-		Summer 2016 - Six Week - Second - 33 [81.8, 18.2, 0.0, 0.0] [6, 15, 6, 3, 2, 1, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.409 Sect: 3.782
-	Hamilton,Maria Eliza 94.0 [94.3, 5.7, 0.0, 0.0] 2013 1 sem.35.0:
-		Spring 2013 - Regular Academic Session - 35 [94.3, 5.7, 0.0, 0.0] [14, 18, 1, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.074 Sect: 3.951
-	Grim,Valerie 94.0 [78.8, 18.2, 3.0, 0.0] 2012 1 sem.33.0:
-		Fall 2012 - Regular Academic Session - 33 [78.8, 18.2, 3.0, 0.0] [11, 12, 3, 1, 4, 1, 1, 0, 0, 0, 0, 0, 0] CGPA: 2.729 Sect: 3.739
-	Comer,Nandi Njeri-Ayinde 82.78 [56.5, 32.05, 5.7, 0.0] 2013-2014 2 sem.26.0:
-		Spring 2014 - Regular Academic Session - 25 [76.0, 16.0, 4.0, 0.0] [5, 11, 3, 2, 2, 0, 0, 1, 0, 0, 0, 0, 1] CGPA: 2.963 Sect: 3.588
-		Fall 2013 - Regular Academic Session - 27 [37.0, 48.1, 7.4, 0.0] [3, 3, 4, 4, 6, 3, 1, 1, 0, 0, 0, 0, 2] CGPA: 2.919 Sect: 3.052
-	Louis,Diana Martha 78.45 [55.6, 29.6, 0.0, 0.0] 2015 1 sem.27.0:
-		Fall 2015 - Regular Academic Session - 27 [55.6, 29.6, 0.0, 0.0] [6, 6, 3, 2, 6, 0, 0, 0, 0, 0, 0, 0, 4] CGPA: 2.714 Sect: 3.1
-AAAD-A447 RACE, CRIME & MEDIA [9] 89.35 1 :
-	Dillard,J. Amy 89.35 [72.7, 18.2, 0.0, 0.0] 2018 1 sem.33.0:
-		Fall 2018 - Eight Week - Second - 33 [72.7, 18.2, 0.0, 0.0] [4, 8, 12, 4, 1, 1, 0, 0, 0, 0, 0, 0, 3] CGPA: 2.5 Sect: 3.373
-AAAD-A500 INTR AFRC AM&AFRC DIASP PART I [9] 89.11 4 :
-	Grim,Valerie 89.11 [78.95, 21.05, 0.0, 0.0] 2014-2018 4 sem.9.75:
-		Fall 2018 - Regular Academic Session - 13 [76.9, 23.1, 0.0, 0.0] [0, 4, 6, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.812 Sect: 3.677
-		Fall 2016 - Regular Academic Session - 8 [50.0, 50.0, 0.0, 0.0] [0, 2, 2, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.622 Sect: 3.538
-		Fall 2015 - Regular Academic Session - 9 [88.9, 11.1, 0.0, 0.0] [0, 6, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.317 Sect: 3.856
-		Fall 2014 - Regular Academic Session - 9 [100.0, 0.0, 0.0, 0.0] [0, 5, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.765 Sect: 3.867
-AAAD-A479 CONTEMPORARY BLACK POETRY [9] 89.09 4 :
-	McElroy,Frederick L. 89.09 [52.55, 46.2, 1.25, 0.0] 2012-2015 4 sem.18.25:
-		Spring 2015 - Eight Week - Second - 12 [58.3, 41.7, 0.0, 0.0] [0, 1, 6, 3, 1, 1, 0, 0, 0, 0, 0, 0, 0] CGPA: 2.476 Sect: 3.483
-		Spring 2014 - Eight Week - Second - 20 [30.0, 65.0, 5.0, 0.0] [0, 0, 6, 8, 5, 0, 1, 0, 0, 0, 0, 0, 0] CGPA: 2.895 Sect: 3.295
-		Spring 2013 - Eight Week - Second - 21 [61.9, 38.1, 0.0, 0.0] [0, 4, 9, 7, 1, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 2.924 Sect: 3.59
-		Spring 2012 - Eight Week - Second - 20 [60.0, 40.0, 0.0, 0.0] [0, 3, 9, 5, 2, 1, 0, 0, 0, 0, 0, 0, 0] CGPA: 2.814 Sect: 3.525
-AAAD-A605 RACE AND GLOBAL CITY, PART I [9] 88.96 3 :
-	Seigel,Micol 91.16 [88.9, 11.1, 0.0, 0.0] 2011 1 sem.9.0:
-		Fall 2011 - nan - 9 [88.9, 11.1, 0.0, 0.0] [0, 5, 3, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.821 Sect: 3.822
-	Grim,Valerie 86.76 [70.15, 29.85, 0.0, 0.0] 2015-2018 2 sem.8.5:
-		Fall 2018 - Regular Academic Session - 8 [62.5, 37.5, 0.0, 0.0] [0, 3, 2, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.736 Sect: 3.625
-		Fall 2015 - Regular Academic Session - 9 [77.8, 22.2, 0.0, 0.0] [0, 4, 3, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.719 Sect: 3.744
-AAAD-A263 CONTEMP SOC ISS-AFR AMER COMM [2, 1] 88.59 4 :
-	Williams,Vernon 91.8 [67.7, 16.1, 16.1, 0.0] 2012 1 sem.31.0:
-		Spring 2012 - Eight Week - Second - 31 [67.7, 16.1, 16.1, 0.0] [1, 15, 5, 3, 2, 0, 1, 3, 1, 0, 0, 0, 0] CGPA: 2.607 Sect: 3.497
-	Hamilton Abegunde,Maria Eliza 85.38 [65.97, 17.5, 10.1, 1.27] 2015-2018 3 sem.20.33:
-		Fall 2018 - Regular Academic Session - 26 [69.2, 7.7, 15.4, 3.8] [0, 18, 0, 0, 2, 0, 0, 4, 0, 0, 1, 0, 1] CGPA: 3.086 Sect: 3.346
-		Fall 2016 - Regular Academic Session - 9 [55.6, 33.3, 11.1, 0.0] [2, 2, 1, 2, 1, 0, 0, 1, 0, 0, 0, 0, 0] CGPA: 2.68 Sect: 3.478
-		Fall 2015 - Regular Academic Session - 26 [73.1, 11.5, 3.8, 0.0] [0, 16, 3, 1, 2, 0, 0, 1, 0, 0, 0, 0, 3] CGPA: 2.742 Sect: 3.323
-AAAD-A131 EARLY AAAD LITERATURE [] 88.53 3 :
-	McElroy,Frederick L. 91.5 [58.6, 34.5, 3.4, 3.4] 2011 1 sem.29.0:
-		Fall 2011 - nan - 29 [58.6, 34.5, 3.4, 3.4] [2, 11, 4, 6, 3, 1, 1, 0, 0, 1, 0, 0, 0] CGPA: 2.728 Sect: 3.514
-	Smith,April Faye 88.73 [56.3, 37.5, 6.3, 0.0] 2012 1 sem.16.0:
-		Fall 2012 - Regular Academic Session - 16 [56.3, 37.5, 6.3, 0.0] [3, 3, 3, 3, 2, 1, 0, 1, 0, 0, 0, 0, 0] CGPA: 2.919 Sect: 3.481
-	Horsley,Marsha Nicole 85.35 [47.8, 47.8, 0.0, 0.0] 2012 1 sem.23.0:
-		Summer 2012 - Four Week - First - 23 [47.8, 47.8, 0.0, 0.0] [3, 4, 4, 5, 4, 2, 0, 0, 0, 0, 0, 0, 1] CGPA: 2.745 Sect: 3.335
-AAAD-A350 BLACK ATLANTIC [8, 0] 87.55 3 :
-	Craig,Byron B 92.33 [67.6, 26.5, 0.0, 2.9] 2014 1 sem.34.0:
-		Spring 2014 - Regular Academic Session - 34 [67.6, 26.5, 0.0, 2.9] [4, 9, 10, 8, 1, 0, 0, 0, 0, 0, 1, 0, 1] CGPA: 2.668 Sect: 3.512
-	Hamilton Abegunde,Maria Eliza 90.37 [69.0, 17.2, 10.3, 0.0] 2014 1 sem.29.0:
-		Fall 2014 - Regular Academic Session - 29 [69.0, 17.2, 10.3, 0.0] [0, 18, 2, 3, 1, 1, 2, 0, 1, 0, 0, 0, 1] CGPA: 2.762 Sect: 3.493
-	Williams,Vernon 79.95 [46.4, 35.7, 17.9, 0.0] 2012 1 sem.28.0:
-		Fall 2012 - Regular Academic Session - 28 [46.4, 35.7, 17.9, 0.0] [3, 4, 6, 3, 3, 4, 1, 3, 1, 0, 0, 0, 0] CGPA: 2.771 Sect: 3.211
-AAAD-A395 CONTEMPORARY JAZZ & SOUL MUSIC [8] 87.44 2 :
-	Baker,David N. 87.44 [59.7, 25.2, 11.55, 3.55] 2012-2013 2 sem.31.0:
-		Spring 2013 - Regular Academic Session - 28 [42.9, 35.7, 14.3, 7.1] [6, 3, 3, 3, 6, 1, 2, 1, 1, 1, 0, 1, 0] CGPA: 2.839 Sect: 3.143
-		Spring 2012 - Regular Academic Session - 34 [76.5, 14.7, 8.8, 0.0] [20, 5, 1, 3, 0, 2, 0, 1, 2, 0, 0, 0, 0] CGPA: 2.999 Sect: 3.659
 AAAD-A696 INTERDISCIPLINARY RSCH METHODS [9] 86.64 2 :
 	Grim,Valerie 89.21 [70.0, 30.0, 0.0, 0.0] 2016 1 sem.10.0:
 		Spring 2016 - Regular Academic Session - 10 [70.0, 30.0, 0.0, 0.0] [0, 6, 1, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.711 Sect: 3.73
 	Williams,Jakobi 84.07 [44.4, 55.6, 0.0, 0.0] 2018 1 sem.9.0:
 		Fall 2018 - Regular Academic Session - 9 [44.4, 55.6, 0.0, 0.0] [1, 3, 0, 4, 1, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.749 Sect: 3.578
-AAAD-A703 BLACK FEMINISMS [9] 85.7 1 :
-	Hamilton Abegunde,Maria Eliza 85.7 [64.3, 35.7, 0.0, 0.0] 2017 1 sem.14.0:
-		Fall 2017 - Regular Academic Session - 14 [64.3, 35.7, 0.0, 0.0] [0, 9, 0, 0, 5, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.738 Sect: 3.643
-AAAD-A156 JIM CROW AND APARTHEID [2, 4] 83.85 7 :
-	Williams,Vernon 92.33 [66.7, 28.2, 5.1, 0.0] 2013 1 sem.39.0:
-		Spring 2013 - Regular Academic Session - 39 [66.7, 28.2, 5.1, 0.0] [2, 16, 8, 8, 1, 2, 1, 1, 0, 0, 0, 0, 0] CGPA: 2.966 Sect: 3.608
-	Mahady,Anne E. 87.75 [69.75, 19.9, 8.5, 0.0] 2016-2017 2 sem.22.0:
-		Spring 2017 - Regular Academic Session - 27 [63.0, 22.2, 11.1, 0.0] [5, 9, 3, 2, 4, 0, 1, 2, 0, 0, 0, 0, 1] CGPA: 3.1 Sect: 3.407
-		Summer 2016 - Six Week - Second - 17 [76.5, 17.6, 5.9, 0.0] [4, 4, 5, 2, 1, 0, 0, 1, 0, 0, 0, 0, 0] CGPA: 3.195 Sect: 3.653
-	Sterling,Andrea Marie 85.78 [62.1, 24.1, 10.3, 0.0] 2018 1 sem.29.0:
-		Fall 2018 - Regular Academic Session - 29 [62.1, 24.1, 10.3, 0.0] [6, 9, 3, 4, 1, 2, 3, 0, 0, 0, 0, 0, 1] CGPA: 3.094 Sect: 3.434
-	Stanfield,John H. 82.46 [58.1, 27.5, 8.0, 2.0] 2011-2014 2 sem.23.0:
-		Spring 2014 - Regular Academic Session - 25 [40.0, 36.0, 16.0, 4.0] [3, 4, 3, 1, 6, 2, 2, 2, 0, 0, 1, 0, 1] CGPA: 2.95 Sect: 3.016
-		Fall 2011 - nan - 21 [76.2, 19.0, 0.0, 0.0] [7, 8, 1, 1, 3, 0, 0, 0, 0, 0, 0, 0, 1] CGPA: 2.924 Sect: 3.619
-	Jones,Caralee Georgianna 70.91 [47.8, 21.7, 21.7, 4.3] 2016 1 sem.23.0:
-		Spring 2016 - Regular Academic Session - 23 [47.8, 21.7, 21.7, 4.3] [4, 3, 4, 2, 2, 1, 3, 2, 0, 0, 1, 0, 1] CGPA: 3.155 Sect: 3.043
-AAAD-A221 DANCE IN THE AFRICAN DIASPORA [4] 82.94 7 :
-	Berry Jr,Stafford C 86.01 [86.4, 0.0, 4.5, 0.0] 2018 1 sem.22.0:
-		Fall 2018 - Eight Week - Second - 22 [86.4, 0.0, 4.5, 0.0] [0, 13, 6, 0, 0, 0, 0, 1, 0, 0, 0, 0, 2] CGPA: 3.114 Sect: 3.464
-	Rosa,Iris 79.88 [67.57, 19.72, 7.72, 2.87] 2011-2016 6 sem.24.67:
-		Fall 2016 - Eight Week - Second - 22 [50.0, 18.2, 13.6, 9.1] [4, 4, 3, 3, 1, 0, 2, 0, 1, 0, 1, 1, 2] CGPA: 2.784 Sect: 2.909
-		Fall 2015 - Eight Week - Second - 24 [62.5, 25.0, 12.5, 0.0] [7, 5, 3, 3, 3, 0, 2, 0, 1, 0, 0, 0, 0] CGPA: 3.012 Sect: 3.513
-		Fall 2014 - Eight Week - Second - 26 [88.5, 7.7, 3.8, 0.0] [13, 5, 5, 2, 0, 0, 1, 0, 0, 0, 0, 0, 0] CGPA: 3.195 Sect: 3.823
-		Fall 2013 - Eight Week - Second - 23 [60.9, 26.1, 8.7, 4.3] [5, 7, 2, 2, 2, 2, 0, 0, 2, 1, 0, 0, 0] CGPA: 2.738 Sect: 3.396
-		Fall 2012 - Eight Week - Second - 26 [73.1, 15.4, 7.7, 3.8] [13, 4, 2, 1, 2, 1, 0, 1, 1, 0, 1, 0, 0] CGPA: 3.139 Sect: 3.542
-		Fall 2011 - nan - 27 [70.4, 25.9, 0.0, 0.0] [10, 5, 4, 6, 0, 1, 0, 0, 0, 0, 0, 0, 1] CGPA: 2.888 Sect: 3.604
-AAAD-A379 EARLY BLACK AMERICAN WRITING [8, 0, 1] 82.72 8 :
-	McElroy,Frederick L. 88.27 [53.09, 44.34, 2.57, 0.0] 2011-2017 7 sem.35.14:
-		Fall 2016 - Regular Academic Session - 33 [45.5, 51.5, 3.0, 0.0] [0, 8, 7, 12, 5, 0, 1, 0, 0, 0, 0, 0, 0] CGPA: 2.997 Sect: 3.479
-		Fall 2017 - Regular Academic Session - 38 [42.1, 57.9, 0.0, 0.0] [1, 4, 11, 14, 8, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 2.806 Sect: 3.445
-		Fall 2015 - Regular Academic Session - 36 [63.9, 36.1, 0.0, 0.0] [0, 5, 18, 7, 6, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 2.774 Sect: 3.547
-		Fall 2014 - Regular Academic Session - 32 [59.4, 31.3, 9.4, 0.0] [0, 7, 12, 8, 2, 0, 0, 1, 2, 0, 0, 0, 0] CGPA: 2.802 Sect: 3.444
-		Fall 2013 - Regular Academic Session - 43 [58.1, 39.5, 2.3, 0.0] [1, 6, 18, 13, 4, 0, 1, 0, 0, 0, 0, 0, 0] CGPA: 2.94 Sect: 3.53
-		Fall 2012 - Regular Academic Session - 34 [55.9, 44.1, 0.0, 0.0] [0, 8, 11, 13, 2, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 2.921 Sect: 3.576
-		Fall 2011 - nan - 30 [46.7, 50.0, 3.3, 0.0] [0, 5, 9, 10, 5, 0, 1, 0, 0, 0, 0, 0, 0] CGPA: 3.147 Sect: 3.453
-	Amoah-Ramey,Nana Abena Dansowaa 77.16 [35.1, 56.8, 2.7, 2.7] 2018 1 sem.37.0:
-		Fall 2018 - Regular Academic Session - 37 [35.1, 56.8, 2.7, 2.7] [1, 7, 5, 9, 9, 3, 1, 0, 0, 1, 0, 0, 1] CGPA: 3.08 Sect: 3.214
-AAAD-A692 WR & LIT IN AFRC AM&AFRC DIASP [9] 82.25 1 :
-	Wester,Maisha 82.25 [71.4, 28.6, 0.0, 0.0] 2016 1 sem.7.0:
-		Fall 2016 - Regular Academic Session - 7 [71.4, 28.6, 0.0, 0.0] [0, 3, 2, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.839 Sect: 3.586
 AAAD-A210 BLACK WOMEN IN THE DIASPORA [2, 1] 82.06 12 :
 	Hamilton,Maria Eliza 94.0 [94.4, 5.6, 0.0, 0.0] 2013 1 sem.18.0:
 		Summer 2013 - Four Week - First - 18 [94.4, 5.6, 0.0, 0.0] [14, 2, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 2.788 Sect: 3.944
@@ -296,16 +135,6 @@ AAAD-A154 HISTORY OF RACE IN AMERICAS [2, 4] 81.47 12 :
 		Spring 2013 - Regular Academic Session - 18 [27.8, 33.3, 22.2, 0.0] [4, 1, 0, 0, 4, 2, 1, 3, 0, 0, 0, 0, 3] CGPA: 2.735 Sect: 2.539
 	Person,Simone Rae 68.77 [51.7, 17.2, 13.8, 17.2] 2019 1 sem.29.0:
 		Spring 2019 - Regular Academic Session - 29 [51.7, 17.2, 13.8, 17.2] [2, 7, 6, 1, 1, 3, 3, 0, 1, 3, 0, 2, 0] CGPA: 3.055 Sect: 2.983
-AAAD-A405 CIV RHTS/BLACK POW MVMNT 54-74 [9] 81.36 4 :
-	Williams,Vernon 86.7 [54.07, 30.63, 15.3, 0.0] 2011-2013 3 sem.17.33:
-		Fall 2013 - Regular Academic Session - 17 [47.1, 35.3, 17.6, 0.0] [2, 5, 1, 3, 2, 1, 1, 2, 0, 0, 0, 0, 0] CGPA: 2.875 Sect: 3.329
-		Fall 2012 - Regular Academic Session - 16 [62.5, 25.0, 12.5, 0.0] [2, 6, 2, 4, 0, 0, 1, 1, 0, 0, 0, 0, 0] CGPA: 3.004 Sect: 3.556
-		Fall 2011 - nan - 19 [52.6, 31.6, 15.8, 0.0] [2, 7, 1, 4, 2, 0, 0, 1, 2, 0, 0, 0, 0] CGPA: 2.788 Sect: 3.384
-	Williams,Jakobi 76.01 [41.7, 41.7, 16.7, 0.0] 2018 1 sem.12.0:
-		Fall 2018 - Regular Academic Session - 12 [41.7, 41.7, 16.7, 0.0] [0, 3, 2, 2, 1, 2, 1, 0, 1, 0, 0, 0, 0] CGPA: 3.09 Sect: 3.2
-AAAD-A606 RACE AND GLOBAL CITY, PART II [9] 80.72 1 :
-	Williams,Jakobi 80.72 [50.0, 50.0, 0.0, 0.0] 2019 1 sem.8.0:
-		Spring 2019 - Regular Academic Session - 8 [50.0, 50.0, 0.0, 0.0] [0, 3, 1, 1, 3, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.719 Sect: 3.5
 AAAD-A481 RACISM AND THE LAW [9, 2] 79.64 7 :
 	Motley,Frank 79.64 [40.47, 48.54, 7.89, 0.0] 2012-2019 7 sem.18.57:
 		Spring 2019 - Regular Academic Session - 22 [50.0, 45.5, 0.0, 0.0] [3, 2, 6, 4, 4, 2, 0, 0, 0, 0, 0, 0, 1] CGPA: 2.757 Sect: 3.309
@@ -338,36 +167,6 @@ AAAD-A265 MODRN SPORTS & AFRO-AMER EXPER [2, 1] 79.37 11 :
 		Spring 2014 - Regular Academic Session - 179 [59.2, 30.7, 7.8, 1.7] [35, 40, 31, 26, 19, 10, 5, 7, 2, 2, 0, 1, 1] CGPA: 2.826 Sect: 3.445
 		Spring 2013 - Regular Academic Session - 179 [42.5, 46.4, 6.1, 4.5] [0, 32, 44, 37, 32, 14, 3, 4, 4, 2, 4, 2, 1] CGPA: 2.87 Sect: 3.22
 		Spring 2012 - Regular Academic Session - 170 [48.2, 41.2, 9.4, 1.2] [11, 59, 12, 20, 43, 7, 2, 11, 3, 1, 1, 0, 0] CGPA: 2.833 Sect: 3.366
-AAAD-A355 AFRICAN-AMERICAN HISTORY I [8, 2, 1] 78.99 8 :
-	Smith,April Faye 93.5 [60.0, 34.3, 5.7, 0.0] 2015 1 sem.35.0:
-		Fall 2015 - Regular Academic Session - 35 [60.0, 34.3, 5.7, 0.0] [13, 5, 3, 5, 5, 2, 1, 1, 0, 0, 0, 0, 0] CGPA: 2.778 Sect: 3.551
-	Williams,Vernon 82.69 [44.0, 42.0, 12.0, 0.0] 2013 1 sem.50.0:
-		Fall 2013 - Regular Academic Session - 50 [44.0, 42.0, 12.0, 0.0] [3, 14, 5, 12, 7, 2, 3, 3, 0, 0, 0, 0, 1] CGPA: 2.883 Sect: 3.308
-	Williams,Jakobi 80.06 [31.65, 58.1, 8.05, 1.15] 2014-2017 2 sem.45.0:
-		Fall 2017 - Regular Academic Session - 47 [44.7, 51.1, 2.1, 0.0] [0, 16, 5, 10, 8, 6, 0, 0, 1, 0, 0, 0, 1] CGPA: 2.954 Sect: 3.349
-		Fall 2014 - Regular Academic Session - 43 [18.6, 65.1, 14.0, 2.3] [0, 5, 3, 9, 16, 3, 4, 2, 0, 1, 0, 0, 0] CGPA: 2.749 Sect: 3.056
-	Assensoh,Akwasi B. 76.98 [10.2, 89.8, 0.0, 0.0] 2011 1 sem.49.0:
-		Fall 2011 - nan - 49 [10.2, 89.8, 0.0, 0.0] [0, 1, 4, 14, 30, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 2.892 Sect: 3.163
-	Grim,Valerie 61.7 [14.83, 49.5, 29.63, 3.0] 2012-2018 3 sem.37.33:
-		Fall 2018 - Regular Academic Session - 47 [8.5, 46.8, 42.6, 2.1] [0, 2, 2, 5, 7, 10, 13, 5, 2, 1, 0, 0, 0] CGPA: 2.894 Sect: 2.649
-		Fall 2016 - Regular Academic Session - 36 [22.2, 50.0, 22.2, 0.0] [0, 3, 5, 3, 6, 9, 3, 5, 0, 0, 0, 0, 2] CGPA: 2.763 Sect: 2.767
-		Fall 2012 - Regular Academic Session - 29 [13.8, 51.7, 24.1, 6.9] [0, 3, 1, 3, 9, 3, 4, 3, 0, 2, 0, 0, 1] CGPA: 2.644 Sect: 2.707
-AAAD-A360 SLAVERY: WORLDWIDE PERSPECTIVE [8] 78.99 1 :
-	Hamilton Abegunde,Maria Eliza 78.99 [44.0, 28.0, 28.0, 0.0] 2015 1 sem.25.0:
-		Spring 2015 - Regular Academic Session - 25 [44.0, 28.0, 28.0, 0.0] [0, 11, 0, 2, 2, 3, 3, 3, 1, 0, 0, 0, 0] CGPA: 2.709 Sect: 3.172
-AAAD-A690 CORE RDGS IN AFRO-AMER STUDIES [9] 78.32 1 :
-	Grim,Valerie 78.32 [50.0, 50.0, 0.0, 0.0] 2016 1 sem.8.0:
-		Spring 2016 - Regular Academic Session - 8 [50.0, 50.0, 0.0, 0.0] [0, 1, 3, 2, 1, 1, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.666 Sect: 3.425
-AAAD-A388 MOTOWN [8, 0] 78.13 8 :
-	Sykes,Charles Evans 78.13 [54.94, 19.94, 17.85, 3.14] 2012-2019 8 sem.13.75:
-		Summer 2019 - Six Week - Second - 13 [30.8, 30.8, 30.8, 7.7] [2, 0, 2, 3, 0, 1, 1, 3, 0, 0, 1, 0, 0] CGPA: 2.581 Sect: 2.869
-		Summer 2018 - Six Week - Second - 8 [62.5, 12.5, 12.5, 0.0] [3, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0, 0, 1] CGPA: 2.611 Sect: 3.125
-		Summer 2017 - Six Week - First - 9 [66.7, 11.1, 22.2, 0.0] [5, 1, 0, 0, 1, 0, 2, 0, 0, 0, 0, 0, 0] CGPA: 2.924 Sect: 3.511
-		Summer 2016 - Six Week - Second - 12 [41.7, 8.3, 33.3, 8.3] [3, 1, 1, 1, 0, 0, 0, 3, 1, 0, 1, 0, 1] CGPA: 2.501 Sect: 2.642
-		Summer 2015 - Six Week - Second - 16 [43.8, 31.3, 12.5, 0.0] [3, 2, 2, 1, 4, 0, 0, 1, 1, 0, 0, 0, 2] CGPA: 2.615 Sect: 2.9
-		Summer 2014 - Six Week - Second - 15 [80.0, 6.7, 13.3, 0.0] [3, 1, 8, 0, 1, 0, 1, 1, 0, 0, 0, 0, 0] CGPA: 2.77 Sect: 3.527
-		Summer 2013 - Six Week - Second - 15 [86.7, 13.3, 0.0, 0.0] [8, 5, 0, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0] CGPA: 2.912 Sect: 3.867
-		Summer 2012 - Six Week - First - 22 [27.3, 45.5, 18.2, 9.1] [3, 1, 2, 3, 6, 1, 1, 1, 2, 1, 1, 0, 0] CGPA: 2.635 Sect: 2.909
 AAAD-A380 CONTEMP BLACK AMER WRITING [8, 0, 1] 77.12 15 :
 	McElroy,Frederick L. 86.64 [52.65, 44.41, 1.17, 0.0] 2011-2017 11 sem.23.09:
 		Summer 2017 - Six Week - Second - 24 [41.7, 50.0, 4.2, 0.0] [0, 4, 6, 9, 1, 2, 1, 0, 0, 0, 0, 0, 1] CGPA: 3.008 Sect: 3.275
@@ -400,25 +199,6 @@ AAAD-A356 AFRICAN-AMERICAN HISTORY II [8, 2, 1] 77.07 8 Credit given for only on
 		Spring 2015 - Regular Academic Session - 22 [22.7, 31.8, 36.4, 9.1] [0, 2, 3, 3, 4, 0, 4, 2, 2, 1, 1, 0, 0] CGPA: 2.835 Sect: 2.723
 	Grim,Valerie 61.4 [20.0, 35.0, 40.0, 5.0] 2017 1 sem.20.0:
 		Spring 2017 - Regular Academic Session - 20 [20.0, 35.0, 40.0, 5.0] [0, 2, 2, 1, 1, 5, 3, 4, 1, 1, 0, 0, 0] CGPA: 2.58 Sect: 2.655
-AAAD-A382 BLACK COMM, LAW, & SOC CHANGE [8] 76.2 1 :
-	Motley,Frank 76.2 [41.2, 47.1, 0.0, 0.0] 2019 1 sem.17.0:
-		Spring 2019 - Eight Week - Second - 17 [41.2, 47.1, 0.0, 0.0] [2, 1, 4, 3, 4, 1, 0, 0, 0, 0, 0, 0, 2] CGPA: 2.587 Sect: 3.024
-AAAD-A290 SOCIOCLTRL PERSP-AFR AMER MUS [1, 0] 75.65 3 :
-	Cooper,Tyron 85.34 [70.6, 20.6, 2.9, 0.0] 2017 1 sem.34.0:
-		Fall 2017 - Regular Academic Session - 34 [70.6, 20.6, 2.9, 0.0] [5, 7, 12, 2, 5, 0, 1, 0, 0, 0, 0, 0, 2] CGPA: 3.057 Sect: 3.421
-	Cohen,Judah M 65.95 [30.35, 53.55, 7.7, 0.0] 2012-2017 2 sem.13.0:
-		Spring 2017 - Regular Academic Session - 12 [25.0, 50.0, 8.3, 0.0] [0, 0, 3, 0, 5, 1, 1, 0, 0, 0, 0, 0, 2] CGPA: 2.803 Sect: 2.592
-		Spring 2012 - Regular Academic Session - 14 [35.7, 57.1, 7.1, 0.0] [0, 3, 2, 3, 4, 1, 0, 1, 0, 0, 0, 0, 0] CGPA: 3.086 Sect: 3.286
-AAAD-A264 HIST SPORT&AFRO-AMERICAN EXPER [1, 2] 75.24 8 :
-	Sailes,Gary A. 75.24 [39.34, 42.48, 11.97, 4.04] 2011-2018 8 sem.117.5:
-		Fall 2018 - Regular Academic Session - 76 [21.1, 55.3, 17.1, 3.9] [1, 5, 10, 15, 17, 10, 7, 4, 2, 2, 0, 1, 2] CGPA: 2.728 Sect: 2.886
-		Fall 2016 - Regular Academic Session - 97 [45.4, 38.1, 8.2, 7.2] [7, 22, 15, 10, 17, 10, 6, 1, 1, 2, 4, 1, 1] CGPA: 2.74 Sect: 3.168
-		Fall 2017 - Regular Academic Session - 74 [32.4, 48.6, 12.2, 2.7] [0, 8, 16, 8, 21, 7, 2, 5, 2, 0, 2, 0, 3] CGPA: 2.634 Sect: 2.966
-		Fall 2015 - Regular Academic Session - 94 [64.9, 29.8, 3.2, 1.1] [5, 35, 21, 15, 8, 5, 2, 0, 1, 0, 1, 0, 1] CGPA: 2.779 Sect: 3.532
-		Fall 2014 - Regular Academic Session - 100 [28.0, 49.0, 17.0, 4.0] [0, 11, 17, 24, 18, 7, 10, 4, 3, 1, 2, 1, 2] CGPA: 2.778 Sect: 2.991
-		Fall 2013 - Regular Academic Session - 176 [38.6, 41.5, 13.6, 3.4] [3, 32, 33, 29, 28, 16, 7, 14, 3, 3, 2, 1, 5] CGPA: 2.775 Sect: 3.073
-		Fall 2012 - Regular Academic Session - 166 [40.4, 48.2, 6.0, 3.6] [5, 37, 25, 35, 35, 10, 4, 3, 3, 0, 5, 1, 3] CGPA: 2.837 Sect: 3.217
-		Fall 2011 - nan - 157 [43.9, 29.3, 18.5, 6.4] [2, 47, 20, 8, 30, 8, 10, 15, 4, 3, 6, 1, 3] CGPA: 2.823 Sect: 3.047
 AAAD-A150 SURV CULTR OF BLACK AMERICANS [0] 75.1 27 :
 	Mahady,Anne E. 94.0 [91.2, 8.8, 0.0, 0.0] 2017 1 sem.34.0:
 		Summer 2017 - Six Week - Second - 34 [91.2, 8.8, 0.0, 0.0] [14, 13, 4, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.392 Sect: 3.903
@@ -455,16 +235,6 @@ AAAD-A150 SURV CULTR OF BLACK AMERICANS [0] 75.1 27 :
 		Spring 2018 - Regular Academic Session - 84 [32.1, 31.0, 22.6, 6.0] [6, 11, 10, 9, 9, 8, 6, 10, 3, 2, 3, 0, 7] CGPA: 2.723 Sect: 2.712
 	Wester,Maisha 51.67 [15.1, 38.4, 22.1, 15.1] 2018 1 sem.86.0:
 		Fall 2018 - Regular Academic Session - 86 [15.1, 38.4, 22.1, 15.1] [0, 7, 6, 11, 15, 7, 7, 6, 6, 7, 4, 2, 8] CGPA: 2.595 Sect: 2.363
-AAAD-A363 RSRCH ON CONTMP AFR AMER PROBS [8] 74.66 1 :
-	Stanfield,John H. 74.66 [38.5, 46.2, 0.0, 7.7] 2013 1 sem.13.0:
-		Spring 2013 - Eight Week - Second - 13 [38.5, 46.2, 0.0, 7.7] [2, 2, 1, 2, 1, 3, 0, 0, 0, 1, 0, 0, 1] CGPA: 2.554 Sect: 2.977
-AAAD-A427 CROSS-CULTURAL COMMUNICATION [9] 74.35 2 :
-	Calloway-Thomas,Carolyn 74.35 [29.15, 58.3, 12.5, 0.0] 2015-2016 2 sem.9.0:
-		Fall 2016 - Regular Academic Session - 6 [0.0, 83.3, 16.7, 0.0] [0, 0, 0, 3, 1, 1, 1, 0, 0, 0, 0, 0, 0] CGPA: 2.986 Sect: 2.983
-		Fall 2015 - Regular Academic Session - 12 [58.3, 33.3, 8.3, 0.0] [0, 3, 4, 1, 1, 2, 0, 0, 1, 0, 0, 0, 0] CGPA: 3.023 Sect: 3.35
-AAAD-A243 RACE REPRESENTATION AMER ART [] 73.07 1 :
-	Wolfskill,Phoebe 73.07 [33.3, 50.0, 16.7, 0.0] 2016 1 sem.18.0:
-		Spring 2016 - Regular Academic Session - 18 [33.3, 50.0, 16.7, 0.0] [0, 2, 4, 2, 3, 4, 2, 1, 0, 0, 0, 0, 0] CGPA: 3.017 Sect: 3.1
 AAAD-A295 SURVEY OF HIP HOP [0, 1] 72.61 14 :
 	Orejuela,Fernando 72.61 [35.0, 45.25, 15.67, 2.23] 2012-2019 14 sem.82.5:
 		Spring 2019 - Regular Academic Session - 86 [31.4, 50.0, 10.5, 3.5] [4, 9, 14, 11, 22, 10, 4, 5, 0, 3, 0, 0, 4] CGPA: 3.027 Sect: 2.979
@@ -481,28 +251,11 @@ AAAD-A295 SURVEY OF HIP HOP [0, 1] 72.61 14 :
 		Fall 2013 - Regular Academic Session - 84 [33.3, 47.6, 15.5, 0.0] [5, 11, 12, 15, 20, 5, 4, 8, 1, 0, 0, 0, 3] CGPA: 2.948 Sect: 3.075
 		Spring 2013 - Regular Academic Session - 75 [24.0, 50.7, 24.0, 1.3] [3, 5, 10, 9, 19, 10, 12, 3, 3, 1, 0, 0, 0] CGPA: 3.024 Sect: 2.969
 		Fall 2012 - Regular Academic Session - 74 [43.2, 40.5, 13.5, 1.4] [8, 9, 15, 11, 15, 4, 6, 4, 0, 1, 0, 0, 1] CGPA: 2.912 Sect: 3.226
-AAAD-A250 U.S. CONTEMPORARY MINORITIES [] 72.56 2 :
-	Khan-Thomas,Zeba Yvonne 79.03 [44.0, 44.0, 0.0, 4.0] 2016 1 sem.25.0:
-		Spring 2016 - Regular Academic Session - 25 [44.0, 44.0, 0.0, 4.0] [2, 6, 3, 6, 5, 0, 0, 0, 0, 0, 1, 0, 2] CGPA: 2.756 Sect: 3.156
-	Carter-David,Siobhan Dene 66.09 [35.7, 35.7, 10.7, 0.0] 2011 1 sem.28.0:
-		Fall 2011 - nan - 28 [35.7, 35.7, 10.7, 0.0] [0, 6, 4, 6, 3, 1, 1, 1, 1, 0, 0, 0, 5] CGPA: 2.537 Sect: 2.725
-AAAD-A332 ART OF CIVIL RIGHTS MOVEMENT [8] 72.38 2 :
-	Wolfskill,Phoebe 72.38 [28.9, 58.1, 11.2, 1.8] 2016-2018 2 sem.25.0:
-		Spring 2018 - Regular Academic Session - 28 [21.4, 57.1, 17.9, 3.6] [0, 5, 1, 7, 5, 4, 1, 0, 4, 0, 1, 0, 0] CGPA: 3.046 Sect: 2.954
-		Spring 2016 - Regular Academic Session - 22 [36.4, 59.1, 4.5, 0.0] [0, 3, 5, 3, 8, 2, 0, 0, 1, 0, 0, 0, 0] CGPA: 3.064 Sect: 3.25
 AAAD-A386 BLACK FEMINIST PERSPECTIVES [8, 2, 1] 71.06 2 :
 	Louis,Diana Martha 89.67 [60.0, 33.3, 0.0, 0.0] 2015 1 sem.15.0:
 		Spring 2015 - Regular Academic Session - 15 [60.0, 33.3, 0.0, 0.0] [4, 3, 2, 2, 3, 0, 0, 0, 0, 0, 0, 0, 1] CGPA: 2.627 Sect: 3.4
 	Wester,Maisha 52.44 [20.6, 26.5, 38.2, 11.8] 2019 1 sem.34.0:
 		Spring 2019 - Regular Academic Session - 34 [20.6, 26.5, 38.2, 11.8] [2, 1, 4, 2, 2, 5, 5, 5, 3, 3, 1, 0, 1] CGPA: 2.909 Sect: 2.482
-AAAD-A345 HIP HOP MUSIC AND CULTURE [8] 70.51 2 :
-	Orejuela,Fernando 70.51 [33.35, 39.6, 20.85, 6.25] 2014-2016 2 sem.10.0:
-		Spring 2016 - Regular Academic Session - 12 [16.7, 41.7, 41.7, 0.0] [0, 1, 1, 3, 1, 1, 2, 3, 0, 0, 0, 0, 0] CGPA: 2.825 Sect: 2.825
-		Spring 2014 - Regular Academic Session - 8 [50.0, 37.5, 0.0, 12.5] [0, 3, 1, 1, 1, 1, 0, 0, 0, 1, 0, 0, 0] CGPA: 2.967 Sect: 3.25
-AAAD-A320 BLACK DANCE HISTORY [8] 69.46 2 :
-	Rosa,Iris 69.46 [43.15, 25.0, 13.6, 13.65] 2016-2017 2 sem.22.0:
-		Spring 2017 - Eight Week - Second - 22 [54.5, 22.7, 4.5, 18.2] [2, 4, 6, 4, 0, 1, 0, 1, 0, 0, 4, 0, 0] CGPA: 2.951 Sect: 3.095
-		Spring 2016 - Eight Week - Second - 22 [31.8, 27.3, 22.7, 9.1] [4, 0, 3, 3, 3, 0, 2, 3, 0, 2, 0, 0, 2] CGPA: 2.54 Sect: 2.691
 AAAD-A297 POPULAR MUSIC OF BLACK AMERICA [0, 1] 68.66 7 :
 	Cooper,Tyron 85.46 [55.67, 35.23, 8.2, 0.0] 2016-2018 3 sem.28.67:
 		Fall 2018 - Regular Academic Session - 31 [77.4, 19.4, 3.2, 0.0] [7, 9, 8, 5, 1, 0, 1, 0, 0, 0, 0, 0, 0] CGPA: 3.153 Sect: 3.723
@@ -513,11 +266,6 @@ AAAD-A297 POPULAR MUSIC OF BLACK AMERICA [0, 1] 68.66 7 :
 		Spring 2013 - Regular Academic Session - 15 [20.0, 26.7, 40.0, 13.3] [2, 0, 1, 0, 2, 2, 1, 5, 0, 0, 1, 1, 0] CGPA: 2.818 Sect: 2.473
 		Spring 2012 - Eight Week - Second - 9 [11.1, 22.2, 33.3, 22.2] [0, 1, 0, 0, 2, 0, 1, 2, 0, 1, 1, 0, 1] CGPA: 2.258 Sect: 2.067
 		Fall 2011 - nan - 19 [15.8, 42.1, 26.3, 10.5] [0, 1, 2, 3, 3, 2, 1, 3, 1, 0, 2, 0, 1] CGPA: 2.716 Sect: 2.511
-AAAD-A331 VISUAL ARTS HARLEM RENAISSANCE [8] 67.74 3 :
-	Wolfskill,Phoebe 67.74 [42.47, 29.8, 19.3, 3.17] 2015-2018 3 sem.24.33:
-		Fall 2018 - Regular Academic Session - 30 [30.0, 43.3, 23.3, 0.0] [0, 3, 6, 2, 7, 4, 1, 5, 1, 0, 0, 0, 1] CGPA: 2.892 Sect: 2.887
-		Spring 2017 - Eight Week - Second - 24 [50.0, 25.0, 8.3, 4.2] [1, 6, 5, 0, 2, 4, 1, 0, 1, 0, 1, 0, 3] CGPA: 2.932 Sect: 2.846
-		Fall 2015 - Regular Academic Session - 19 [47.4, 21.1, 26.3, 5.3] [0, 1, 8, 1, 1, 2, 2, 2, 1, 0, 1, 0, 0] CGPA: 2.819 Sect: 2.979
 AAAD-A398 ADV TPCS IN SOCIAL&HIST AAADS [8, 2] 67.39 7 :
 	nan 94.0 [90.0, 10.0, 0.0, 0.0] 2016 1 sem.20.0:
 		Summer 2016 - Regular Academic Session - 20 [90.0, 10.0, 0.0, 0.0] [2, 12, 4, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.311 Sect: 3.84
@@ -533,17 +281,6 @@ AAAD-A398 ADV TPCS IN SOCIAL&HIST AAADS [8, 2] 67.39 7 :
 AAAD-A222 BLACK WOMEN ARTISTS [0, 1] 67.01 1 :
 	Wolfskill,Phoebe 67.01 [28.0, 40.0, 24.0, 4.0] 2018 1 sem.25.0:
 		Spring 2018 - Regular Academic Session - 25 [28.0, 40.0, 24.0, 4.0] [0, 4, 3, 3, 6, 1, 2, 3, 1, 0, 1, 0, 1] CGPA: 2.737 Sect: 2.84
-AAAD-A251 PHOTOGRPHY & AFRICAN DIASPORA [0, 1] 66.15 1 :
-	Wolfskill,Phoebe 66.15 [25.0, 50.0, 10.0, 15.0] 2017 1 sem.20.0:
-		Fall 2017 - Regular Academic Session - 20 [25.0, 50.0, 10.0, 15.0] [0, 4, 1, 5, 5, 0, 1, 1, 0, 1, 1, 1, 0] CGPA: 3.117 Sect: 2.925
-AAAD-A299 SPEC TPC ARTS&HUMANITIES AAADS [] 65.87 4 :
-	Horsley,Marsha Nicole 94.0 [78.55, 11.9, 7.15, 0.0] 2012-2015 2 sem.17.5:
-		Spring 2015 - Regular Academic Session - 14 [100.0, 0.0, 0.0, 0.0] [4, 6, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 2.576 Sect: 3.914
-		Spring 2012 - Eight Week - Second - 21 [57.1, 23.8, 14.3, 0.0] [3, 5, 4, 3, 1, 1, 1, 1, 1, 0, 0, 0, 1] CGPA: 2.628 Sect: 3.257
-	Horton-Stallings,Lamonda 79.53 [35.7, 50.0, 14.3, 0.0] 2012 1 sem.14.0:
-		Fall 2012 - Eight Week - Second - 14 [35.7, 50.0, 14.3, 0.0] [0, 4, 1, 5, 0, 2, 1, 0, 1, 0, 0, 0, 0] CGPA: 2.972 Sect: 3.257
-	Wester,Maisha 24.08 [9.1, 18.2, 9.1, 45.5] 2014 1 sem.11.0:
-		Spring 2014 - Eight Week - Second - 11 [9.1, 18.2, 9.1, 45.5] [1, 0, 0, 1, 0, 1, 1, 0, 0, 1, 2, 2, 2] CGPA: 2.506 Sect: 1.545
 AAAD-A238 COMMUNICATION IN BLACK AMERICA [0, 1] 65.3 4 :
 	Calloway-Thomas,Carolyn 65.3 [20.52, 53.12, 22.25, 0.0] 2016-2019 4 sem.24.5:
 		Spring 2019 - Regular Academic Session - 25 [16.0, 12.0, 60.0, 0.0] [0, 0, 4, 3, 0, 0, 10, 4, 1, 0, 0, 0, 3] CGPA: 2.802 Sect: 2.296
@@ -583,26 +320,6 @@ AAAD-A420 TRANSFORMNG DIV COMM&SOCIETIES [9, 2] 64.34 3 :
 		Spring 2018 - Regular Academic Session - 8 [12.5, 62.5, 12.5, 0.0] [0, 1, 0, 1, 2, 2, 1, 0, 0, 0, 0, 0, 1] CGPA: 2.628 Sect: 2.625
 		Spring 2017 - Regular Academic Session - 10 [30.0, 40.0, 20.0, 0.0] [0, 2, 1, 0, 0, 4, 1, 0, 1, 0, 0, 0, 1] CGPA: 2.747 Sect: 2.65
 		Spring 2016 - Eight Week - Second - 13 [15.4, 76.9, 0.0, 0.0] [0, 2, 0, 3, 2, 5, 0, 0, 0, 0, 0, 0, 1] CGPA: 2.563 Sect: 2.877
-AAAD-A205 BLACK ELECTORAL POLITICS [] 63.28 1 :
-	Stanfield,John H. 63.28 [25.0, 41.7, 16.7, 0.0] 2012 1 sem.12.0:
-		Fall 2012 - Eight Week - Second - 12 [25.0, 41.7, 16.7, 0.0] [2, 1, 0, 1, 4, 0, 0, 2, 0, 0, 0, 0, 2] CGPA: 2.456 Sect: 2.608
-AAAD-A352 AFRI AM ART II:AFRI AM ARTISTS [8] 61.16 4 :
-	Wolfskill,Phoebe 61.16 [22.12, 44.57, 21.58, 8.18] 2013-2019 4 sem.13.75:
-		Spring 2019 - Regular Academic Session - 28 [21.4, 46.4, 21.4, 10.7] [0, 4, 2, 4, 6, 3, 1, 1, 4, 1, 1, 1, 0] CGPA: 2.923 Sect: 2.743
-		Spring 2017 - Regular Academic Session - 13 [38.5, 46.2, 7.7, 7.7] [0, 3, 2, 0, 4, 2, 1, 0, 0, 1, 0, 0, 0] CGPA: 3.183 Sect: 3.108
-		Fall 2014 - Regular Academic Session - 7 [28.6, 28.6, 28.6, 14.3] [0, 0, 2, 1, 1, 0, 0, 1, 1, 0, 1, 0, 0] CGPA: 2.68 Sect: 2.629
-		Fall 2013 - Regular Academic Session - 7 [0.0, 57.1, 28.6, 0.0] [0, 0, 0, 0, 1, 3, 0, 2, 0, 0, 0, 0, 1] CGPA: 2.215 Sect: 2.157
-AAAD-A304 BLACK PARIS [8] 60.34 2 :
-	Julien,Eileen 60.34 [16.65, 57.2, 16.1, 5.0] 2015-2017 2 sem.9.5:
-		Fall 2017 - Eight Week - Second - 10 [0.0, 70.0, 10.0, 10.0] [0, 0, 0, 1, 3, 3, 0, 1, 0, 0, 1, 0, 1] CGPA: 2.67 Sect: 2.34
-		Spring 2015 - Regular Academic Session - 9 [33.3, 44.4, 22.2, 0.0] [0, 0, 3, 3, 0, 1, 2, 0, 0, 0, 0, 0, 0] CGPA: 2.758 Sect: 3.144
-AAAD-A298 SPEC TPCS SOC&HIST FOR AAADS [] 60.02 2 :
-	Smith,Candis D 60.02 [32.7, 24.75, 12.25, 9.1] 2015-2016 2 sem.13.5:
-		Fall 2016 - Eight Week - Second - 16 [56.3, 31.3, 6.3, 0.0] [3, 4, 2, 0, 2, 3, 0, 1, 0, 0, 0, 0, 1] CGPA: 2.804 Sect: 3.219
-		Fall 2015 - Eight Week - Second - 11 [9.1, 18.2, 18.2, 18.2] [0, 0, 1, 0, 0, 2, 2, 0, 0, 2, 0, 0, 4] CGPA: 2.324 Sect: 1.482
-AAAD-A430 THE CINEMA OF AFRICANA WOMEN [9] 58.8 1 :
-	McCluskey,Audrey T. 58.8 [12.5, 54.2, 20.8, 8.3] 2012 1 sem.24.0:
-		Spring 2012 - Eight Week - Second - 24 [12.5, 54.2, 20.8, 8.3] [0, 2, 1, 1, 6, 6, 3, 2, 0, 0, 2, 0, 1] CGPA: 2.635 Sect: 2.588
 AAAD-A408 RACE, GENDER AND CLASS [9, 2, 1] 53.16 4 :
 	Smith,Candis D 64.88 [25.57, 45.2, 17.7, 6.4] 2016-2018 3 sem.27.0:
 		Fall 2018 - Regular Academic Session - 24 [20.8, 37.5, 25.0, 12.5] [0, 1, 4, 4, 4, 1, 3, 1, 2, 1, 2, 0, 1] CGPA: 2.856 Sect: 2.596
@@ -610,43 +327,3 @@ AAAD-A408 RACE, GENDER AND CLASS [9, 2, 1] 53.16 4 :
 		Spring 2016 - Regular Academic Session - 27 [25.9, 48.1, 14.8, 0.0] [0, 6, 1, 4, 8, 1, 1, 2, 1, 0, 0, 0, 3] CGPA: 2.798 Sect: 2.8
 	Bailey,Marlon M 41.43 [15.0, 25.0, 30.0, 20.0] 2011 1 sem.20.0:
 		Fall 2011 - nan - 20 [15.0, 25.0, 30.0, 20.0] [0, 0, 3, 2, 0, 3, 1, 4, 1, 2, 1, 1, 2] CGPA: 2.675 Sect: 2.105
-AAAD-A393 HISTORY OF JAZZ [8] 52.97 3 :
-	Baker,David N. 67.91 [37.9, 28.8, 19.7, 12.1] 2011-2012 2 sem.33.0:
-		Fall 2012 - Regular Academic Session - 33 [45.5, 15.2, 18.2, 21.2] [8, 3, 4, 2, 2, 1, 1, 5, 0, 2, 2, 3, 0] CGPA: 2.886 Sect: 2.821
-		Fall 2011 - nan - 33 [30.3, 42.4, 21.2, 3.0] [6, 3, 1, 2, 9, 3, 2, 3, 2, 0, 1, 0, 1] CGPA: 2.746 Sect: 2.921
-	Wallace,Wayne Lee 38.04 [7.1, 32.1, 35.7, 14.3] 2013 1 sem.28.0:
-		Fall 2013 - Regular Academic Session - 28 [7.1, 32.1, 35.7, 14.3] [0, 1, 1, 1, 2, 6, 2, 7, 1, 1, 2, 1, 3] CGPA: 2.832 Sect: 2.054
-AAAD-A387 BLACK MIGRATION [8, 2, 4] 52.5 5 :
-	Smith,Candis D 57.45 [19.55, 39.38, 27.32, 7.55] 2015-2018 4 sem.14.75:
-		Fall 2018 - Eight Week - Second - 22 [22.7, 36.4, 22.7, 9.1] [0, 1, 4, 0, 5, 3, 3, 1, 1, 2, 0, 0, 2] CGPA: 2.586 Sect: 2.505
-		Fall 2016 - Regular Academic Session - 9 [33.3, 33.3, 33.3, 0.0] [0, 1, 2, 0, 2, 1, 0, 2, 1, 0, 0, 0, 0] CGPA: 2.61 Sect: 2.867
-		Fall 2017 - Regular Academic Session - 10 [0.0, 60.0, 20.0, 10.0] [0, 0, 0, 2, 3, 1, 0, 2, 0, 1, 0, 0, 1] CGPA: 2.346 Sect: 2.36
-		Fall 2015 - Eight Week - Second - 18 [22.2, 27.8, 33.3, 11.1] [0, 3, 1, 1, 1, 3, 0, 5, 1, 0, 2, 0, 1] CGPA: 2.624 Sect: 2.433
-	Stanfield,John H. 47.54 [22.2, 33.3, 14.8, 7.4] 2011 1 sem.27.0:
-		Fall 2011 - nan - 27 [22.2, 33.3, 14.8, 7.4] [2, 0, 4, 2, 4, 3, 0, 3, 1, 0, 2, 0, 6] CGPA: 2.511 Sect: 2.193
-AAAD-A112 BLACK MUSIC OF TWO WORLDS [] 50.68 4 :
-	Burnim,Mellonee Victoria 50.68 [2.5, 49.38, 37.08, 8.57] 2012-2016 4 sem.17.0:
-		Fall 2016 - Regular Academic Session - 16 [0.0, 56.3, 25.0, 18.8] [0, 0, 0, 1, 6, 2, 1, 3, 0, 2, 1, 0, 0] CGPA: 2.751 Sect: 2.413
-		Fall 2014 - Regular Academic Session - 13 [0.0, 53.8, 46.2, 0.0] [0, 0, 0, 3, 3, 1, 1, 3, 2, 0, 0, 0, 0] CGPA: 2.975 Sect: 2.562
-		Fall 2013 - Regular Academic Session - 20 [10.0, 40.0, 35.0, 5.0] [0, 1, 1, 2, 4, 2, 2, 1, 4, 0, 1, 0, 2] CGPA: 2.722 Sect: 2.305
-		Spring 2012 - Regular Academic Session - 19 [0.0, 47.4, 42.1, 10.5] [0, 0, 0, 1, 4, 4, 3, 3, 2, 2, 0, 0, 0] CGPA: 2.702 Sect: 2.368
-AAAD-A255 THE BLACK CHURCH IN AMERICA [] 50.15 1 :
-	Grim,Valerie 50.15 [17.9, 39.3, 25.0, 3.6] 2018 1 sem.28.0:
-		Spring 2018 - Eight Week - Second - 28 [17.9, 39.3, 25.0, 3.6] [0, 2, 3, 2, 4, 5, 1, 5, 1, 0, 1, 0, 4] CGPA: 2.772 Sect: 2.364
-AAAD-A359 ETHNIC/RACIAL FILM STEREOTYPES [8] 46.96 2 :
-	Wester,Maisha 46.96 [17.8, 35.65, 17.8, 15.5] 2015-2017 2 sem.22.5:
-		Spring 2017 - Regular Academic Session - 22 [18.2, 40.9, 18.2, 13.6] [0, 2, 2, 3, 3, 3, 1, 2, 1, 0, 1, 2, 2] CGPA: 2.592 Sect: 2.4
-		Fall 2015 - Regular Academic Session - 23 [17.4, 30.4, 17.4, 17.4] [0, 2, 2, 1, 2, 4, 0, 2, 2, 0, 3, 1, 4] CGPA: 2.776 Sect: 2.026
-AAAD-A496 BLACK RELIGIOUS MUSIC [9] 43.14 1 :
-	Burnim,Mellonee Victoria 43.14 [0.0, 50.0, 33.3, 16.7] 2013 1 sem.6.0:
-		Spring 2013 - Regular Academic Session - 6 [0.0, 50.0, 33.3, 16.7] [0, 0, 0, 0, 0, 3, 0, 1, 1, 0, 1, 0, 0] CGPA: 2.474 Sect: 2.133
-AAAD-A407 AFRICAN AMER&AFR PROTEST STRAT [9] 38.22 2 :
-	Stanfield,John H. 45.54 [11.1, 44.4, 11.1, 0.0] 2012 1 sem.9.0:
-		Fall 2012 - Eight Week - Second - 9 [11.1, 44.4, 11.1, 0.0] [0, 1, 0, 3, 0, 1, 0, 1, 0, 0, 0, 0, 3] CGPA: 2.361 Sect: 2.067
-	Grim,Valerie 30.89 [7.1, 21.4, 35.7, 7.1] 2018 1 sem.14.0:
-		Spring 2018 - Eight Week - Second - 14 [7.1, 21.4, 35.7, 7.1] [0, 1, 0, 1, 1, 1, 0, 4, 1, 1, 0, 0, 4] CGPA: 2.49 Sect: 1.714
-AAAD-A480 THE BLACK NOVEL [9] 33.13 3 :
-	Wester,Maisha 33.13 [22.73, 19.7, 10.17, 25.77] 2013-2015 3 sem.14.33:
-		Fall 2015 - Regular Academic Session - 7 [42.9, 14.3, 0.0, 28.6] [0, 2, 1, 0, 0, 1, 0, 0, 0, 0, 1, 1, 1] CGPA: 2.711 Sect: 2.3
-		Fall 2014 - Eight Week - Second - 22 [18.2, 9.1, 9.1, 27.3] [2, 2, 0, 0, 1, 1, 0, 2, 0, 2, 3, 1, 8] CGPA: 2.596 Sect: 1.455
-		Fall 2013 - Eight Week - Second - 14 [7.1, 35.7, 21.4, 21.4] [0, 1, 0, 1, 3, 1, 2, 0, 1, 0, 3, 0, 2] CGPA: 2.58 Sect: 2.021

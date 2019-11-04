@@ -10,7 +10,7 @@ with open(scrape_file, "r") as f:
     for lines in f:
         raw_data.append(lines[:-1])
 
-def search_all(dep='', sub='', code='', inst='', credit='', cr=''):
+def search_all(dep='', sub='', code='', inst='', credit='', cr='', next_sem=''):
     all_courses = []
     start = time()
     filtered = raw_data
@@ -33,7 +33,8 @@ def search_all(dep='', sub='', code='', inst='', credit='', cr=''):
             if f != []:
                 filtered2.append(d.split('\t')[0] + '\t' + f[0])
         filtered = filtered2
-    if(cr != '' and cr != "ANY"): filtered=list(filter(lambda x: (int(x.split('|')[10].split('\t')[0]) >= int(cr)), filtered))
+    if(cr != '' and cr != "ANY"): filtered=list(filter(lambda x: (int(x.split('|')[10]) >= int(cr)), filtered))
+    if(next_sem != ''): filtered=list(filter(lambda x: (x.split('|')[11].split('\t')[0] == next_sem), filtered))
     for raw in filtered:
         raw1 = raw.split('\t')
         c = raw1[0].split('|')

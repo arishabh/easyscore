@@ -13,7 +13,8 @@ def index():
         code = request.form['code']
         inst = request.form['instrname']
         cr = request.form['cr']
-        all_courses = search_all(dep, sub, code, inst, req, cr)
+        next_sem = request.form['next_sem']
+        all_courses = search_all(dep, sub, code, inst, req, cr, next_sem)
         if len(all_courses)>40:
             all_courses = all_courses[:40]
         return render_template('result.html', all_courses=all_courses, credits_inv=credits_inv)
@@ -29,7 +30,8 @@ def output():
         code = request.form['code']
         inst = request.form['instrname']
         cr = request.form['cr']
-        all_courses = search_all(dep, sub, code, inst, req, cr)
+        next_sem = request.form['next_sem']
+        all_courses = search_all(dep, sub, code, inst, req, cr, next_sem)
         if len(all_courses)>40:
             all_courses = all_courses[:40]
         return render_template('result.html', all_courses=all_courses, credits_inv=credits_inv)

@@ -117,9 +117,9 @@ span{
 }
 
 .feedback{
+  position: fixed;
   font-size:23px;
   cursor:pointer;
-  float:right;
   width: 150px;
   text-decoration: none;
   color: #9A0000;

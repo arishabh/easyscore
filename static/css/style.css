@@ -224,13 +224,26 @@ span{
   margin-top: 0;
   top: 0;
   left: 0;
-  font-size: 40pt; 
   color:black; 
   margin-bottom: 0;
-  font-size: 80px;
+  font-size: 400%;
 }
 
 .web-name:hover{
+  opacity: .5;
+}
+
+.mweb-name{
+  margin-top: 0;
+  float: right;
+  color:black; 
+  margin-bottom: 0;
+  font-size: 150%;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.mweb-name:hover{
   opacity: .5;
 }
 

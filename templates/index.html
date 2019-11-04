@@ -1,11 +1,18 @@
 {% extends 'base.html' %}
 
 {% block head %}
+<script type="text/javascript">
+	flag = 0;
+	if (screen.width <= 699) {
+		window.location.href = "/mobile";
+		flag = 1;
+	}
+</script>
 <title>EasyScore</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {% endblock %}
 {% block body %}
-<div class="centered">
+<div class="centered desktop">
 	<h1 style="font-size: 350%;"><center>Welcome To EasyScore</center></h1>
 	<h2 class="line-1 anim-typewriter"><center>Find out how easy your future teacher is</center></h2>
 </div>
@@ -18,7 +25,7 @@
 			<tr><th class="faker">Course Subject </th><td style="background-color: #ffffff;"><input style="padding: 5px 7px 5px 10px; margin: 1px;"  placeholder="example: 'CSCI-C' or 'C'" type="text" size="30" maxlength="7" name="subject" id="subject" value=""></td></tr>
 			<tr><th class="faker">Class Number </th><td style="background-color: #ffffff;"><input style="padding: 5px 7px 5px 10px; margin: 1px;" placeholder="example: '212'" type="text" size="30" maxlength="6" name="code" id="code" value=""></td></tr>
 			<tr><th class="faker">Instructor &nbsp;<span class="showTip L1" style="text-decoration: underline; cursor: pointer;"></span></th><td style="background-color: #ffffff;"><input placeholder="example: 'Adeel Bhutta' or 'Adeel' or 'Bhutta'" style="padding: 5px 7px 5px 10px;" type="text" size="30" maxlength="30" name="instrname" id="instrname" value=""></td>
-                <tr><th class="faker">Min. Credits</th><td><select style="padding: 2px 0px 2px; margin: 1px;" id="cr" name="cr"><option value='ANY'>Any</option><option value="1">1+</option> <option value="2">2+</option> <option value="3">3+</option> <option value="4">4+</option> <option value="5">5+</option></select></td></tr>
+            <tr><th class="faker">Min. Credits</th><td><select style="padding: 2px 0px 2px; margin: 1px;" id="cr" name="cr"><option value='ANY'>Any</option><option value="1">1+</option> <option value="2">2+</option> <option value="3">3+</option> <option value="4">4+</option> <option value="5">5+</option></select></td></tr>
 		</table>
 		<br>
 		<input class="button" type="submit" id="isearch" value="Search">&nbsp;

@@ -13,7 +13,7 @@ def index():
         code = request.form['code']
         inst = request.form['instrname']
         cr = request.form['cr']
-        next_sem = request.form['next_sem']
+        next_sem = request.form.getlist('next_sem')
         all_courses = search_all(dep, sub, code, inst, req, cr, next_sem)
         if len(all_courses)>40:
             all_courses = all_courses[:40]
@@ -30,7 +30,7 @@ def output():
         code = request.form['code']
         inst = request.form['instrname']
         cr = request.form['cr']
-        next_sem = request.form['next_sem']
+        next_sem = request.form.getlist('next_sem')
         all_courses = search_all(dep, sub, code, inst, req, cr, next_sem)
         if len(all_courses)>40:
             all_courses = all_courses[:40]
@@ -47,7 +47,8 @@ def mobile():
         code = request.form['code']
         inst = request.form['instrname']
         cr = request.form['cr']
-        next_sem = request.form['next_sem']
+        next_sem = request.form.getlist('next_sem')
+        print(next_sem)
         all_courses = search_all(dep, sub, code, inst, req, cr, next_sem)
         if len(all_courses)>40:
             all_courses = all_courses[:40]
@@ -64,7 +65,7 @@ def mobile_output():
         code = request.form['code']
         inst = request.form['instrname']
         cr = request.form['cr']
-        next_sem = request.form['next_sem']
+        next_sem = request.form.getlist('next_sem')
         all_courses = search_all(dep, sub, code, inst, req, cr, next_sem)
         if len(all_courses)>40:
             all_courses = all_courses[:40]

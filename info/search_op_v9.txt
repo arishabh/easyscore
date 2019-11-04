@@ -1,65 +1,47 @@
-NELC-N212 CONTEMPORARY LIT OF MID EAST [] 94.0 2 :
-	Harding,Cigdem Balim 94.0 [84.0, 16.0, 0.0, 0.0] 2013-2014 2 sem.25.0:
-		Spring 2014 - Regular Academic Session - 25 [76.0, 24.0, 0.0, 0.0] [5, 4, 10, 4, 2, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.2 Sect: 3.688
-		Spring 2013 - Regular Academic Session - 25 [92.0, 8.0, 0.0, 0.0] [5, 12, 6, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.257 Sect: 3.848
-HPER-D212 ADV MODERN DANCE TECHNIQUE II [] 93.44 2 :
-	Dowd,Jamie Lynn 94.0 [93.3, 6.7, 0.0, 0.0] 2013 1 sem.15.0:
-		Spring 2013 - Regular Academic Session - 15 [93.3, 6.7, 0.0, 0.0] [0, 13, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.642 Sect: 3.933
-	Wegman,Benjamin Josiah 92.89 [75.0, 25.0, 0.0, 0.0] 2012 1 sem.16.0:
-		Spring 2012 - Regular Academic Session - 16 [75.0, 25.0, 0.0, 0.0] [2, 8, 2, 2, 1, 1, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.383 Sect: 3.731
-INTL-I212 NEGOTIATING GLOBAL CHALLENGES [] 92.0 1 :
-	Minton,Mark Clements 92.0 [77.8, 22.2, 0.0, 0.0] 2016 1 sem.9.0:
-		Fall 2016 - Regular Academic Session - 9 [77.8, 22.2, 0.0, 0.0] [0, 2, 5, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0] CGPA: 2.701 Sect: 3.578
-ENG-R212 COMMUNICATING SUSTAINABILITY [] 90.29 1 :
-	de Onis,Kathleen Maire 90.29 [85.7, 7.1, 0.0, 0.0] 2016 1 sem.14.0:
-		Spring 2016 - Regular Academic Session - 14 [85.7, 7.1, 0.0, 0.0] [0, 11, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1] CGPA: 3.257 Sect: 3.621
-HIST-H212 LATIN AMERICAN CULTURE & CIV 2 [] 87.05 5 :
-	McGraw,Jason P. 87.05 [40.34, 50.8, 7.68, 0.0] 2012-2017 5 sem.11.4:
-		Spring 2017 - Regular Academic Session - 6 [66.7, 33.3, 0.0, 0.0] [0, 2, 2, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 2.998 Sect: 3.667
-		Spring 2015 - Regular Academic Session - 11 [27.3, 72.7, 0.0, 0.0] [0, 1, 2, 7, 1, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.189 Sect: 3.409
-		Spring 2014 - Regular Academic Session - 14 [28.6, 50.0, 21.4, 0.0] [0, 1, 3, 2, 3, 2, 1, 2, 0, 0, 0, 0, 0] CGPA: 2.898 Sect: 3.029
-		Spring 2013 - Regular Academic Session - 9 [55.6, 33.3, 11.1, 0.0] [0, 2, 3, 2, 0, 1, 1, 0, 0, 0, 0, 0, 0] CGPA: 2.884 Sect: 3.411
-		Spring 2012 - Regular Academic Session - 17 [23.5, 64.7, 5.9, 0.0] [0, 3, 1, 9, 1, 1, 1, 0, 0, 0, 0, 0, 1] CGPA: 2.888 Sect: 3.141
-INST-I212 THE CIVILIZATION OF TIBET [2, 4] 82.99 1 :
-	Sperling,Elliot H. 82.99 [66.7, 16.7, 16.7, 0.0] 2013 1 sem.6.0:
-		Fall 2013 - Regular Academic Session - 6 [66.7, 16.7, 16.7, 0.0] [1, 0, 3, 0, 1, 0, 0, 1, 0, 0, 0, 0, 0] CGPA: 2.972 Sect: 3.35
-ANTH-E212 ANTH OF YOUTH AND ADOLESCENCE [] 79.42 2 :
-	Suslak,Daniel Frank 79.42 [62.2, 23.65, 6.45, 1.6] 2015-2016 2 sem.43.0:
-		Spring 2016 - Eight Week - Second - 62 [45.2, 30.6, 12.9, 3.2] [1, 16, 11, 5, 11, 3, 1, 4, 3, 0, 1, 1, 5] CGPA: 2.605 Sect: 2.958
-		Spring 2015 - Regular Academic Session - 24 [79.2, 16.7, 0.0, 0.0] [1, 10, 8, 2, 1, 1, 0, 0, 0, 0, 0, 0, 1] CGPA: 2.974 Sect: 3.579
-SPH-R212 COMPUTERS IN PRST [] 79.08 2 :
-	Ross,Craig M. 81.28 [54.5, 31.8, 4.5, 9.1] 2014 1 sem.22.0:
-		Spring 2014 - Regular Academic Session - 22 [54.5, 31.8, 4.5, 9.1] [2, 7, 3, 1, 5, 1, 0, 0, 1, 1, 1, 0, 0] CGPA: 2.881 Sect: 3.277
-	Furman Jr,Lowell B 76.87 [33.3, 41.7, 8.3, 16.7] 2015 1 sem.12.0:
-		Spring 2015 - Regular Academic Session - 12 [33.3, 41.7, 8.3, 16.7] [0, 4, 0, 4, 1, 0, 1, 0, 0, 2, 0, 0, 0] CGPA: 2.678 Sect: 3.092
-POLS-Y212 MAKING DEMOCRACY WORK [] 78.42 9 :
-	Carugati,Maria Federica 87.25 [52.0, 46.5, 1.5, 0.0] 2017-2018 2 sem.30.5:
-		Spring 2018 - Regular Academic Session - 28 [46.4, 53.6, 0.0, 0.0] [4, 5, 4, 10, 4, 1, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.177 Sect: 3.518
-		Spring 2017 - Regular Academic Session - 33 [57.6, 39.4, 3.0, 0.0] [1, 8, 10, 7, 5, 1, 1, 0, 0, 0, 0, 0, 0] CGPA: 3.157 Sect: 3.518
-	Colley,Christopher Keegin 86.52 [63.0, 22.2, 14.8, 0.0] 2016 1 sem.27.0:
-		Spring 2016 - Regular Academic Session - 27 [63.0, 22.2, 14.8, 0.0] [0, 13, 4, 3, 3, 0, 1, 1, 2, 0, 0, 0, 0] CGPA: 2.985 Sect: 3.459
-	Bielasiak,Jacob 77.25 [54.5, 18.2, 27.3, 0.0] 2018 1 sem.11.0:
-		Spring 2018 - Eight Week - First - 11 [54.5, 18.2, 27.3, 0.0] [0, 3, 3, 0, 1, 1, 2, 1, 0, 0, 0, 0, 0] CGPA: 3.03 Sect: 3.218
-	Scheuerman,William 76.35 [30.0, 63.3, 6.7, 0.0] 2017 1 sem.30.0:
-		Fall 2017 - Regular Academic Session - 30 [30.0, 63.3, 6.7, 0.0] [1, 2, 6, 7, 9, 3, 1, 1, 0, 0, 0, 0, 0] CGPA: 3.165 Sect: 3.223
-	Isaac,Jeffrey C. 71.94 [35.7, 38.6, 17.43, 1.73] 2012-2018 3 sem.35.67:
-		Fall 2018 - Regular Academic Session - 29 [48.3, 34.5, 6.9, 0.0] [1, 10, 3, 5, 4, 1, 0, 2, 0, 0, 0, 0, 3] CGPA: 3.012 Sect: 3.114
-		Spring 2013 - Regular Academic Session - 43 [30.2, 44.2, 14.0, 2.3] [2, 4, 7, 4, 10, 5, 2, 3, 1, 1, 0, 0, 4] CGPA: 2.881 Sect: 2.795
-		Spring 2012 - Regular Academic Session - 35 [28.6, 37.1, 31.4, 2.9] [0, 5, 5, 6, 5, 2, 7, 3, 1, 0, 1, 0, 0] CGPA: 2.855 Sect: 2.957
-	Stewart,Katie Lynn 71.24 [40.0, 34.3, 25.7, 0.0] 2015 1 sem.35.0:
-		Spring 2015 - Regular Academic Session - 35 [40.0, 34.3, 25.7, 0.0] [1, 4, 9, 3, 5, 4, 4, 2, 3, 0, 0, 0, 0] CGPA: 3.085 Sect: 3.066
-HPER-P212 INTRO TO EXERCISE SCIENCE [] 72.83 5 :
-	Henson,Phillip Likins 72.83 [50.32, 35.32, 8.22, 2.86] 2011-2013 5 sem.116.8:
-		Spring 2013 - Regular Academic Session - 174 [31.0, 35.6, 17.2, 7.5] [26, 16, 12, 28, 17, 17, 13, 11, 6, 8, 4, 1, 15] CGPA: 2.872 Sect: 2.752
-		Fall 2012 - Regular Academic Session - 61 [57.4, 37.7, 3.3, 1.6] [9, 13, 13, 16, 4, 3, 0, 1, 1, 0, 0, 1, 0] CGPA: 3.235 Sect: 3.498
-		Summer 2012 - Six Week - First - 6 [66.7, 33.3, 0.0, 0.0] [1, 2, 1, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0] CGPA: 2.981 Sect: 3.567
-		Spring 2012 - Regular Academic Session - 287 [28.6, 43.2, 18.8, 5.2] [14, 30, 38, 54, 39, 31, 32, 14, 8, 9, 4, 2, 12] CGPA: 2.834 Sect: 2.884
-		Fall 2011 - nan - 56 [67.9, 26.8, 1.8, 0.0] [17, 14, 7, 11, 3, 1, 1, 0, 0, 0, 0, 0, 2] CGPA: 3.083 Sect: 3.575
-CMCL-C212 COMMUNICATING SUSTAINABILITY [] 69.93 4 :
-	de Onis,Kathleen Maire 82.46 [44.4, 48.1, 7.4, 0.0] 2015 1 sem.27.0:
-		Spring 2015 - Regular Academic Session - 27 [44.4, 48.1, 7.4, 0.0] [1, 7, 4, 5, 7, 1, 0, 2, 0, 0, 0, 0, 0] CGPA: 3.09 Sect: 3.37
-	McGuffey,James Coleman 74.59 [37.5, 37.5, 18.8, 0.0] 2013 1 sem.32.0:
-		Spring 2013 - Regular Academic Session - 32 [37.5, 37.5, 18.8, 0.0] [5, 4, 3, 5, 5, 2, 4, 2, 0, 0, 0, 0, 2] CGPA: 2.787 Sect: 3.038
-	Pezzullo,Phaedra C. 52.73 [13.65, 42.95, 30.8, 6.2] 2012-2014 2 sem.56.0:
-		Fall 2014 - Regular Academic Session - 43 [18.6, 39.5, 32.6, 2.3] [0, 2, 6, 6, 7, 4, 1, 8, 5, 1, 0, 0, 3] CGPA: 2.902 Sect: 2.556
-		Fall 2012 - Regular Academic Session - 69 [8.7, 46.4, 29.0, 10.1] [2, 2, 2, 7, 13, 12, 10, 6, 4, 3, 3, 1, 4] CGPA: 2.861 Sect: 2.425
+CSCI-H212 INTRO TO SFTWR SYSTEMS-HONORS [] 86.02 11 P - CSCI-C 200 or C 211:
+	German,Dan-Adrian 92.6 [83.45, 15.23, 1.32, 0.0] 2012-2019 6 sem.26.0:
+		Spring 2019 - Regular Academic Session - 27 [81.5, 14.8, 3.7, 0.0] [4, 14, 4, 3, 1, 0, 1, 0, 0, 0, 0, 0, 0] CGPA: 3.507 Sect: 3.778
+		Spring 2018 - Regular Academic Session - 29 [69.0, 31.0, 0.0, 0.0] [1, 12, 7, 6, 3, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.672 Sect: 3.679
+		Spring 2017 - Regular Academic Session - 29 [93.1, 6.9, 0.0, 0.0] [11, 12, 4, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.657 Sect: 3.9
+		Spring 2016 - Regular Academic Session - 27 [96.3, 3.7, 0.0, 0.0] [0, 23, 3, 0, 1, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.716 Sect: 3.93
+		Spring 2015 - Regular Academic Session - 24 [70.8, 25.0, 4.2, 0.0] [1, 13, 3, 2, 2, 2, 0, 1, 0, 0, 0, 0, 0] CGPA: 3.506 Sect: 3.629
+		Spring 2012 - Regular Academic Session - 20 [90.0, 10.0, 0.0, 0.0] [1, 11, 6, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.469 Sect: 3.795
+	Malbasa,Vel 90.54 [85.7, 7.1, 0.0, 7.1] 2015 1 sem.14.0:
+		Fall 2015 - Regular Academic Session - 14 [85.7, 7.1, 0.0, 7.1] [0, 12, 0, 1, 0, 0, 0, 0, 0, 1, 0, 0, 0] CGPA: 3.68 Sect: 3.757
+	Bhutta,Adeel A 88.62 [72.5, 27.5, 0.0, 0.0] 2016-2018 2 sem.15.0:
+		Fall 2018 - Regular Academic Session - 10 [80.0, 20.0, 0.0, 0.0] [6, 2, 0, 0, 1, 1, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.777 Sect: 3.77
+		Fall 2016 - Regular Academic Session - 20 [65.0, 35.0, 0.0, 0.0] [4, 4, 5, 4, 2, 1, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.61 Sect: 3.62
+	Gupta,Minaxi 82.48 [62.5, 29.2, 8.3, 0.0] 2013 1 sem.24.0:
+		Spring 2013 - Regular Academic Session - 24 [62.5, 29.2, 8.3, 0.0] [0, 10, 5, 3, 1, 3, 1, 1, 0, 0, 0, 0, 0] CGPA: 3.499 Sect: 3.492
+	Dalkilic,Mehmet M. 75.85 [47.8, 43.5, 8.7, 0.0] 2014 1 sem.23.0:
+		Spring 2014 - Regular Academic Session - 23 [47.8, 43.5, 8.7, 0.0] [3, 5, 3, 0, 7, 3, 0, 2, 0, 0, 0, 0, 0] CGPA: 3.559 Sect: 3.313
+CSCI-C212 INTRO TO SOFTWARE SYSTEMS [] 72.72 25 P - CSCI-C 200 or C 211:
+	Malbasa,Vel 76.4 [50.7, 34.3, 9.0, 3.0] 2016 1 sem.67.0:
+		Spring 2016 - Regular Academic Session - 67 [50.7, 34.3, 9.0, 3.0] [0, 20, 14, 8, 12, 3, 1, 3, 2, 1, 1, 0, 2] CGPA: 3.182 Sect: 3.228
+	German,Dan-Adrian 75.91 [63.96, 21.32, 7.7, 2.39] 2011-2019 19 sem.41.37:
+		Summer 2019 - Six Week - First - 26 [50.0, 23.1, 11.5, 15.4] [2, 6, 5, 4, 2, 0, 3, 0, 0, 2, 2, 0, 0] CGPA: 3.276 Sect: 3.123
+		Fall 2018 - Regular Academic Session - 102 [38.2, 27.5, 16.7, 2.9] [0, 24, 15, 11, 3, 14, 11, 3, 3, 3, 0, 0, 15] CGPA: 3.1 Sect: 2.695
+		Summer 2018 - Six Week - Second - 14 [42.9, 28.6, 7.1, 7.1] [3, 2, 1, 1, 2, 1, 1, 0, 0, 0, 1, 0, 2] CGPA: 2.866 Sect: 2.786
+		Summer 2017 - Six Week - Second - 20 [65.0, 30.0, 5.0, 0.0] [0, 9, 4, 4, 1, 1, 1, 0, 0, 0, 0, 0, 0] CGPA: 3.087 Sect: 3.6
+		Fall 2016 - Regular Academic Session - 46 [54.3, 34.8, 10.9, 0.0] [2, 8, 15, 10, 3, 3, 3, 2, 0, 0, 0, 0, 0] CGPA: 2.998 Sect: 3.402
+		Summer 2016 - Six Week - Second - 30 [73.3, 13.3, 10.0, 0.0] [4, 10, 8, 0, 2, 2, 3, 0, 0, 0, 0, 0, 1] CGPA: 3.089 Sect: 3.463
+		Fall 2017 - Regular Academic Session - 46 [34.8, 21.7, 19.6, 6.5] [2, 11, 3, 3, 3, 4, 3, 4, 2, 0, 1, 2, 8] CGPA: 2.916 Sect: 2.467
+		Fall 2015 - Regular Academic Session - 18 [77.8, 11.1, 11.1, 0.0] [0, 10, 4, 1, 1, 0, 0, 2, 0, 0, 0, 0, 0] CGPA: 3.254 Sect: 3.617
+		Summer 2015 - Six Week - Second - 29 [86.2, 13.8, 0.0, 0.0] [8, 13, 4, 0, 3, 1, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.111 Sect: 3.81
+		Spring 2015 - Regular Academic Session - 67 [40.3, 32.8, 16.4, 0.0] [1, 12, 14, 9, 4, 9, 7, 1, 3, 0, 0, 0, 7] CGPA: 2.97 Sect: 2.881
+		Summer 2014 - Six Week - Second - 29 [86.2, 10.3, 0.0, 0.0] [3, 19, 3, 1, 2, 0, 0, 0, 0, 0, 0, 0, 1] CGPA: 2.981 Sect: 3.738
+		Spring 2014 - Regular Academic Session - 66 [47.0, 40.9, 9.1, 0.0] [2, 15, 14, 15, 6, 6, 5, 1, 0, 0, 0, 0, 2] CGPA: 2.859 Sect: 3.288
+		Summer 2013 - Six Week - Second - 28 [92.9, 3.6, 0.0, 0.0] [5, 20, 1, 0, 1, 0, 0, 0, 0, 0, 0, 0, 1] CGPA: 3.224 Sect: 3.811
+		Spring 2013 - Regular Academic Session - 51 [76.5, 19.6, 0.0, 0.0] [0, 24, 15, 6, 3, 1, 0, 0, 0, 0, 0, 0, 2] CGPA: 3.218 Sect: 3.588
+		Fall 2012 - Regular Academic Session - 58 [56.9, 41.4, 1.7, 0.0] [6, 23, 4, 11, 5, 8, 0, 1, 0, 0, 0, 0, 0] CGPA: 3.089 Sect: 3.547
+		Summer 2012 - Six Week - Second - 25 [88.0, 12.0, 0.0, 0.0] [3, 12, 7, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.054 Sect: 3.82
+		Spring 2012 - Regular Academic Session - 57 [45.6, 19.3, 17.5, 7.0] [0, 12, 14, 5, 2, 4, 3, 4, 3, 3, 0, 1, 6] CGPA: 3.02 Sect: 2.767
+		Fall 2011 - nan - 62 [67.7, 12.9, 9.7, 6.5] [0, 27, 15, 4, 1, 3, 3, 2, 1, 1, 1, 2, 2] CGPA: 3.133 Sect: 3.292
+		Second Summer Session 2011 - nan - 12 [91.7, 8.3, 0.0, 0.0] [1, 8, 2, 0, 0, 1, 0, 0, 0, 0, 0, 0, 0] CGPA: 3.084 Sect: 3.842
+	Bhutta,Adeel A 70.51 [44.47, 36.7, 7.4, 3.7] 2017-2019 3 sem.76.33:
+		Spring 2019 - Regular Academic Session - 79 [36.7, 43.0, 10.1, 0.0] [14, 9, 6, 8, 16, 10, 1, 6, 1, 0, 0, 0, 8] CGPA: 3.174 Sect: 2.932
+		Spring 2018 - Regular Academic Session - 80 [53.8, 30.0, 5.0, 2.5] [12, 20, 11, 8, 13, 3, 1, 2, 1, 0, 1, 1, 7] CGPA: 3.186 Sect: 3.149
+		Spring 2017 - Regular Academic Session - 70 [42.9, 37.1, 7.1, 8.6] [13, 8, 9, 7, 10, 9, 1, 2, 2, 2, 3, 1, 3] CGPA: 3.15 Sect: 3.01
+	Rawlins,Gregory J.e. 68.06 [40.65, 32.6, 14.6, 4.2] 2013-2014 2 sem.71.5:
+		Fall 2014 - Regular Academic Session - 75 [38.7, 37.3, 16.0, 4.0] [7, 11, 11, 11, 11, 6, 6, 3, 3, 1, 2, 0, 3] CGPA: 3.077 Sect: 3.019
+		Fall 2013 - Regular Academic Session - 68 [42.6, 27.9, 13.2, 4.4] [10, 11, 8, 7, 9, 3, 2, 4, 3, 2, 0, 1, 8] CGPA: 2.991 Sect: 2.835

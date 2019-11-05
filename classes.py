@@ -179,7 +179,6 @@ class Course:
         return out
 
     def rate(self):
-        if(self.code > 400) and (9 not in self.credit): self.credit.append(9)
         total = 0
         for i in self.instructors: total += i.rating
         self.rating = round(total/len(self.instructors), 2)

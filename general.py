@@ -10,7 +10,8 @@ credits = {'A&H Breadth of Inquiry credit':0,
         'English Composition credit':6,
         'Mathematical Modeling credit':7,
         '300+':8,
-        '400+':9}
+        '400+':9,
+        'Grad':10}
 
 credits_inv = ['A&H Breadth of Inquiry credit',
         'Diversity in U.S. credit',
@@ -21,7 +22,8 @@ credits_inv = ['A&H Breadth of Inquiry credit',
         'English Composition credit',
         'Mathematical Modeling credit',
         '300+',
-        '400+']
+        '400+',
+        'Grad']
 
 path = "info/"
 total_files = 10

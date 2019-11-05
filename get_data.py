@@ -40,7 +40,8 @@ for i in range(len(all_courses)):
     credit = []
     preq = ''
     if(c.code >= 300 and c.code <= 399): credit.append(credits['300+'])
-    if(c.code >= 400): credit.append(credits['400+'])
+    elif(c.code >= 400 and c.code <= 499): credit.append(credits['400+'])
+    elif(c.code >= 500): credit.append(credits['Grad']) 
     for i in range(len(url)):
         u = url[i][0] + c.department + "/" + c.name + url[i][1]
         b = bs(get(u).content, "lxml").findAll("pre")
@@ -50,7 +51,7 @@ for i in range(len(all_courses)):
             for cont in b:
                 st = cont.strip()
                 if (st.startswith("COLL (CASE)") and credits[st[12:]] not in credit):
-                        credit.append(credits[st[12:]])
+                    credit.append(credits[st[12:]])
                 if ((st.startswith(c.sub[-1] + " " + str(c.code))) or (st.startswith(c.sub[-1] + str(c.code) + ":"))) and (preq == ""):
                     st2 = ":".join(st.split(':')[1:])
                     preq = st2[1:]

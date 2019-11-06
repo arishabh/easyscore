@@ -35,6 +35,7 @@ def search_all(dep='', sub='', code='', inst='', credit='', cr='', next_sem='', 
         filtered = filtered2
     if(cr != '' and cr != "ANY"): filtered=list(filter(lambda x: (int(x.split('|')[10]) >= int(cr)), filtered))
     if(next_sem == ['1']): filtered=list(filter(lambda x: (x.split('|')[11].split('\t')[0] == '1'), filtered))
+    if(keyword != ''): filtered=list(filter(lambda x: (all(str.upper(word) in x.split('|')[3] for word in keyword.split(','))), filtered))
     for raw in filtered:
         raw1 = raw.split('\t')
         c = raw1[0].split('|')

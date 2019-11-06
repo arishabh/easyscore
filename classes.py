@@ -101,7 +101,7 @@ class Instructor:
             self.avg_grades[i] = round(self.avg_grades[i]/len(self.terms), 2)
         self.avg_std = round(self.avg_std/len(self.terms), 2)
         self.rate()
-        if (self.avg_std < 10 and self.rating>92): self.rating = 92
+        if (self.avg_std < 10 and self.rating>92): self.rating = 93
         if(self.sems < 4 and self.rating>94): self.rating = 94
         if(self.sems > 7): min(100, self.rating+1.5)
         elif(self.sems >= 4): min(100, self.rating+1)

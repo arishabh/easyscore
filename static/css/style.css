@@ -154,14 +154,14 @@ span{
   position: relative;
   height: 330px;
   float: left;
-  width: 65%;
+  width: 60%;
 }
 
 .column2 {
   position: relative;
   text-align: left;
   float: left;
-  width: 35%;
+  width: 40%;
 }
 
 .column3{
@@ -171,7 +171,7 @@ span{
 .column11 {
   position: relative;
   float: left;
-  width: 65%;
+  width: 60%;
 }
 
 .column12 {
@@ -179,7 +179,7 @@ span{
   float: left;
   width: 6%;
   color: #9A0000; 
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .column13{

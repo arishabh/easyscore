@@ -35,7 +35,6 @@ def search_all(dep='', sub='', code='', inst='', credit='', cr='', next_sem='', 
         filtered = filtered2
     if(cr != '' and cr != "ANY"): filtered=list(filter(lambda x: (int(x.split('|')[10]) >= int(cr)), filtered))
     if(next_sem == ['1']): filtered=list(filter(lambda x: (x.split('|')[11].split('\t')[0] == '1'), filtered))
-    if(keyword != ''): filtered=list
     for raw in filtered:
         raw1 = raw.split('\t')
         c = raw1[0].split('|')
@@ -64,9 +63,6 @@ def search_all(dep='', sub='', code='', inst='', credit='', cr='', next_sem='', 
             new_course.add_inst(new_inst)
         all_courses.append(new_course)
     all_courses.sort(reverse=True)
-    with open(search_op_file, "w+") as f:
-        for c in all_courses:
-            f.write(c.to_string())
     print("Time taken: " + str(time()-start))
     return all_courses
 

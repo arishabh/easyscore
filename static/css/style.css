@@ -122,7 +122,7 @@ span{
   cursor:pointer;
   text-decoration: none;
   color: #9A0000;
-  right: 0;
+  left: 1;
 }
 .feedback:hover{
   opacity: .5;

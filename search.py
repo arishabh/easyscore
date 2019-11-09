@@ -18,11 +18,12 @@ def search_all(dep='', sub='', code='', inst='', credit='', cr='', next_sem='', 
     print(cr)
     if(dep != '' and dep != 'ANY'): filtered = list(filter(lambda d: (d.split('|')[0] == dep), filtered))
     if(sub != ''): 
+        sub = sub.strip()
         if(len(sub) > 2):
             filtered = list(filter(lambda d: (d.split('|')[1] == sub), filtered))
         else:
             filtered = list(filter(lambda d: (d.split('|')[1][-1] == sub), filtered))
-    if(code != ''): filtered = list(filter(lambda d: (d.split('|')[2] == code), filtered))
+    if(code != ''): filtered = list(filter(lambda d: (d.split('|')[2] == code.strip()), filtered))
     if(credit != '' and credit != 'ANY'):
         filtered = list(filter(lambda d: (credits[credit] in list(map(int, literal_eval(d.split('\t')[0].split('|')[5])))), filtered))
     if(inst != ''):

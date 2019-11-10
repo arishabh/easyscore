@@ -14,10 +14,11 @@ def index():
         inst = request.form['instrname']
         cr = request.form['cr']
         next_sem = request.form.getlist('next_sem')
+        data = {'dep':dep, 'req': req, 'sub': sub, 'code': code, 'inst': inst, 'cr': cr}
         all_courses = search_all(dep, sub, code, inst, req, cr, next_sem)
         if len(all_courses)>40:
             all_courses = all_courses[:40]
-        return render_template('result.html', all_courses=all_courses, credits_inv=credits_inv)
+        return render_template('result.html', all_courses=all_courses, credits_inv=credits_inv, data=data)
     else:
         return render_template('index.html')      
 

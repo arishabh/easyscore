@@ -13,19 +13,17 @@ with open(scrape_file, "r") as f:
 def search_all(dep='', sub='', code='', inst='', credit='', cr='', next_sem='', keyword=''):
     all_courses = []
     start = time()
-    filtered = raw_data
-    sub = str.upper(sub)
-    print(cr)
+    filtered = raw_data 
     if(dep != '' and dep != 'ANY'): filtered = list(filter(lambda d: (d.split('|')[0] == dep), filtered))
     if(sub != ''): 
-        sub = sub.strip()
+        sub = str.upper(sub.strip())
         if(len(sub) > 2):
             filtered = list(filter(lambda d: (d.split('|')[1] == sub), filtered))
         else:
             filtered = list(filter(lambda d: (d.split('|')[1][-1] == sub), filtered))
     if(code != ''): filtered = list(filter(lambda d: (d.split('|')[2] == code.strip()), filtered))
     if(credit != '' and credit != 'ANY'):
-        filtered = list(filter(lambda d: (credits[credit] in list(map(int, literal_eval(d.split('\t')[0].split('|')[5])))), filtered))
+        filtered = list(filter(lambda d: (int(credit) in list(map(int, literal_eval(d.split('\t')[0].split('|')[5])))), filtered))
     if(inst != ''):
         filtered2=[]
         inst = "".join((char if char.isalpha() else " ") for char in inst).split()

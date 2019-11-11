@@ -30,6 +30,7 @@ class Instructor:
         self.range = ""
         self.sems = 0
         self.avg_std = 0
+        self.next_sem = 0;
     
     def add_term(self, term):
         self.terms.append(term)
@@ -114,7 +115,7 @@ class Instructor:
         return out
 
     def to_string2(self):
-        out = "\t" + str(self.name) + "|" + str(self.rating) + "|" + str(self.avg_grades) + "|" + self.range + "|" + str(self.sems) + "|" + str(self.avg_std)
+        out = "\t" + str(self.name) + "|" + str(self.rating) + "|" + str(self.avg_grades) + "|" + self.range + "|" + str(self.sems) + "|" + str(self.avg_std) + '|' + str(self.next_sem)
         for term in self.terms:
             out += term.to_string2()
         return out
@@ -134,6 +135,7 @@ class Course:
         self.url= ''
         self.cr = 0
         self.next_sem = 0;
+        self.new_teacher = 0;
     
     def __lt__(self, other):
         if (self.rating == other.rating):
@@ -172,7 +174,7 @@ class Course:
         return out
 
     def to_string2(self):
-        out = self.department + "|" + self.sub + "|" + str(self.code) + "|" + self.desc + "|" + self.name + "|" + str(self.credit) + "|" + str(self.rating) + "|" + str(self.sems) + "|" + self.preq + '|' + self.url + "|" + str(self.cr) + "|" + str(self.next_sem)
+        out = self.department + "|" + self.sub + "|" + str(self.code) + "|" + self.desc + "|" + self.name + "|" + str(self.credit) + "|" + str(self.rating) + "|" + str(self.sems) + "|" + self.preq + '|' + self.url + "|" + str(self.cr) + "|" + str(self.next_sem) + '|' + str(self.new_teacher)
         for inst in self.instructors:
             out += inst.to_string2()
         out += "\n"

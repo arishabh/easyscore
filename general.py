@@ -1,3 +1,11 @@
+from pandas import read_csv
+from classes import *
+from requests import get
+from bs4 import BeautifulSoup as bs
+from time import time
+from statistics import mean, median, stdev
+from ast import literal_eval
+
 VERSION = "v9"
 
 credits = {'A&H Breadth of Inquiry credit':0,
@@ -11,12 +19,14 @@ credits = {'A&H Breadth of Inquiry credit':0,
         '300+':8,
         '400+':9,
         'Grad':10,
-        'Intensive Writing credit':11}
+        'Intensive Writing credit':11,
+        '100-299':12,
+        'Honors': 13}
 
-credits_inv = ['A&H Breadth of Inquiry credit',
+credits_inv = ['A&H credit',
         'Diversity in U.S. credit',
-        'S&H Breadth of Inquiry credit',
-        'N&M Breadth of Inquiry credit',
+        'S&H credit',
+        'N&M credit',
         'World Culture credit',
         'Public Oral Communication credit',
         'English Composition credit',
@@ -24,7 +34,9 @@ credits_inv = ['A&H Breadth of Inquiry credit',
         '300+',
         '400+',
         'Grad',
-        'Intensive Writing credit']
+        'Intensive Writing credit',
+        '100-299',
+        'Honors']
 
 path = "info/"
 total_files = 10

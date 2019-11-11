@@ -1,6 +1,4 @@
 from classes import *
-from ast import literal_eval
-from time import time
 from general import *
 
 all_courses = []
@@ -10,10 +8,10 @@ with open(scrape_file, "r") as f:
     for lines in f:
         raw_data.append(lines[:-1])
 
-def search_all(dep='', sub='', code='', inst='', credit='', cr='', next_sem='', keyword=''):
+def search_all(dep='', sub='', code='', inst='', credit='', level='', cr='', next_sem='', keyword='', raw_data=raw_data):
     all_courses = []
     start = time()
-    filtered = raw_data 
+    filtered = raw_data
     if(dep != '' and dep != 'ANY'): filtered = list(filter(lambda d: (d.split('|')[0] == dep), filtered))
     if(sub != ''): 
         sub = str.upper(sub.strip())
@@ -22,8 +20,8 @@ def search_all(dep='', sub='', code='', inst='', credit='', cr='', next_sem='', 
         else:
             filtered = list(filter(lambda d: (d.split('|')[1][-1] == sub), filtered))
     if(code != ''): filtered = list(filter(lambda d: (d.split('|')[2] == code.strip()), filtered))
-    if(credit != '' and credit != 'ANY'):
-        filtered = list(filter(lambda d: (int(credit) in list(map(int, literal_eval(d.split('\t')[0].split('|')[5])))), filtered))
+    if(credit != '' and credit != 'ANY'): filtered = list(filter(lambda d: (int(credit) in list(map(int, literal_eval(d.split('\t')[0].split('|')[5])))), filtered))
+    if(level != '' and level != 'ANY'): filtered = list(filter(lambda d: (int(level) in list(map(int, literal_eval(d.split('\t')[0].split('|')[5])))), filtered))
     if(inst != ''):
         filtered2=[]
         inst = "".join((char if char.isalpha() else " ") for char in inst).split()
@@ -33,7 +31,14 @@ def search_all(dep='', sub='', code='', inst='', credit='', cr='', next_sem='', 
                 filtered2.append(d.split('\t')[0] + '\t' + f[0])
         filtered = filtered2
     if(cr != '' and cr != "ANY"): filtered=list(filter(lambda x: (int(x.split('|')[10]) >= int(cr)), filtered))
-    if(next_sem == ['1']): filtered=list(filter(lambda x: (x.split('|')[11].split('\t')[0] == '1'), filtered))
+    if(next_sem == ['1']): 
+        filtered=list(filter(lambda x: (x.split('|')[11] == '1'), filtered))
+        filtered2 = []
+        for d in filtered:
+            f = list(filter(lambda x: (x.split('|')[6].split('\z')[0] == '1'), d.split('\t')[1:]))
+            filtered2.append(d.split('\t')[0])
+            for x in f: filtered2[-1] += '\t' + x
+        filtered = filtered2
     if(keyword != ''): filtered=list(filter(lambda x: (all(str.upper(word) in x.split('|')[3] for word in keyword.split(','))), filtered))
     for raw in filtered:
         raw1 = raw.split('\t')
@@ -46,6 +51,8 @@ def search_all(dep='', sub='', code='', inst='', credit='', cr='', next_sem='', 
         new_course.preq = c[8]
         new_course.url = c[9]
         new_course.cr = int(c[10])
+        new_course.next_sem = int(c[11])
+        new_course.new_teacher = int(c[12])
         for i in range(len(raw1)-1):
             raw2 = raw1[i+1].split('\\z')
             i = raw2[0].split('|')
@@ -55,6 +62,7 @@ def search_all(dep='', sub='', code='', inst='', credit='', cr='', next_sem='', 
             new_inst.range = i[3]
             new_inst.sems = int(i[4])
             new_inst.avg_std = float(i[5])
+            new_inst.next_sem = int(i[6])
             for j in range(len(raw2)-1):
                 t = raw2[j+1].split('|')
                 new_term = Term(t[0])

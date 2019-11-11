@@ -5,13 +5,6 @@
 # Date              : 22.10.2019
 # Last Modified Date: 28.10.2019
 
-from pandas import read_csv
-from classes import *
-from requests import get
-from bs4 import BeautifulSoup as bs
-from time import time
-from statistics import mean, median, stdev
-from ast import literal_eval
 from general import *
 start = time()
 
@@ -24,6 +17,7 @@ course_preqs = {}
 course_urls = {}
 course_cr = {}
 course_next_sem = {}
+instruct = {}
 all_scores = []
 
 with open(course_credit_file, "r") as f:
@@ -34,6 +28,7 @@ with open(course_credit_file, "r") as f:
         course_urls[d[0]] = d[3]
         course_cr[d[0]] = d[4]
         course_next_sem[d[0]] = d[5]
+        instruct[d[0]] = literal_eval(d[6])
 
 with open(black_list_file, "r") as f:
     black_list = [l.strip("\n") for l in f]
@@ -84,11 +79,17 @@ for c in all_courses:
         i.calc_data()
         all_scores.append(i.rating)
         c.sems += len(i.terms)
+        print(instruct[c.name])
+        try:
+            i.next_sem = instruct[c.name][i.name]
+            print("TEACHING NEXT SEM!")
+        except: i.next_sem = 0
     c.credit = course_credits[c.name]
     c.preq = course_preqs[c.name]
     c.url = course_urls[c.name]
     c.cr = course_cr[c.name]
     c.next_sem = course_next_sem[c.name]
+    if(instruct[c.name] == {}): c.new_teacher = 1
     c.instructors.sort(reverse=True)
     c.rate()
 

@@ -13,12 +13,12 @@ def index():
         code = request.form['code']
         inst = request.form['instrname']
         cr = request.form['cr']
+        level = request.form['level']
         next_sem = request.form.getlist('next_sem')
-        data = {'dep':dep, 'req': req, 'sub': sub, 'code': code, 'inst': inst, 'cr': cr}
-        all_courses = search_all(dep, sub, code, inst, req, cr, next_sem)
+        all_courses = search_all(dep, sub, code, inst, req, level, cr, next_sem)
         if len(all_courses)>40:
             all_courses = all_courses[:40]
-        return render_template('result.html', all_courses=all_courses, credits_inv=credits_inv, data=data)
+        return render_template('result.html', all_courses=all_courses, credits_inv=credits_inv)
     else:
         return render_template('index.html')      
 
@@ -31,8 +31,9 @@ def output():
         code = request.form['code']
         inst = request.form['instrname']
         cr = request.form['cr']
+        level = request.form['level']
         next_sem = request.form.getlist('next_sem')
-        all_courses = search_all(dep, sub, code, inst, req, cr, next_sem)
+        all_courses = search_all(dep, sub, code, inst, req, level, cr, next_sem)
         if len(all_courses)>40:
             all_courses = all_courses[:40]
         return render_template('result.html', all_courses=all_courses, credits_inv=credits_inv)
@@ -48,9 +49,9 @@ def mobile():
         code = request.form['code']
         inst = request.form['instrname']
         cr = request.form['cr']
+        level = request.form['level']
         next_sem = request.form.getlist('next_sem')
-        print(next_sem)
-        all_courses = search_all(dep, sub, code, inst, req, cr, next_sem)
+        all_courses = search_all(dep, sub, code, inst, req, level, cr, next_sem)
         if len(all_courses)>40:
             all_courses = all_courses[:40]
         return render_template('mobile_result.html', all_courses=all_courses, credits_inv=credits_inv)
@@ -66,8 +67,9 @@ def mobile_output():
         code = request.form['code']
         inst = request.form['instrname']
         cr = request.form['cr']
+        level = request.form['level']
         next_sem = request.form.getlist('next_sem')
-        all_courses = search_all(dep, sub, code, inst, req, cr, next_sem)
+        all_courses = search_all(dep, sub, code, inst, req, level, cr, next_sem)
         if len(all_courses)>40:
             all_courses = all_courses[:40]
         return render_template('mobile_result.html', all_courses=all_courses, credits_inv=credits_inv)

@@ -4,6 +4,8 @@ from general import credits_inv
 
 app = Flask(__name__)
 
+f = open("info/misc/search.txt", "a")
+
 @app.route('/',methods=['POST', 'GET'])
 def index():
     if request.method == 'POST':
@@ -16,6 +18,7 @@ def index():
         level = request.form['level']
         next_sem = request.form.getlist('next_sem')
         all_courses = search_all(dep, sub, code, inst, req, level, cr, next_sem)
+        f.write(" ".join(dep, sub, code, inst, req, level, cr, next_sem))
         if len(all_courses)>40:
             all_courses = all_courses[:40]
         return render_template('result.html', all_courses=all_courses, credits_inv=credits_inv)
@@ -34,6 +37,7 @@ def output():
         level = request.form['level']
         next_sem = request.form.getlist('next_sem')
         all_courses = search_all(dep, sub, code, inst, req, level, cr, next_sem)
+        f.write(" ".join(dep, sub, code, inst, req, level, cr, next_sem))
         if len(all_courses)>40:
             all_courses = all_courses[:40]
         return render_template('result.html', all_courses=all_courses, credits_inv=credits_inv)
@@ -52,6 +56,7 @@ def mobile():
         level = request.form['level']
         next_sem = request.form.getlist('next_sem')
         all_courses = search_all(dep, sub, code, inst, req, level, cr, next_sem)
+        f.write(" ".join(dep, sub, code, inst, req, level, cr, next_sem))
         if len(all_courses)>40:
             all_courses = all_courses[:40]
         return render_template('mobile_result.html', all_courses=all_courses, credits_inv=credits_inv)
@@ -70,6 +75,7 @@ def mobile_output():
         level = request.form['level']
         next_sem = request.form.getlist('next_sem')
         all_courses = search_all(dep, sub, code, inst, req, level, cr, next_sem)
+        f.write(" ".join(dep, sub, code, inst, req, level, cr, next_sem))
         if len(all_courses)>40:
             all_courses = all_courses[:40]
         return render_template('mobile_result.html', all_courses=all_courses, credits_inv=credits_inv)

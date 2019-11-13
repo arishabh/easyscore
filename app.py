@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request, redirect
 from search import search_all
 from general import credits_inv
-from datetime.datetime import now
 
 app = Flask(__name__)
 

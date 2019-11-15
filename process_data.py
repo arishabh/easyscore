@@ -20,7 +20,7 @@ course_next_sem = {}
 instruct = {}
 all_scores = []
 
-with open(course_credit_file, "r") as f:
+with open(course_file, "r") as f:
     for line in f:
         d = line[:-1].split('\t')
         course_credits[d[0]] = literal_eval(d[1])
@@ -79,17 +79,13 @@ for c in all_courses:
         i.calc_data()
         all_scores.append(i.rating)
         c.sems += len(i.terms)
-        print(instruct[c.name])
-        try:
-            i.next_sem = instruct[c.name][i.name]
-            print("TEACHING NEXT SEM!")
-        except: i.next_sem = 0
+        if(i.name in instruct[c.name]): i.next_sem = 1
     c.credit = course_credits[c.name]
     c.preq = course_preqs[c.name]
     c.url = course_urls[c.name]
     c.cr = course_cr[c.name]
     c.next_sem = course_next_sem[c.name]
-    if(instruct[c.name] == {}): c.new_teacher = 1
+    if(instruct[c.name] == []): c.new_teacher = 1
     c.instructors.sort(reverse=True)
     c.rate()
 

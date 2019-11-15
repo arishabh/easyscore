@@ -44,12 +44,12 @@ raw_data_file = path+"raw_data/"
 main_file = path+"data/data_"+VERSION+".txt"
 stat_file = path+"stat/stat_"+VERSION+".txt"
 scrape_file = path+"scrape/scrape_"+VERSION+".txt"
-course_credit_file = path+"misc/course_credits.txt"
+course_file = path+"misc/course.txt"
 black_list_file = path+"misc/black_list.txt"
 teachers_name_file = path+"misc/teachers_name.txt"
 search_op_file = "info/search_op_"+VERSION+".txt"
 
-next_sem = ["https://registrar.indiana.edu/browser/soc4202/", ".shtml"]
-last_sem = ["https://registrar.indiana.edu/browser/soc4198/", ".shtml"]
-last_last_sem = ["https://registrar.indiana.edu/browser/soc4195/", ".shtml"]
+next_sem = ["https://utilities.registrar.indiana.edu/course-browser/prl/soc4202/", ".shtml"]
+last_sem = ["https://utilities.registrar.indiana.edu/course-browser/prl/soc4198/", ".shtml"]
+last_last_sem = ["https://utilities.registrar.indiana.edu/course-browser/prl/soc4195/", ".shtml"]
 url = [next_sem, last_sem, last_last_sem]

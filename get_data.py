@@ -11,7 +11,7 @@ from general import *
 a = []
 black = []
 black_file = open(black_list_file, 'w')
-credit_file = open("info/misc/course_credits2.txt", "w") 
+credit_file = open(course_file, "w") 
 def get_cred(b):
     b = b[1].get_text().split("\r\n")
     b = [a.strip() for a in b]
@@ -39,8 +39,9 @@ for i in range(len(all_courses)):
     c = all_courses[i]
     credit = []
     preq = ''
-    instruct = {}
+    instruct = []
     seen = []
+    cr = 0
     if(c.code >= 100 and c.code <= 299): credit.append(credits['100-299'])
     elif(c.code >= 300 and c.code <= 399): credit.append(credits['300+'])
     elif(c.code >= 400 and c.code <= 499): credit.append(credits['400+'])
@@ -50,6 +51,7 @@ for i in range(len(all_courses)):
         b = bs(get(u).content, "lxml").findAll("pre")
         if (b != []):
             flag = True
+            with open("info/courses/"+c.name, "w+") as f: f.write(b[1].get_text())
             cr = int(b[1].findChild().get_text()[-5])
             b = b[1].get_text().split("\r\n")
             for cont in b:
@@ -62,7 +64,7 @@ for i in range(len(all_courses)):
                         seen.append(inst)
                         for i in c.instructors:
                             if(inst[0] in i.name and inst[1] in i.name): 
-                                instruct[i.name] = 1
+                                instruct.append(i.name)
                                 break;
                 except: instruct = instruct
                 if('HONORS' in st): credit.append(13)
@@ -73,7 +75,7 @@ for i in range(len(all_courses)):
                 elif('Global Civ' in st or 'World Culture' in st): credit.append(4)
                 elif('Pubic Oral Communication' in st): credit.append(5)
                 elif('English Composition' in st): credit.append(6)
-                elif('Mathematical Modelling' in st): credit.append(7)
+                elif('Mathematical Modeling' in st): credit.append(7)
                 elif('Intensive Writing' in st): credit.append(11)
                 if ((st.startswith(c.sub[-1] + " " + str(c.code))) or (st.startswith(c.sub[-1] + str(c.code) + ":"))) and (preq == ""):
                     st2 = ":".join(st.split(':')[1:])

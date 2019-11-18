@@ -1,4 +1,0 @@
-AAAD-A132	[12]		https://registrar.indiana.edu/browser/soc4195/AAAD/AAAD-A132.shtml	0	0	[]
-AAAD-A150	[12]		https://registrar.indiana.edu/browser/soc4195/AAAD/AAAD-A150.shtml	0	0	[]
-AAAD-A169	[12]		https://registrar.indiana.edu/browser/soc4195/AAAD/AAAD-A169.shtml	0	0	[]
-AAAD-A265	[12]		https://registrar.indiana.edu/browser/soc4195/AAAD/AAAD-A265.shtml	0	0	[]

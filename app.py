@@ -21,7 +21,7 @@ def index():
         all_courses = search_all(dep, sub, code, inst, req, level, cr, next_sem)
         if len(all_courses)>40:
             all_courses = all_courses[:40]
-        return render_template('result.html', all_courses=all_courses, credits_inv=credits_inv)
+        return render_template('result.html', all_courses=all_courses, credits_inv=credits_inv, inp=[dep, req, sub, code, inst, cr, level, 1 if next_sem!=[] else 0])
     else:
         return render_template('index.html')      
 
@@ -41,7 +41,7 @@ def output():
         all_courses = search_all(dep, sub, code, inst, req, level, cr, next_sem)
         if len(all_courses)>40:
             all_courses = all_courses[:40]
-        return render_template('result.html', all_courses=all_courses, credits_inv=credits_inv)
+        return render_template('result.html', all_courses=all_courses, credits_inv=credits_inv, inp=[dep, req, sub, code, inst, cr, level, 1 if next_sem!=[] else 0])
     else:
         return render_template('result.html')
 
@@ -61,7 +61,7 @@ def mobile():
             f.write(str(datetime.now().strftime("%d/%m/%Y %H:%M:%S")) + "\t" + dep + "\t" + req + "\t" + sub + "\t" + code + "\t" + inst + "\t" + cr + "\t" + level + "\t" + str(next_sem) + "\n")
         if len(all_courses)>40:
             all_courses = all_courses[:40]
-        return render_template('mobile_result.html', all_courses=all_courses, credits_inv=credits_inv)
+        return render_template('mobile_result.html', all_courses=all_courses, credits_inv=credits_inv, inp=[dep, req, sub, code, inst, cr, level, 1 if next_sem!=[] else 0])
     else:
         return render_template('mobile.html')
 
@@ -81,7 +81,7 @@ def mobile_output():
             f.write(str(datetime.now().strftime("%d/%m/%Y %H:%M:%S")) + "\t" + dep + "\t" + req + "\t" + sub + "\t" + code + "\t" + inst + "\t" + cr + "\t" + level + "\t" + str(next_sem) + "\n")
         if len(all_courses)>40:
             all_courses = all_courses[:40]
-        return render_template('mobile_result.html', all_courses=all_courses, credits_inv=credits_inv)
+        return render_template('mobile_result.html', all_courses=all_courses, credits_inv=credits_inv, inp=[dep, req, sub, code, inst, cr, level, 1 if next_sem!=[] else 0])
     else:
         return render_template('mobile_result.html') 
 

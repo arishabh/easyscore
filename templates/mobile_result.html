@@ -11,7 +11,7 @@
 </style>
 <div class="row">
     <div class="column1" style="width: 100%; height: auto;"><a href='/' class="mweb-name">EasyScore</a></div>
-    <form name="search" method="POST">
+    <form name="search" method="POST" id='form'>
     <div class="column2" style="width: 100%;">
           <table style="float: center;">
                 <tr><th class="faker" style="width: 140px;">Department</th><td><select style="padding: 2px 0px 2px; margin: 1px;" id="dept" name="dept"><option value='ANY'>Any</option><option value="AAAD">AAAD</option> <option value="AADM">AADM</option> <option value="AAST">AAST</option> <option value="ABEH">ABEH</option> <option value="ACE">ACE</option> <option value="AERO">AERO</option> <option value="AFRI">AFRI</option> <option value="AFRO">AFRO</option> <option value="AMID">AMID</option> <option value="AMST">AMST</option> <option value="ANAT">ANAT</option> <option value="ANTH">ANTH</option> <option value="ARTH">ARTH</option> <option value="ASCS">ASCS</option> <option value="AST">AST</option> <option value="BIOC">BIOC</option> <option value="BIOL">BIOL</option> <option value="BIOT">BIOT</option> <option value="BUEX">BUEX</option> <option value="BUKD">BUKD</option> <option value="BUS">BUS</option> <option value="CEUS">CEUS</option> <option value="CHEM">CHEM</option> <option value="CJUS">CJUS</option> <option value="CLAR">CLAR</option> <option value="CLAS">CLAS</option> <option value="CLLC">CLLC</option> <option value="CMCL">CMCL</option> <option value="CMLT">CMLT</option> <option value="COAS">COAS</option> <option value="COGS">COGS</option> <option value="COLL">COLL</option> <option value="CSCI">CSCI</option> <option value="CTIH">CTIH</option> <option value="CULS">CULS</option> <option value="DSCI">DSCI</option> <option value="EALC">EALC</option> <option value="EAS">EAS</option> <option value="ECON">ECON</option> <option value="EDUC">EDUC</option> <option value="ENG">ENG</option> <option value="ENGR">ENGR</option> <option value="EURO">EURO</option> <option value="FILM">FILM</option> <option value="FINA">FINA</option> <option value="FLLC">FLLC</option> <option value="FOLK">FOLK</option> <option value="FRIT">FRIT</option> <option value="FRST">FRST</option> <option value="GEOG">GEOG</option> <option value="GEOL">GEOL</option> <option value="GER">GER</option> <option value="GLLC">GLLC</option> <option value="GNDR">GNDR</option> <option value="GRAD">GRAD</option> <option value="HISP">HISP</option> <option value="HIST">HIST</option> <option value="HON">HON</option> <option value="HPER">HPER</option> <option value="HPSC">HPSC</option> <option value="HUBI">HUBI</option> <option value="HVST">HVST</option> <option value="IBLS">IBLS</option> <option value="ILS">ILS</option> <option value="IMP">IMP</option> <option value="INFO">INFO</option> <option value="INST">INST</option> <option value="INTL">INTL</option> <option value="JOUR">JOUR</option> <option value="JSTU">JSTU</option> <option value="KINS">KINS</option> <option value="LAMP">LAMP</option> <option value="LATS">LATS</option> <option value="LAW">LAW</option> <option value="LESA">LESA</option> <option value="LING">LING</option> <option value="LLC">LLC</option> <option value="LSTU">LSTU</option> <option value="LTAM">LTAM</option> <option value="MATH">MATH</option> <option value="MBIO">MBIO</option> <option value="MCHE">MCHE</option> <option value="MED">MED</option> <option value="MEST">MEST</option> <option value="MIL">MIL</option> <option value="MLS">MLS</option> <option value="MSCH">MSCH</option> <option value="MSCI">MSCI</option> <option value="MUS">MUS</option> <option value="NELC">NELC</option> <option value="NEUS">NEUS</option> <option value="NURS">NURS</option> <option value="OPT">OPT</option> <option value="OVST">OVST</option> <option value="PACE">PACE</option> <option value="PATH">PATH</option> <option value="PHAR">PHAR</option> <option value="PHIL">PHIL</option> <option value="PHSL">PHSL</option> <option value="PHYS">PHYS</option> <option value="POLS">POLS</option> <option value="POPT">POPT</option> <option value="PPP">PPP</option> <option value="PRST">PRST</option> <option value="PSY">PSY</option> <option value="REEI">REEI</option> <option value="REL">REL</option> <option value="REN">REN</option> <option value="SCS">SCS</option> <option value="SEAS">SEAS</option> <option value="SEMS">SEMS</option> <option value="SGIS">SGIS</option> <option value="SLAV">SLAV</option> <option value="SLIS">SLIS</option> <option value="SLST">SLST</option> <option value="SOAD">SOAD</option> <option value="SOC">SOC</option> <option value="SPCH">SPCH</option> <option value="SPCN">SPCN</option> <option value="SPEA">SPEA</option> <option value="SPH">SPH</option> <option value="SPHS">SPHS</option> <option value="STAT">STAT</option> <option value="SWK">SWK</option> <option value="TEL">TEL</option> <option value="THTR">THTR</option> <option value="TOPT">TOPT</option> <option value="UDIV">UDIV</option> <option value="VICT">VICT</option> <option value="VSCI">VSCI</option> <option value="WEUR">WEUR</option> <option value="WOST">WOST</option> </select></td></tr>
@@ -28,12 +28,28 @@
             <tr><th class="faker" style="width: 140px;">Min. Credits</th><td><select style="padding: 2px 0px 2px; margin: 1px;" id="cr" name="cr"><option value='ANY'>Any</option><option value="1">1+</option> <option value="2">2+</option> <option value="3">3+</option> <option value="4">4+</option> <option value="5">5+</option></select></td></tr>
         </table>
         <input class="button" type="submit" id="isearch" value="Search">&nbsp;
+		<input type="button" id="btnReset" value="Clear" />
+        <script type="text/javascript">
+            $(function () {
+                $("#btnReset").bind("click", function () {
+                    $("#dept")[0].selectedIndex = 0;
+                    $("#requirement").val('ANY');
+                    $('#subject').val('');
+                    $('#code').val('');
+                    $('#instrname').val('');
+                    $("#cr").val('ANY');
+                    $("#level").val('ANY');
+                    $('#next_sem').attr('checked', false);
+                });
+            });
+        </script>
     </div>
     </form>
     <br>
     <div class="column2" style="width: 60%;">
     <h1 style="font-size: 200%; color: #9A0000; margin-bottom: 2px;">Results</h1>
-    <span style="font-size: 60%; color: black;">* Instructors that will be teaching this course next semester</span>
+    <span style="font-size: 40%; cursor: auto; float: left;">** </span>
+    <span style="font-size: 33%; cursor: auto; color: black; float: left;">Instructors that will be teaching this course next semester</span>
     </div>
     <div class="column2" style="width: 35%;">
     <h1 style="font-size: 200%; color: #9A0000; margin-bottom: 2px;">EasyScore</h1>
@@ -49,7 +65,7 @@
 {% for course in all_courses %}
     <div class ="row">
         <div class='column1' style="height: auto; width: 75%;">
-            <h2><a href="{{ course.url }}" class='course-name' style="font-size: 70%;">{{ course.name }} - {{ course.desc }} ({{ course.cr }} CR)</a></h2>
+            <h2><a href="{{ course.url }}" target="_blank" class='course-name' style="font-size: 70%;">{{ course.name }} - {{ course.desc }} ({{ course.cr }} CR)</a></h2>
         </div>
         <div class='column2' style="width: 20%; padding-left: 15px;">
             <h1  style="margin-bottom: 0pt; font-size: 170%;">{{ course.rating }}</h1>
@@ -75,8 +91,22 @@
         {% else %}
         {% for i in course.instructors %}
             <div class="column11" style="width: 75%;">
-                <strong><p class='teacher' style="font-size: 105%; text-indent: 0;">{{ i.name }} ({{ i.range }}, {{ i.sems }} sem.){% if i.next_sem == 1 %}*{% endif %}</p></strong>
+                <input type='submit' form='form' value='{{ i.name }} ({{ i.range }}, {{ i.sems }} sem.){% if i.next_sem == 1 %}**{% endif %}' class='teacher-mob' id='teacher'> 
                 <p class='avg_grades' style="text-indent: 10px; font-size: 100%;">Avg. Class Size: {{i.avg_std}} | A:{{ i.avg_grades[0] }}% | B:{{ i.avg_grades[1] }}% | C:{{ i.avg_grades[2] }}% | D:{{ i.avg_grades[3] }}%</p>
+            <script type="text/javascript">
+                $(function () {
+                    $("#teacher").click(function () {
+                        $("#dept")[0].selectedIndex = 0;
+                        $("#requirement").val('ANY');
+                        $('#subject').val('');
+                        $('#code').val('');
+                        $('#instrname').val('{{ i.name }}');
+                        $("#cr").val('ANY');
+                        $("#level").val('ANY');
+                        $('#next_sem').attr('checked', false);
+                    });
+                });
+            </script>
             </div>
             <div class="column12" style="width: 20%; padding-left: 15px;">
                 <p class='rating' id='rating' style="font-size: 100%;">{{ i.rating }} </p>
@@ -87,4 +117,17 @@
     <hr>
 {% endfor %}
 {% endif %}
+<script type="text/javascript">
+    $("#dept option[value='{{ inp[0] }}']").attr('selected', 'selected');
+    $("#requirement").val('{{ inp[1] }}');
+    $('#subject').val('{{ inp[2] }}');
+    $('#code').val('{{ inp[3] }}');
+    $('#instrname').val('{{ inp[4] }}');
+    $("#cr").val('{{ inp[5] }}');
+    $("#level").val('{{ inp[6] }}');
+    function check(x){
+        return(x == '1');
+    }
+    $('#next_sem').attr('checked', check('{{ inp[7] }}'));
+</script>
 {% endblock %}

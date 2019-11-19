@@ -268,6 +268,29 @@ span{
   margin-bottom: 10px;
   margin-top: 10px;
   color: #9A0000;
+  font-weight:bold;
+  background: none;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+}
+
+.teacher-mob{
+  font-size: 105%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  color: #9A0000;
+  font-weight:bold;
+  background: none;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+  padding: 0;
+}
+
+.teacher:hover, .teacher-mob:hover{
+  opacity: .6;
 }
 
 .rating{

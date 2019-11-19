@@ -9,15 +9,11 @@
 	}
 </script>
 <title>EasyScore</title>
-<center style="color: black;">We are currently experiencing server issues. We are working fast to resolve this issue. 
-	Please be patient with us as we do so. The server seems to be primarily having an issue 
-	with IU Secure & eduroam Network, try running the website on your personal wifi networks 
-	or Data. -TheEasyScore Team</center>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 {% endblock %}
 {% block body %}
 <div class="centered desktop">
-	<h1 style="font-size: 350%;"><center>Welcome To EasyScore</center></h1>
+	<h1 style="font-size: 300%;"><center>Welcome To TheEasyScore</center></h1>
 	<h2 class="line-1 anim-typewriter"><center>Find out how easy your future teacher is</center></h2>
 </div>
 <div class="centered1">
@@ -34,6 +30,7 @@
 		<div style="padding: 2px 0px 2px; margin: 1px; font-weight: bold;"><input type="checkbox" id='next_sem' name='next_sem' value='1'>Next Semester Courses and Teachers only</div>
 		<br>
 		<input class="button" type="submit" id="isearch" value="Search">&nbsp;
+		<input class="button" type="reset" id="clear" value="Clear" onclick="clear()" >&nbsp;
 	</form>
 </div>
 
@@ -60,7 +57,7 @@
 </div>
 </div>
 
-<span class='how-we-rate' onclick="openNav()" id="text">How We Rate</span>
+<span class='how-we-rate' onclick="openNav()" id="text">How We Work</span>
 <a class='feedback' href='https://docs.google.com/forms/d/e/1FAIpQLSezIovWZvpOYOh29ZBw62P_dwrOB9wfsJ_n5wIxUsa8nMJItQ/viewform?usp=sf_link'>Feedback</a>
 <script>
 function openNav() {
@@ -73,8 +70,20 @@ function openNav() {
 function closeNav() {
 	document.getElementById("myNav").style.width = "0%";
 	document.getElementById("myNav").style.height = "0%";
-	document.getElementById("text").innerHTML = "How We Rate";
+	document.getElementById("text").innerHTML = "How We Work";
 }
+$(document).ready(function(){
+	$("#clear").click(function(){
+		$("#dept option[value='ANY']").attr('selected', 'selected');
+		$("#requirement").val('ANY');
+		$('#subject').val('');
+		$('#code').val('');
+		$('#instrname').val('');
+		$("#cr").val('ANY');
+		$("#level").val('ANY');
+		$('#next_sem').attr('checked', false);
+	});
+});
 </script>
 
 {% endblock %}

@@ -17,61 +17,200 @@
         padding-top: 20px;
     }
 </style>
-<div class="row">
-    <div class='column1' style="width: 40%;">
+<div class="row1" style="width: 90%"> 
+    <div class='column'>
         <a href='/'><h1 class='web-name'>EasyScore</h1></a>
         <h1 class='result_title'>Results<br>
-            <span style="font-size: 33%; cursor: auto; color: black;">Instructors that will be teaching this course next semester</span>
-            <span style="font-size: 40%; cursor: auto;">** </span>
+            <span style="font-size: 33%; cursor: auto; color: black;">Next semester instructor</span>
+            <span style="font-size: 40%; cursor: auto;">**</span>
         </h1>
     </div>
-    
+    <div style="width: 70%; float: right; margin-top: 1%">
     <form name="search" method="POST" id='form'>
-    <div class="column2" style="width: 32%; height: 330px;">
-          <table style="float: center;">
-                <tr><th class="new_search">New Search</th></tr>
-                <tr><th class="faker" style="width: 140px;">Department</th><td><select style="padding: 2px 0px 2px; margin: 1px;" id="dept" name="dept"><option value='ANY'>Any</option><option value="AAAD">AAAD</option> <option value="AADM">AADM</option> <option value="AAST">AAST</option> <option value="ABEH">ABEH</option> <option value="ACE">ACE</option> <option value="AERO">AERO</option> <option value="AFRI">AFRI</option> <option value="AFRO">AFRO</option> <option value="AMID">AMID</option> <option value="AMST">AMST</option> <option value="ANAT">ANAT</option> <option value="ANTH">ANTH</option> <option value="ARTH">ARTH</option> <option value="ASCS">ASCS</option> <option value="AST">AST</option> <option value="BIOC">BIOC</option> <option value="BIOL">BIOL</option> <option value="BIOT">BIOT</option> <option value="BUEX">BUEX</option> <option value="BUKD">BUKD</option> <option value="BUS">BUS</option> <option value="CEUS">CEUS</option> <option value="CHEM">CHEM</option> <option value="CJUS">CJUS</option> <option value="CLAR">CLAR</option> <option value="CLAS">CLAS</option> <option value="CLLC">CLLC</option> <option value="CMCL">CMCL</option> <option value="CMLT">CMLT</option> <option value="COAS">COAS</option> <option value="COGS">COGS</option> <option value="COLL">COLL</option> <option value="CSCI">CSCI</option> <option value="CTIH">CTIH</option> <option value="CULS">CULS</option> <option value="DSCI">DSCI</option> <option value="EALC">EALC</option> <option value="EAS">EAS</option> <option value="ECON">ECON</option> <option value="EDUC">EDUC</option> <option value="ENG">ENG</option> <option value="ENGR">ENGR</option> <option value="EURO">EURO</option> <option value="FILM">FILM</option> <option value="FINA">FINA</option> <option value="FLLC">FLLC</option> <option value="FOLK">FOLK</option> <option value="FRIT">FRIT</option> <option value="FRST">FRST</option> <option value="GEOG">GEOG</option> <option value="GEOL">GEOL</option> <option value="GER">GER</option> <option value="GLLC">GLLC</option> <option value="GNDR">GNDR</option> <option value="GRAD">GRAD</option> <option value="HISP">HISP</option> <option value="HIST">HIST</option> <option value="HON">HON</option> <option value="HPER">HPER</option> <option value="HPSC">HPSC</option> <option value="HUBI">HUBI</option> <option value="HVST">HVST</option> <option value="IBLS">IBLS</option> <option value="ILS">ILS</option> <option value="IMP">IMP</option> <option value="INFO">INFO</option> <option value="INST">INST</option> <option value="INTL">INTL</option> <option value="JOUR">JOUR</option> <option value="JSTU">JSTU</option> <option value="KINS">KINS</option> <option value="LAMP">LAMP</option> <option value="LATS">LATS</option> <option value="LAW">LAW</option> <option value="LESA">LESA</option> <option value="LING">LING</option> <option value="LLC">LLC</option> <option value="LSTU">LSTU</option> <option value="LTAM">LTAM</option> <option value="MATH">MATH</option> <option value="MBIO">MBIO</option> <option value="MCHE">MCHE</option> <option value="MED">MED</option> <option value="MEST">MEST</option> <option value="MIL">MIL</option> <option value="MLS">MLS</option> <option value="MSCH">MSCH</option> <option value="MSCI">MSCI</option> <option value="MUS">MUS</option> <option value="NELC">NELC</option> <option value="NEUS">NEUS</option> <option value="NURS">NURS</option> <option value="OPT">OPT</option> <option value="OVST">OVST</option> <option value="PACE">PACE</option> <option value="PATH">PATH</option> <option value="PHAR">PHAR</option> <option value="PHIL">PHIL</option> <option value="PHSL">PHSL</option> <option value="PHYS">PHYS</option> <option value="POLS">POLS</option> <option value="POPT">POPT</option> <option value="PPP">PPP</option> <option value="PRST">PRST</option> <option value="PSY">PSY</option> <option value="REEI">REEI</option> <option value="REL">REL</option> <option value="REN">REN</option> <option value="SCS">SCS</option> <option value="SEAS">SEAS</option> <option value="SEMS">SEMS</option> <option value="SGIS">SGIS</option> <option value="SLAV">SLAV</option> <option value="SLIS">SLIS</option> <option value="SLST">SLST</option> <option value="SOAD">SOAD</option> <option value="SOC">SOC</option> <option value="SPCH">SPCH</option> <option value="SPCN">SPCN</option> <option value="SPEA">SPEA</option> <option value="SPH">SPH</option> <option value="SPHS">SPHS</option> <option value="STAT">STAT</option> <option value="SWK">SWK</option> <option value="TEL">TEL</option> <option value="THTR">THTR</option> <option value="TOPT">TOPT</option> <option value="UDIV">UDIV</option> <option value="VICT">VICT</option> <option value="VSCI">VSCI</option> <option value="WEUR">WEUR</option> <option value="WOST">WOST</option> </select></td></tr>
-                <tr><th class="faker" style="width: 140px;">Requirement</th><td><select style="padding: 2px 0px 2px; margin: 1px;" id="requirement" name="requirement"><option value='ANY'>Any</option><option value=0>A&H credit</option> <option value=3>N&M credit</option> <option value=2>S&H credit</option> <option value=1>Diversity in U.S. credit</option> <option value=6>English Composition credit</option> <option value=4>World Culture credit</option> <option value=7>Mathematical Modeling credit</option> <option value=5>Public Oral Communication credit</option> <option value=11>Intensive Writing credit</option></select></td></tr>  
-                <tr><th class="faker" style="width: 140px;">Course Level</th><td><select style="padding: 2px 0px 2px; margin: 1px;" id="level" name="level"><option value='ANY'>Any</option> <option value=12>100-299 Courses</option> <option value=8>300-399 Courses</option> <option value=9>400-499 Courses</option> <option value=10>Graduate Level Courses</option> <option value=13>Honors Courses</option></select></td></tr>   
-            </table>
-                <div style="padding: 2px 0px 2px; margin: 1px; font-weight: bold;"><input type="checkbox" id='next_sem' name='next_sem' value='1'>Next Semester Courses and Teachers only</div>
-            <h1 class='result_title' style="font-size: 40px; margin-left: 50%;">EasyScore</h1>
-    </div>
-    <div class="column3" style= "width: 28%; float: right;">
-        <table style="float: center;">          
-            <tr><th class="faker" style="width: 140px;">Course Subject </th><td style="background-color: #ffffff;"><input style="padding: 5px 7px 5px 10px; margin: 1px;"  placeholder="example: 'CSCI-C' or 'C'" type="text" size="30" maxlength="7" name="subject" id="subject"></td></tr>
-            <tr><th class="faker" style="width: 140px;">Class Number </th><td style="background-color: #ffffff;"><input style="padding: 5px 7px 5px 10px; margin: 1px;" placeholder="example: '212'" type="text" size="30" maxlength="6" name="code" id="code"></td></tr>
-            <tr><th class="faker" style="width: 140px;">Instructor &nbsp;<span class="showTip L1" style="text-decoration: underline; cursor: pointer;"></span></th><td style="background-color: #ffffff;"><input placeholder="example: 'Adeel Bhutta' or 'Adeel' or 'Bhutta'" style="padding: 5px 7px 5px 10px;" type="text" size="30" maxlength="30" name="instrname" id="instrname"></td>
-            <tr><th class="faker" style="width: 140px;">Min. Credits</th><td><select style="padding: 2px 0px 2px; margin: 1px;" id="cr" name="cr"><option value='ANY'>Any</option><option value="1">1+</option> <option value="2">2+</option> <option value="3">3+</option> <option value="4">4+</option> <option value="5">5+</option></select></td></tr>
-        </table>
-        <input class="button" type="submit" id="isearch" value="Search">&nbsp;
-        <input type="button" id="btnReset" value="Clear" />
+            <div class="form-content">
+                <div class="row">
+                <div class="form-item"> 
+                    <div class="form-item-label">
+                        <label for="keyword"></label>
+                    </div>
+                    <div class="form-item-input">
+                        <input type="text" name="keyword" id="keyword" value="" placeholder="Enter keyword to search"> </div>
+                </div>
+                </div>
+                
+            <div class="grid thirds">	
+                <div class="grid-item">
+                    <div class="form-item">
+                        <div class="form-item-label">
+                            <label for="subject"></label>
+                        </div>
+                        <div class="form-item-input">
+                            <input type="text" name="subject" id="subject" value="" placeholder="Enter course subject (CSCI-C or C)">
+        
+                        </div>
+                    </div>
+                </div>
+                        <div class="grid-item">
+                    <div class="form-item">
+                        <div class="form-item-label">
+                            <label for="number"></label>
+                        </div>
+                        <div class="form-item-input">
+                            <input type="text" name="code" id="code" value="" placeholder="Enter course number (212)">
+        
+                        </div>
+                    </div>
+                </div>
+                        <div class="grid-item">
+                    <div class="form-item">
+                        <div class="form-item-label">
+                            <label for="name"></label>
+                        </div>
+                        <div class="form-item-input">
+                            <input type="text" name="instrname" id="instrname" value="" placeholder="Enter teacher name (Albus Dumbledore or Albus)">
+                        </div>
+                    </div>
+                </div>
+        
+                    <div class="grid-item">
+                    <div class="form-item">
+                        <div class="form-item-label">
+                            <label for="requirement"></label>
+                        </div>
+                        <div class="form-item-input">
+                            <select name="requirement" id="requirement">
+            <option value="">Choose a requirement</option><option value=0>A&amp;H credit</option><option value=1>Diversity in U.S. Credit</option><option value=6>English Composition</option><option value=11>Intensive Writing Credit</option><option value=7>Mathematical Model</option><option value=3>N&amp;M credit</option><option value=5>Public Oral Communication Credit</option><option value=2>S&amp;H credit</option><option value=4>World Culture credit</option><option value="0GENEDMM">World Language Class</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                        <div class="grid-item">
+                    <div class="form-item">
+                        <div class="form-item-label">
+                            <label for="other"></label>
+                        </div>
+                        <div class="form-item-input">
+                            <select name="dept" id="dept">
+        
+            <option value="">All departments</option><option value="AAAD">African American and African Diaspora Studies (AAAD)</option> <option value="AADM">Arts Administration (AADM)</option> <option value="AAST">Asian American Studies (AAST)</option> <option value="ABEH">Animal Behavior (ABEH)</option> <option value="AERO">Aerospace Studies (Air Force) (AERO)</option> <option value="AFRI">African Studies (AFRI)</option> <option value="AMST">American Studies (AMST)</option> <option value="ANAT">Anatomy (ANAT)</option> <option value="ANTH">Anthropology (ANTH)</option> <option value="ARTH">Art History (ARTH)</option> <option value="ASCS">Arts & Sciences Career Services (ASCS)</option> <option value="AST">Astronomy (AST)</option> <option value="BIOC">Biochemistry (BIOC)</option> <option value="BIOL">Biology (BIOL)</option> <option value="BIOT">Biotechnology (BIOT)</option> <option value="BUEX">Business Global Executive Management (BUEX)</option> <option value="BUKD">Kelley Direct-MBA (BUKD)</option> <option value="BUS">Business (BUS)</option> <option value="CEUS">Central Eurasian Studies (CEUS)</option> <option value="CHEM">Chemistry (CHEM)</option> <option value="CJUS">Criminal Justice (CJUS)</option> <option value="CLAS">Classical Studies (CLAS)</option> <option value="CLLC">Collins Living-Learning Center (CLLC)</option> <option value="CMCL">Communication & Culture (CMCL)</option> <option value="CMLT">Comparative Literature (CMLT)</option> <option value="COGS">Cognitive Science Program (COGS)</option> <option value="COLL">College of Arts and Sciences (COLL)</option> <option value="CSCI">Computer Science (CSCI)</option> <option value="CTIH">Center for Theoretical Inquiry in the Humanities (CTIH)</option> <option value="CULS">Cultural Studies (CULS)</option> <option value="DSCI">Data Science (DSCI)</option> <option value="EALC">East Asian Languages and Cultures (EALC)</option> <option value="EAS">Earth and Atmospheric Sciences (EAS)</option> <option value="ECON">Economics (ECON)</option> <option value="EDUC">Education (EDUC)</option> <option value="ENG">English (ENG)</option> <option value="ENGR">Engineering (ENGR)</option> <option value="EURO">Institute for European Studies (EURO)</option> <option value="FOLK">Folklore and Ethnomusicology (FOLK)</option> <option value="FRIT">French and Italian (FRIT)</option> <option value="GEOG">Geography (GEOG)</option> <option value="GER">Germanic Studies (GER)</option> <option value="GLLC">Global Village Living-Learning Center (GLLC)</option> <option value="GNDR">Gender Studies (GNDR)</option> <option value="GRAD">University Graduate School (GRAD)</option> <option value="HISP">Spanish and Portuguese (HISP)</option> <option value="HIST">History (HIST)</option> <option value="HLS">Hamilton Lugar School of Global & International Studies (HLS)</option> <option value="HON">Hutton Honors College (HON)</option> <option value="HPSC">History and Philosophy of Science (HPSC)</option> <option value="HUBI">Human Biology (HUBI)</option> <option value="ILS">Information & Library Science (ILS)</option> <option value="IMP">Individualized Major Program (IMP)</option> <option value="INFO">Informatics (INFO)</option> <option value="INPG">International Programs (INPG)</option> <option value="INST">India Studies (INST)</option> <option value="INTL">International Studies (INTL)</option> <option value="JSTU">Jewish Studies (JSTU)</option> <option value="KINS">Kinsey Institute (KINS)</option> <option value="LAMP">Liberal Arts and Management Program (LAMP)</option> <option value="LATS">Latino Studies (LATS)</option> <option value="LAW">Law (LAW)</option> <option value="LING">Linguistics (LING)</option> <option value="LSTU">Labor Studies Program (LSTU)</option> <option value="LTAM">Center for Latin American and Caribbean Studies (LTAM)</option> <option value="MATH">Mathematics (MATH)</option> <option value="MED">Medical Sciences (MED)</option> <option value="MEST">Medieval Studies (MEST)</option> <option value="MIL">Military Science (Army) (MIL)</option> <option value="MSCH">Media School (MSCH)</option> <option value="MSCI">Medical Sciences (MSCI)</option> <option value="MUS">Music (MUS)</option> <option value="NELC">Near Eastern Languages and Cultures (NELC)</option> <option value="NEUS">Neural Sciences (NEUS)</option> <option value="NURS">Nursing (NURS)</option> <option value="OPT">Optometry (OPT)</option> <option value="OVST">Overseas Study (OVST)</option> <option value="PACE">Political and Civic Engagement Program (PACE)</option> <option value="PHIL">Philosophy (PHIL)</option> <option value="PHYS">Physics (PHYS)</option> <option value="POLS">Political Science (POLS)</option> <option value="PSY">Psychological & Brain Sciences (PSY)</option> <option value="REEI">Russian and East European Institute (REEI)</option> <option value="REL">Religious Studies (REL)</option> <option value="REN">Renaissance Studies (REN)</option> <option value="SEAS">Southeast Asian Studies (SEAS)</option> <option value="SICE">School of Informatics, Computing, and Engineering (SICE)</option> <option value="SLAV">Slavic and East European Languages and Cultures (SLAV)</option> <option value="SLIS">School of Library and Information Science (SLIS)</option> <option value="SLST">Second Language Studies (SLST)</option> <option value="SOAAD">School of Art, Architecture + Design (SOAAD)</option> <option value="SOC">Sociology (SOC)</option> <option value="SPCN">SPEA Connect (SPCN)</option> <option value="SPEA">Public and Environmental Affairs (SPEA)</option> <option value="SPH">Public Health (SPH)</option> <option value="SPHS">Speech and Hearing Sciences (SPHS)</option> <option value="STAT">Statistics (STAT)</option> <option value="SWK">Social Work (SWK)</option> <option value="THTR">Theatre and Drama (THTR)</option> <option value="TOPT">Optometric Technology (TOPT)</option> <option value="VICT">Victorian Studies (VICT)</option> <option value="VSCI">Vision Science (VSCI)</option> <option value="AAAD">African American and African Diaspora Studies (AAAD)</option> <option value="AADM">Arts Administration (AADM)</option> <option value="AAST">Asian American Studies (AAST)</option> <option value="ABEH">Animal Behavior (ABEH)</option> <option value="AERO">Aerospace Studies (Air Force) (AERO)</option> <option value="AFRI">African Studies (AFRI)</option> <option value="AMST">American Studies (AMST)</option> <option value="ANAT">Anatomy (ANAT)</option> <option value="ANTH">Anthropology (ANTH)</option> <option value="ARTH">Art History (ARTH)</option> <option value="ASCS">Arts & Sciences Career Services (ASCS)</option> <option value="AST">Astronomy (AST)</option> <option value="BIOC">Biochemistry (BIOC)</option> <option value="BIOL">Biology (BIOL)</option> <option value="BIOT">Biotechnology (BIOT)</option> <option value="BUEX">Business Global Executive Management (BUEX)</option> <option value="BUKD">Kelley Direct-MBA (BUKD)</option> <option value="BUS">Business (BUS)</option> <option value="CEUS">Central Eurasian Studies (CEUS)</option> <option value="CHEM">Chemistry (CHEM)</option> <option value="CJUS">Criminal Justice (CJUS)</option> <option value="CLAS">Classical Studies (CLAS)</option> <option value="CLLC">Collins Living-Learning Center (CLLC)</option> <option value="CMCL">Communication & Culture (CMCL)</option> <option value="CMLT">Comparative Literature (CMLT)</option> <option value="COGS">Cognitive Science Program (COGS)</option> <option value="COLL">College of Arts and Sciences (COLL)</option> <option value="CSCI">Computer Science (CSCI)</option> <option value="CTIH">Center for Theoretical Inquiry in the Humanities (CTIH)</option> <option value="CULS">Cultural Studies (CULS)</option> <option value="DSCI">Data Science (DSCI)</option> <option value="EALC">East Asian Languages and Cultures (EALC)</option> <option value="EAS">Earth and Atmospheric Sciences (EAS)</option> <option value="ECON">Economics (ECON)</option> <option value="EDUC">Education (EDUC)</option> <option value="ENG">English (ENG)</option> <option value="ENGR">Engineering (ENGR)</option> <option value="EURO">Institute for European Studies (EURO)</option> <option value="FOLK">Folklore and Ethnomusicology (FOLK)</option> <option value="FRIT">French and Italian (FRIT)</option> <option value="GEOG">Geography (GEOG)</option> <option value="GER">Germanic Studies (GER)</option> <option value="GLLC">Global Village Living-Learning Center (GLLC)</option> <option value="GNDR">Gender Studies (GNDR)</option> <option value="GRAD">University Graduate School (GRAD)</option> <option value="HISP">Spanish and Portuguese (HISP)</option> <option value="HIST">History (HIST)</option> <option value="HLS">Hamilton Lugar School of Global & International Studies (HLS)</option> <option value="HON">Hutton Honors College (HON)</option> <option value="HPSC">History and Philosophy of Science (HPSC)</option> <option value="HUBI">Human Biology (HUBI)</option> <option value="ILS">Information & Library Science (ILS)</option> <option value="IMP">Individualized Major Program (IMP)</option> <option value="INFO">Informatics (INFO)</option> <option value="INPG">International Programs (INPG)</option> <option value="INST">India Studies (INST)</option> <option value="INTL">International Studies (INTL)</option> <option value="JSTU">Jewish Studies (JSTU)</option> <option value="KINS">Kinsey Institute (KINS)</option> <option value="LAMP">Liberal Arts and Management Program (LAMP)</option> <option value="LATS">Latino Studies (LATS)</option> <option value="LAW">Law (LAW)</option> <option value="LING">Linguistics (LING)</option> <option value="LSTU">Labor Studies Program (LSTU)</option> <option value="LTAM">Center for Latin American and Caribbean Studies (LTAM)</option> <option value="MATH">Mathematics (MATH)</option> <option value="MED">Medical Sciences (MED)</option> <option value="MEST">Medieval Studies (MEST)</option> <option value="MIL">Military Science (Army) (MIL)</option> <option value="MSCH">Media School (MSCH)</option> <option value="MSCI">Medical Sciences (MSCI)</option> <option value="MUS">Music (MUS)</option> <option value="NELC">Near Eastern Languages and Cultures (NELC)</option> <option value="NEUS">Neural Sciences (NEUS)</option> <option value="NURS">Nursing (NURS)</option> <option value="OPT">Optometry (OPT)</option> <option value="OVST">Overseas Study (OVST)</option> <option value="PACE">Political and Civic Engagement Program (PACE)</option> <option value="PHIL">Philosophy (PHIL)</option> <option value="PHYS">Physics (PHYS)</option> <option value="POLS">Political Science (POLS)</option> <option value="PSY">Psychological & Brain Sciences (PSY)</option> <option value="REEI">Russian and East European Institute (REEI)</option> <option value="REL">Religious Studies (REL)</option> <option value="REN">Renaissance Studies (REN)</option> <option value="SEAS">Southeast Asian Studies (SEAS)</option> <option value="SICE">School of Informatics, Computing, and Engineering (SICE)</option> <option value="SLAV">Slavic and East European Languages and Cultures (SLAV)</option> <option value="SLIS">School of Library and Information Science (SLIS)</option> <option value="SLST">Second Language Studies (SLST)</option> <option value="SOAAD">School of Art, Architecture + Design (SOAAD)</option> <option value="SOC">Sociology (SOC)</option> <option value="SPCN">SPEA Connect (SPCN)</option> <option value="SPEA">Public and Environmental Affairs (SPEA)</option> <option value="SPH">Public Health (SPH)</option> <option value="SPHS">Speech and Hearing Sciences (SPHS)</option> <option value="STAT">Statistics (STAT)</option> <option value="SWK">Social Work (SWK)</option> <option value="THTR">Theatre and Drama (THTR)</option> <option value="TOPT">Optometric Technology (TOPT)</option> <option value="VICT">Victorian Studies (VICT)</option> <option value="VSCI">Vision Science (VSCI)</option> <option value="AAAD">African American and African Diaspora Studies (AAAD)</option> <option value="AADM">Arts Administration (AADM)</option> <option value="AAST">Asian American Studies (AAST)</option> <option value="ABEH">Animal Behavior (ABEH)</option> <option value="AERO">Aerospace Studies (Air Force) (AERO)</option> <option value="AFRI">African Studies (AFRI)</option> <option value="AMST">American Studies (AMST)</option> <option value="ANAT">Anatomy (ANAT)</option> <option value="ANTH">Anthropology (ANTH)</option> <option value="ARTH">Art History (ARTH)</option> <option value="ASCS">Arts & Sciences Career Services (ASCS)</option> <option value="AST">Astronomy (AST)</option> <option value="BIOC">Biochemistry (BIOC)</option> <option value="BIOL">Biology (BIOL)</option> <option value="BIOT">Biotechnology (BIOT)</option> <option value="BUEX">Business Global Executive Management (BUEX)</option> <option value="BUKD">Kelley Direct-MBA (BUKD)</option> <option value="BUS">Business (BUS)</option> <option value="CEUS">Central Eurasian Studies (CEUS)</option> <option value="CHEM">Chemistry (CHEM)</option> <option value="CJUS">Criminal Justice (CJUS)</option> <option value="CLAS">Classical Studies (CLAS)</option> <option value="CLLC">Collins Living-Learning Center (CLLC)</option> <option value="CMCL">Communication & Culture (CMCL)</option> <option value="CMLT">Comparative Literature (CMLT)</option> <option value="COGS">Cognitive Science Program (COGS)</option> <option value="COLL">College of Arts and Sciences (COLL)</option> <option value="CSCI">Computer Science (CSCI)</option> <option value="CTIH">Center for Theoretical Inquiry in the Humanities (CTIH)</option> <option value="CULS">Cultural Studies (CULS)</option> <option value="DSCI">Data Science (DSCI)</option> <option value="EALC">East Asian Languages and Cultures (EALC)</option> <option value="EAS">Earth and Atmospheric Sciences (EAS)</option> <option value="ECON">Economics (ECON)</option> <option value="EDUC">Education (EDUC)</option> <option value="ENG">English (ENG)</option> <option value="ENGR">Engineering (ENGR)</option> <option value="EURO">Institute for European Studies (EURO)</option> <option value="FOLK">Folklore and Ethnomusicology (FOLK)</option> <option value="FRIT">French and Italian (FRIT)</option> <option value="GEOG">Geography (GEOG)</option> <option value="GER">Germanic Studies (GER)</option> <option value="GLLC">Global Village Living-Learning Center (GLLC)</option> <option value="GNDR">Gender Studies (GNDR)</option> <option value="GRAD">University Graduate School (GRAD)</option> <option value="HISP">Spanish and Portuguese (HISP)</option> <option value="HIST">History (HIST)</option> <option value="HLS">Hamilton Lugar School of Global & International Studies (HLS)</option> <option value="HON">Hutton Honors College (HON)</option> <option value="HPSC">History and Philosophy of Science (HPSC)</option> <option value="HUBI">Human Biology (HUBI)</option> <option value="ILS">Information & Library Science (ILS)</option> <option value="IMP">Individualized Major Program (IMP)</option> <option value="INFO">Informatics (INFO)</option> <option value="INPG">International Programs (INPG)</option> <option value="INST">India Studies (INST)</option> <option value="INTL">International Studies (INTL)</option> <option value="JSTU">Jewish Studies (JSTU)</option> <option value="KINS">Kinsey Institute (KINS)</option> <option value="LAMP">Liberal Arts and Management Program (LAMP)</option> <option value="LATS">Latino Studies (LATS)</option> <option value="LAW">Law (LAW)</option> <option value="LING">Linguistics (LING)</option> <option value="LSTU">Labor Studies Program (LSTU)</option> <option value="LTAM">Center for Latin American and Caribbean Studies (LTAM)</option> <option value="MATH">Mathematics (MATH)</option> <option value="MED">Medical Sciences (MED)</option> <option value="MEST">Medieval Studies (MEST)</option> <option value="MIL">Military Science (Army) (MIL)</option> <option value="MSCH">Media School (MSCH)</option> <option value="MSCI">Medical Sciences (MSCI)</option> <option value="MUS">Music (MUS)</option> <option value="NELC">Near Eastern Languages and Cultures (NELC)</option> <option value="NEUS">Neural Sciences (NEUS)</option> <option value="NURS">Nursing (NURS)</option> <option value="OPT">Optometry (OPT)</option> <option value="OVST">Overseas Study (OVST)</option> <option value="PACE">Political and Civic Engagement Program (PACE)</option> <option value="PHIL">Philosophy (PHIL)</option> <option value="PHYS">Physics (PHYS)</option> <option value="POLS">Political Science (POLS)</option> <option value="PSY">Psychological & Brain Sciences (PSY)</option> <option value="REEI">Russian and East European Institute (REEI)</option> <option value="REL">Religious Studies (REL)</option> <option value="REN">Renaissance Studies (REN)</option> <option value="SEAS">Southeast Asian Studies (SEAS)</option> <option value="SICE">School of Informatics, Computing, and Engineering (SICE)</option> <option value="SLAV">Slavic and East European Languages and Cultures (SLAV)</option> <option value="SLIS">School of Library and Information Science (SLIS)</option> <option value="SLST">Second Language Studies (SLST)</option> <option value="SOAAD">School of Art, Architecture + Design (SOAAD)</option> <option value="SOC">Sociology (SOC)</option> <option value="SPCN">SPEA Connect (SPCN)</option> <option value="SPEA">Public and Environmental Affairs (SPEA)</option> <option value="SPH">Public Health (SPH)</option> <option value="SPHS">Speech and Hearing Sciences (SPHS)</option> <option value="STAT">Statistics (STAT)</option> <option value="SWK">Social Work (SWK)</option> <option value="THTR">Theatre and Drama (THTR)</option> <option value="TOPT">Optometric Technology (TOPT)</option> <option value="VICT">Victorian Studies (VICT)</option> <option value="VSCI">Vision Science (VSCI)</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>			
+                    
+                <div class="grid-item">
+                    <div class="form-item">
+                        <div class="form-item-label">
+                            <label for="number"></label>
+                        </div>
+                        <div class="form-item-input">
+                            <select name="level" id="level">
+            <option value="">All course numbers</option><option value=12>100–299</option><option value=8>300–399</option><option value=9>400–499</option><option value=10>Graduate Level Courses</option><option value=13>Honors Level Courses</option>					
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                    
+                <div class="grid-item">
+                    <div class="form-item">
+                        <div class="form-item-label">
+                            <label for="credit"></label>
+                        </div>
+                        <div class="form-item-input">
+                            <select name="credit" id="credit">
+            <option value="">All credit hours</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7+</option>					
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                    
+                    
+                <div class="grid-item">
+                    <div class="form-item">
+                        <div class="form-item-label">
+                            <label for="times"></label>
+                        </div>
+                        <div class="form-item-input">
+                            <select name="timing" id="timing">
+            <option value="">All times of day</option><option value="1">Morning (7:00 a.m.–10:59 a.m.)</option><option value="2">Afternoon (11 a.m.–4:59 p.m.)</option><option value="3">Evening (5 p.m.–11:59 p.m.)</option>					
+                            </select>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="grid-item">
+                        <div class="form-item">
+                            <div class="form-item-label">
+                                <label for="times"></label>
+                            </div>
+                            <div class="form-item-input">
+                                <select name="next_sem" id="next_sem">
+                                    <option value="0">All past semesters</option><option value="1">Next Semester Courses only</option>			
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                  
+            </div>		
+            <div class="row">
+                <div class="form-item">
+                    <fieldset class="checkboxes count-7">
+                    <legend class="label"></legend>
+                        <input type="checkbox" class="checkbox" name="day" id="dayMon" value="M">
+                        <label for="dayMon">Mon</label>
+                        <input type="checkbox" class="checkbox" name="day" id="dayTue" value="T">
+                        <label for="dayTue">Tue</label>
+                        <input type="checkbox" class="checkbox" name="day" id="dayWed" value="W">
+                        <label for="dayWed">Wed</label>
+                        <input type="checkbox" class="checkbox" name="day" id="dayThurs" value="R">
+                        <label for="dayThurs">Thurs</label>
+                        <input type="checkbox" class="checkbox" name="day" id="dayFri" value="F">
+                        <label for="dayFri">Fri</label>	
+                        <input type="checkbox" class="checkbox" name="day" id="daySat" value="S">
+                        <label for="daySat">Sat</label>	
+                        <input type="checkbox" class="checkbox" name="day" id="daySun" value="N">
+                        <label for="daySun">Sun</label>
+                        <button type="button" class="clear" id='clear'>Clear</button>
+                        <button type="submit" class='submit'>Search</button></div>
+                    </fieldset>
+                </div>
+            </div>
+            
         <script type="text/javascript">
             $(function () {
-                $("#btnReset").bind("click", function () {
-                    $("#dept")[0].selectedIndex = 0;
-                    $("#requirement").val('ANY');
+                $("#clear").bind("click", function () {
+                    $("#dept option[value='']").attr('selected', 'selected');
+                    $("#keyword").val('');
+                    $("#requirement").val('');
                     $('#subject').val('');
                     $('#code').val('');
                     $('#instrname').val('');
-                    $("#cr").val('ANY');
-                    $("#level").val('ANY');
-                    $('#next_sem').attr('checked', false);
+                    $("#credit").val('');
+                    $("#level").val('');
+                    $("#next_sem").val(0);
+                    $("#timing").val('');
+                    $('#dayMon').attr('checked', false);
+                    $('#dayTue').attr('checked', false);
+                    $('#dayWed').attr('checked', false);
+                    $('#dayThurs').attr('checked', false);
+                    $('#dayFri').attr('checked', false);
+                    $('#daySat').attr('checked', false);
+                    $('#daySun').attr('checked', false);
                 });
             });
         </script>
-    </div>
     </form>
+    </div>
 </div>
 <hr>
 
 {% if all_courses == [] %}
-    <div class="row">
+    <div class="row1">
         <h2>Oops, no results found. Try Again...</h2>
     </div>
 {% else %}
 {% for course in all_courses %}
-    <div class ="row">
+    <div class ="row1">
         <div class='column1' style="height: auto;">
             <h2><a href="{{ course.url }}" target='_blank' class='course-name'>{{ course.name }} - {{ course.desc }} ({{ course.cr }} CR)</a></h2>
         </div>
@@ -91,7 +230,7 @@
         {% else %}
         <div class='column1' style="height: auto; color: black; margin-bottom: 5pt;">
                 {{ course.preq }}
-            </div>
+        </div>
         {% endif %}
         {% if course.instructors == [] %}
         <div class="column11" style="width: 75%;">
@@ -99,21 +238,29 @@
         {% else %}
         {% for i in course.instructors %}
             <div class="column11">
-                <input type='submit' form='form' value='{{ i.name }} ({{ i.range }}, {{ i.sems }} sem.){% if i.next_sem == 1 %}**{% endif %}' class='teacher' id='teacher'> 
+                <input type='submit' form='form' value='{{ i.name }} ({{ i.range }}, {{ i.sems }} sem.){% if i.next_sem == 1 %}**{% endif %}' class="teacher" id="teacher" onclick="inst(this.value)"> 
                 <p class='avg_grades'>Avg. Class Size: {{i.avg_std}} | A:{{ i.avg_grades[0] }}% | B:{{ i.avg_grades[1] }}% | C:{{ i.avg_grades[2] }}% | D:{{ i.avg_grades[3] }}%</p>
-                <script type="text/javascript">
-                    $(function () {
-                        $("#teacher").click(function () {
-                            $("#dept")[0].selectedIndex = 0;
-                            $("#requirement").val('ANY');
-                            $('#subject').val('');
-                            $('#code').val('');
-                            $('#instrname').val('{{ i.name }}');
-                            $("#cr").val('ANY');
-                            $("#level").val('ANY');
-                            $('#next_sem').attr('checked', false);
-                        });
-                    });
+                <script>
+                    function inst(val){
+                        var inst = val.split(" (")[0];
+                        $("#dept option[value='']").attr('selected', 'selected');
+                        $("#keyword").val('');
+                        $("#requirement").val('');
+                        $('#subject').val('');
+                        $('#code').val('');
+                        $('#instrname').val(inst);
+                        $("#credit").val('');
+                        $("#level").val('');
+                        $("#next_sem").val(0);
+                        $("#timing").val('');
+                        $('#dayMon').attr('checked', false);
+                        $('#dayTue').attr('checked', false);
+                        $('#dayWed').attr('checked', false);
+                        $('#dayThurs').attr('checked', false);
+                        $('#dayFri').attr('checked', false);
+                        $('#daySat').attr('checked', false);
+                        $('#daySun').attr('checked', false);
+                    }
                 </script>
             </div>
             <div class="column12">
@@ -129,16 +276,26 @@
 {% endfor %}
 {% endif %}
 <script type="text/javascript">
+    $("#keyword").val('{{ inp[-3] }}');
     $("#dept option[value='{{ inp[0] }}']").attr('selected', 'selected');
     $("#requirement").val('{{ inp[1] }}');
     $('#subject').val('{{ inp[2] }}');
     $('#code').val('{{ inp[3] }}');
     $('#instrname').val('{{ inp[4] }}');
-    $("#cr").val('{{ inp[5] }}');
+    $("#credit").val('{{ inp[5] }}');
     $("#level").val('{{ inp[6] }}');
-    function check(x){
-        return(x == '1');
+    $("#next_sem").val('{{ inp[7] }}');
+    $("#timing").val('{{ inp[-2] }}');
+    function check(inp, letter){
+        return (inp.indexOf(letter) != -1);
     }
+    $('#dayMon').attr('checked', check('{{ inp[-1] }}', 'M'));
+    $('#dayTue').attr('checked', check('{{ inp[-1] }}', 'T'));
+    $('#dayWed').attr('checked', check('{{ inp[-1] }}', 'W'));
+    $('#dayThurs').attr('checked', check('{{ inp[-1] }}', 'R'));
+    $('#dayFri').attr('checked', check('{{ inp[-1] }}', 'F'));
+    $('#daySat').attr('checked', check('{{ inp[-1] }}', 'S'));
+    $('#daySun').attr('checked', check('{{ inp[-1] }}', 'N'));
 </script>
 
 {% endblock %}

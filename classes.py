@@ -15,12 +15,13 @@ class Term:
         self.cum_gpa = float(cum_gpa)
         self.sect_gpa = float(sect_gpa)
         self.sect_desc = desc
-
+    
     def to_string(self):
         return ("\t\t" + self.term + " - " + str(self.sect_desc) + " - " + str(self.total_students) + " " + str(self.grades_perc) + " " + str(self.grade_dist) + " CGPA: " + str(self.cum_gpa) + " Sect: " + str(self.sect_gpa) + "\n")
 
     def to_string2(self):
         return ("\z" + self.term + "|" + str(self.sect_desc) + "|" + str(self.total_students) + "|" + str(self.grades_perc) + "|" + str(self.grade_dist) + "|" + str(self.cum_gpa) + "|" + str(self.sect_gpa))
+
 class Instructor:
     def __init__(self, name):
         self.name = name
@@ -30,7 +31,8 @@ class Instructor:
         self.range = ""
         self.sems = 0
         self.avg_std = 0
-        self.next_sem = 0;
+        self.next_sem = 0
+        self.timings = [[],[]]
     
     def add_term(self, term):
         self.terms.append(term)
@@ -84,7 +86,7 @@ class Instructor:
         self.rating = max(0, self.rating)
     
     def calc_data(self):
-        lowest = 3000
+        lowest = 30000
         highest = 0
         self.sems = len(self.terms)
         for i in self.terms:
@@ -102,11 +104,12 @@ class Instructor:
             self.avg_grades[i] = round(self.avg_grades[i]/len(self.terms), 2)
         self.avg_std = round(self.avg_std/len(self.terms), 2)
         self.rate()
-        if (self.avg_std < 10 and self.rating>92): self.rating = 93
-        if(self.sems < 4 and self.rating>94): self.rating = 94
-        if(self.sems > 7): min(100, self.rating+1.5)
-        elif(self.sems >= 4): min(100, self.rating+1)
-        if(self.avg_std > 20): min(100, self.rating+1.5)
+        if (self.avg_std < 10): self.rating = max(0, self.rating-(12-self.avg_std))
+        if(self.sems < 3): self.rating = max(0, self.rating-(5-self.sems))
+        if(self.sems > 7): min(100, self.rating+(self.sems-8))
+        # elif(self.sems >= 4): min(100, self.rating+1)
+        if(self.avg_std > 20): min(100, self.rating+(self.avg_std-20))
+        self.rating = round(self.rating, 2)
 
     def to_string(self):
         out = "\t" + str(self.name) + " " + str(self.rating) + " " + str(self.avg_grades) + " " + self.range + " " + str(self.sems) + " sem." + str(self.avg_std) + ":\n"
@@ -115,7 +118,7 @@ class Instructor:
         return out
 
     def to_string2(self):
-        out = "\t" + str(self.name) + "|" + str(self.rating) + "|" + str(self.avg_grades) + "|" + self.range + "|" + str(self.sems) + "|" + str(self.avg_std) + '|' + str(self.next_sem)
+        out = "\t" + str(self.name) + "|" + str(self.rating) + "|" + str(self.avg_grades) + "|" + self.range + "|" + str(self.sems) + "|" + str(self.avg_std) + '|' + str(self.next_sem) + '|' + str(self.timings)
         for term in self.terms:
             out += term.to_string2()
         return out

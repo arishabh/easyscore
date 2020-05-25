@@ -6,7 +6,7 @@ from time import time
 from statistics import mean, median, stdev
 from ast import literal_eval
 
-VERSION = "v9"
+VERSION = "v10"
 
 credits = {'A&H Breadth of Inquiry credit':0,
         'Diversity in U.S. credit':1,
@@ -47,7 +47,9 @@ scrape_file = path+"scrape/scrape_"+VERSION+".txt"
 course_file = path+"misc/course.txt"
 black_list_file = path+"misc/black_list.txt"
 teachers_name_file = path+"misc/teachers_name.txt"
-search_op_file = "info/search_op_"+VERSION+".txt"
+searches_file = "info/misc/search.txt"
+search_excel_file = "info/misc/searches.xls"
+courses_folder_path='info/courses'
 
 next_sem = ["https://utilities.registrar.indiana.edu/course-browser/prl/soc4202/", ".shtml"]
 last_sem = ["https://utilities.registrar.indiana.edu/course-browser/prl/soc4198/", ".shtml"]

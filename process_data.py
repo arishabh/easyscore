@@ -1,10 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-# File              : process_data.py
-# Author            : Rishabh Agrawal <rishabhagrawal41@gmail.com>
-# Date              : 22.10.2019
-# Last Modified Date: 28.10.2019
-
 from general import *
 start = time()
 
@@ -18,6 +11,7 @@ course_urls = {}
 course_cr = {}
 course_next_sem = {}
 instruct = {}
+timings = {}
 all_scores = []
 
 with open(course_file, "r") as f:
@@ -29,6 +23,7 @@ with open(course_file, "r") as f:
         course_cr[d[0]] = d[4]
         course_next_sem[d[0]] = d[5]
         instruct[d[0]] = literal_eval(d[6])
+        timings[d[0]] = literal_eval(d[7])
 
 with open(black_list_file, "r") as f:
     black_list = [l.strip("\n") for l in f]
@@ -43,7 +38,7 @@ def add_term(data, inst):
     for t in inst.terms:
         if(t.term == data[0]): return inst
     new_term = Term(data[0])
-    new_term.set_all(data[15:19], data[13], data[12], data[10], data[20:33], data[3])
+    new_term.set_all(data[15:19], data[13], data[12], data[10], data[20:33], data[2])
     inst.add_term(new_term)
     return inst
 
@@ -80,6 +75,10 @@ for c in all_courses:
         all_scores.append(i.rating)
         c.sems += len(i.terms)
         if(i.name in instruct[c.name]): i.next_sem = 1
+        try:
+            i.timings = timings[c.name][i.name] 
+        except:
+            i.timings = [[],[]]
     c.credit = course_credits[c.name]
     c.preq = course_preqs[c.name]
     c.url = course_urls[c.name]
@@ -89,16 +88,6 @@ for c in all_courses:
     c.instructors.sort(reverse=True)
     c.rate()
 
-"""
-all_scores.sort()
-
-for c in all_courses:
-    for i in c.instructors:
-        ind = all_scores.index(i.rating)
-        i.rating = round(100*ind/len(all_scores),2)
-        all_scores[ind] = i.rating
-    c.instructors.sort(reverse=True)
-"""
 
 with open(stat_file, "w+") as f:
     f.write("Mean: " + str(mean(all_scores)) + "\n")

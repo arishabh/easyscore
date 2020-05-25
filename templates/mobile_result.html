@@ -25,7 +25,7 @@
             <tr><th class="faker" style="width: 140px;">Course Subject </th><td style="background-color: #ffffff;"><input style="padding: 5px 7px 5px 10px; margin: 1px;"  placeholder="example: 'CSCI-C' or 'C'" type="text" size="30" maxlength="7" name="subject" id="subject" value=""></td></tr>
             <tr><th class="faker" style="width: 140px;">Class Number </th><td style="background-color: #ffffff;"><input style="padding: 5px 7px 5px 10px; margin: 1px;" placeholder="example: '212'" type="text" size="30" maxlength="6" name="code" id="code" value=""></td></tr>
             <tr><th class="faker" style="width: 140px;">Instructor &nbsp;<span class="showTip L1" style="text-decoration: underline; cursor: pointer;"></span></th><td style="background-color: #ffffff;"><input placeholder="example: 'Adeel Bhutta' or 'Adeel' or 'Bhutta'" style="padding: 5px 7px 5px 10px;" type="text" size="30" maxlength="30" name="instrname" id="instrname" value=""></td>
-            <tr><th class="faker" style="width: 140px;">Min. Credits</th><td><select style="padding: 2px 0px 2px; margin: 1px;" id="cr" name="cr"><option value='ANY'>Any</option><option value="1">1+</option> <option value="2">2+</option> <option value="3">3+</option> <option value="4">4+</option> <option value="5">5+</option></select></td></tr>
+            <tr><th class="faker" style="width: 140px;">Credits</th><td><select style="padding: 2px 0px 2px; margin: 1px;" id="cr" name="cr"><option value='ANY'>Any</option><option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option> <option value="5">5</option> <option value="6">6</option> <option value="7">7+</option></select></td></tr>
         </table>
         <input class="button" type="submit" id="isearch" value="Search">&nbsp;
 		<input type="button" id="btnReset" value="Clear" />
@@ -49,7 +49,7 @@
     <div class="column2" style="width: 60%;">
     <h1 style="font-size: 200%; color: #9A0000; margin-bottom: 2px;">Results</h1>
     <span style="font-size: 40%; cursor: auto; float: left;">** </span>
-    <span style="font-size: 33%; cursor: auto; color: black; float: left;">Instructors that will be teaching this course next semester</span>
+    <span style="font-size: 33%; cursor: auto; color: black; float: left;">Next semester instructor</span>
     </div>
     <div class="column2" style="width: 35%;">
     <h1 style="font-size: 200%; color: #9A0000; margin-bottom: 2px;">EasyScore</h1>
@@ -91,25 +91,24 @@
         {% else %}
         {% for i in course.instructors %}
             <div class="column11" style="width: 75%;">
-                <input type='submit' form='form' value='{{ i.name }} ({{ i.range }}, {{ i.sems }} sem.){% if i.next_sem == 1 %}**{% endif %}' class='teacher-mob' id='teacher'> 
+                <input type='submit' form='form' value='{{ i.name }} ({{ i.range }}, {{ i.sems }} sem.){% if i.next_sem == 1 %}**{% endif %}' class='teacher-mob' id='teacher' onclick="inst(this.value)"> 
                 <p class='avg_grades' style="text-indent: 10px; font-size: 100%;">Avg. Class Size: {{i.avg_std}} | A:{{ i.avg_grades[0] }}% | B:{{ i.avg_grades[1] }}% | C:{{ i.avg_grades[2] }}% | D:{{ i.avg_grades[3] }}%</p>
-            <script type="text/javascript">
-                $(function () {
-                    $("#teacher").click(function () {
+            <script>
+                    function inst(val){
+                        var inst = val.split(" (")[0];
                         $("#dept")[0].selectedIndex = 0;
                         $("#requirement").val('ANY');
                         $('#subject').val('');
                         $('#code').val('');
-                        $('#instrname').val('{{ i.name }}');
+                        $('#instrname').val(inst);
                         $("#cr").val('ANY');
                         $("#level").val('ANY');
                         $('#next_sem').attr('checked', false);
-                    });
-                });
+                    }
             </script>
             </div>
             <div class="column12" style="width: 20%; padding-left: 15px;">
-                <p class='rating' id='rating' style="font-size: 100%;">{{ i.rating }} </p>
+                <p class='rating' id='rating' style="font-size: 100%; padding-top: 20%;">{{ i.rating }} </p>
             </div>
         {% endfor %}
         {% endif %}

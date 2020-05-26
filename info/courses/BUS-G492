@@ -1,0 +1,15 @@
+
+
+	BUS-G 492  PREDICTIVE ANALYTICS BUS STRAT (3 CR)
+         CLSD 30658 RSTR     11:15A-12:30P   TR     HH 2006   Kozak Rogo J             40    0    9
+         CLSD 30659 RSTR     04:00P-05:15P   MW     HH 4075   Raiha D                  40    0    0
+               5850 RSTR     09:30A-10:45A   MW     HH 3030   Seo B                    55   28    0
+                 G 492 : P - BUS-G 350
+         CLSD 10144 RSTR     11:15A-12:30P   MW     HH 3030   Seo B                    55    0    2
+                 G 492 : P - BUS-G 350
+         CLSD 10927 RSTR     04:00P-05:15P   MW     CG 3044   Sacks D                  35    0   12
+         CLSD 11614 RSTR     02:30P-03:45P   MW     HH 3079   Sacks D                  40    0   14
+                 Prerequisite - BUS-G 350
+         CLSD 13440 RSTR     01:00P-02:15P   TR     CG 3044   Kozak Rogo J             35    0    7
+                 Prerequisite - BUS-G 350
+        

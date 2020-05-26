@@ -1,3 +1,4 @@
+#TODO session days timing search filter
 from classes import *
 from general import *
 
@@ -8,10 +9,11 @@ with open(scrape_file, "r") as f:
     for lines in f:
         raw_data.append(lines[:-1])
 
-def search_all(dep='', sub='', code='', inst='', credit='', level='', cr='', next_sem='', keyword='', raw_data=raw_data):
+def search_all(dep='', sub='', code='', inst='', credit='', level='', cr='', next_sem='', keyword='', timings='', days=[], raw_data=raw_data):
     all_courses = []
     start = time()
     filtered = raw_data
+    if(timings != '' or days != []): next_sem = '1'
     if(dep != '' and dep != 'ANY'): filtered = list(filter(lambda d: (d.split('|')[0] == dep), filtered))
     if(sub != ''): 
         sub = str.upper(sub.strip())
@@ -30,16 +32,42 @@ def search_all(dep='', sub='', code='', inst='', credit='', level='', cr='', nex
             if f != []:
                 filtered2.append(d.split('\t')[0] + '\t' + f[0])
         filtered = filtered2
-    if(cr != '' and cr != "ANY"): filtered=list(filter(lambda x: (int(x.split('|')[10]) >= int(cr)), filtered))
-    if(next_sem == ['1']): 
+    if(cr != '' and cr != "ANY"): 
+        if(cr != '7'):
+            filtered=list(filter(lambda x: (int(float(x.split('|')[10])) == int(cr)), filtered))
+        else:
+            filtered=list(filter(lambda x: (int(float(x.split('|')[10]) >= 7)), filtered))
+
+    if(next_sem == '1'):
         filtered=list(filter(lambda x: (x.split('|')[11] == '1'), filtered))
         filtered2 = []
         for d in filtered:
-            f = list(filter(lambda x: (x.split('|')[6].split('\z')[0] == '1'), d.split('\t')[1:]))
+            f = list(filter(lambda x: (x.split('|')[6] == '1'), d.split('\t')[1:]))
+            if f == []: continue
             filtered2.append(d.split('\t')[0])
             for x in f: filtered2[-1] += '\t' + x
         filtered = filtered2
-    if(keyword != ''): filtered=list(filter(lambda x: (all(str.upper(word) in x.split('|')[3] for word in keyword.split(','))), filtered))
+        print(len(filtered))
+
+        if(timings != "" and timings != 'ANY'):
+            filtered2 = []
+            for d in filtered:
+                f = list(filter(lambda x: (int(timings) in literal_eval(x.split('|')[7].split('\z')[0])[0]), d.split('\t')[1:]))
+                if f == []: continue
+                filtered2.append(d.split('\t')[0])
+                for x in f: filtered2[-1] += '\t' + x
+            filtered = filtered2
+
+        if(days != [] and days != 'ANY'):
+            filtered2 = []
+            for d in filtered:
+                f = list(filter(lambda x: (any(y in literal_eval(x.split('|')[7].split('\z')[0])[1] for y in days)), d.split('\t')[1:]))
+                filtered2.append(d.split('\t')[0])
+                for x in f: filtered2[-1] += '\t' + x
+            filtered = filtered2
+    
+    if(keyword != ''): filtered=list(filter(lambda x: (all(str.upper(word) in x.split('|')[3] for word in keyword.split())), filtered))
+    
     for raw in filtered:
         raw1 = raw.split('\t')
         c = raw1[0].split('|')
@@ -50,7 +78,7 @@ def search_all(dep='', sub='', code='', inst='', credit='', level='', cr='', nex
         new_course.sems = int(c[7])
         new_course.preq = c[8]
         new_course.url = c[9]
-        new_course.cr = int(c[10])
+        new_course.cr = float(c[10]) if float(c[10])%1 != 0 else int(c[10])
         new_course.next_sem = int(c[11])
         new_course.new_teacher = int(c[12])
         for i in range(len(raw1)-1):
@@ -63,6 +91,7 @@ def search_all(dep='', sub='', code='', inst='', credit='', level='', cr='', nex
             new_inst.sems = int(i[4])
             new_inst.avg_std = float(i[5])
             new_inst.next_sem = int(i[6])
+            new_inst.timings = literal_eval(i[7])
             for j in range(len(raw2)-1):
                 t = raw2[j+1].split('|')
                 new_term = Term(t[0])

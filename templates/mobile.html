@@ -11,7 +11,7 @@
 	}
 </style>
 <div class="centered" style="top: 25%">
-	<h1 style="font-size: 250%;"><center>Welcome To EasyScore</center></h1>
+	<h1 style="font-size: 250%;"><center>TheEasyScore</center></h1>
 </div>
 <div class="centered1">
   	<form name="search" method="POST">
@@ -22,11 +22,12 @@
             <tr><th class="faker">Course Subject </th><td style="background-color: #ffffff;"><input style="padding: 5px 7px 5px 10px; margin: 1px;"  placeholder="example: 'CSCI-C' or 'C'" type="text" size="30" maxlength="7" name="subject" id="subject" value=""></td></tr>
 			<tr><th class="faker">Class Number </th><td style="background-color: #ffffff;"><input style="padding: 5px 7px 5px 10px; margin: 1px;" placeholder="example: '212'" type="text" size="30" maxlength="6" name="code" id="code" value=""></td></tr>
 			<tr><th class="faker">Instructor &nbsp;<span class="showTip L1" style="text-decoration: underline; cursor: pointer;"></span></th><td style="background-color: #ffffff;"><input placeholder="example: 'Adeel Bhutta' or 'Adeel' or 'Bhutta'" style="padding: 5px 7px 5px 10px;" type="text" size="30" maxlength="30" name="instrname" id="instrname" value=""></td>
-			<tr><th class="faker">Min. Credits</th><td><select style="padding: 2px 0px 2px; margin: 1px;" id="cr" name="cr"><option value='ANY'>Any</option><option value="1">1+</option> <option value="2">2+</option> <option value="3">3+</option> <option value="4">4+</option> <option value="5">5+</option></select></td></tr>
+				<tr><th class="faker" style="width: 140px;">Credits</th><td><select style="padding: 2px 0px 2px; margin: 1px;" id="cr" name="cr"><option value='ANY'>Any</option><option value="1">1</option> <option value="2">2</option> <option value="3">3</option> <option value="4">4</option> <option value="5">5</option> <option value="6">6</option> <option value="7">7+</option></select></td></tr>
 		</table>
 		<div style="padding: 2px 0px 2px; margin: 1px; font-weight: bold;"><input type="checkbox" id='next_sem' name='next_sem' value='1'>Next Semester Courses and Teachers only</div>
 		<br>
 		<input class="button" type="submit" id="isearch" value="Search">&nbsp;
+		<input class="button" type="reset" id="clear" value="Clear">&nbsp;
 	</form>
 </div>
 
@@ -53,7 +54,7 @@
 	<p style="font-size: 10pt;">Source: Official IU Grade Distribution website <a href="http://gradedistribution.registrar.indiana.edu/">gradedistribution.registrar.indiana.edu/</a></p>	
 </div>
 </div>
-<span class='how-we-rate' onclick="openNav()" id="text" style="right: 1; position: fixed;">How We Rate</span>
+<span class='how-we-rate' onclick="openNav()" id="text" style="right: 1; position: fixed;">How We Work</span>
 <a class='feedback' style='right: 0' href='https://docs.google.com/forms/d/e/1FAIpQLSezIovWZvpOYOh29ZBw62P_dwrOB9wfsJ_n5wIxUsa8nMJItQ/viewform?usp=sf_link'>Feedback</a>
 
 <script>
@@ -67,8 +68,20 @@ function openNav() {
 function closeNav() {
 	document.getElementById("myNav").style.width = "0%";
 	document.getElementById("myNav").style.height = "0%";
-	document.getElementById("text").innerHTML = "How We Rate";
+	document.getElementById("text").innerHTML = "How We Work";
 }
+$(document).ready(function(){
+	$("#clear").click(function(){
+		$("#dept option[value='ANY']").attr('selected', 'selected');
+		$("#requirement").val('ANY');
+		$('#subject').val('');
+		$('#code').val('');
+		$('#instrname').val('');
+		$("#cr").val('ANY');
+		$("#level").val('ANY');
+		$('#next_sem').attr('checked', false);
+	});
+});
 </script>
 
 {% endblock %}

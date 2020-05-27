@@ -51,7 +51,6 @@ searches_file = "info/misc/search.txt"
 search_excel_file = "info/misc/searches.xls"
 courses_folder_path='info/courses'
 
-next_sem = ["https://utilities.registrar.indiana.edu/course-browser/prl/soc4202/", ".shtml"]
-last_sem = ["https://utilities.registrar.indiana.edu/course-browser/prl/soc4198/", ".shtml"]
-last_last_sem = ["https://utilities.registrar.indiana.edu/course-browser/prl/soc4195/", ".shtml"]
-url = [next_sem, last_sem, last_last_sem]
+next_sem = ["https://utilities.registrar.indiana.edu/course-browser/prl/soc4208/", ".shtml"]
+last_sem = ["https://utilities.registrar.indiana.edu/course-browser/prl/soc4205/", ".shtml"]
+last_last_sem = ["https://utilities.registrar.indiana.edu/course-browser/prl/soc4202/", ".shtml"]

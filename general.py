@@ -39,7 +39,7 @@ credits_inv = ['A&H credit',
         'Honors']
 
 path = "info/"
-total_files = 10
+total_files = 11
 raw_data_file = path+"raw_data/"
 main_file = path+"data/data_"+VERSION+".txt"
 stat_file = path+"stat/stat_"+VERSION+".txt"

@@ -10,8 +10,8 @@ from general import *
 
 a = []
 black = []
-black_file = open(black_list_file+'1111', 'w')
-credit_file = open(course_file+'1111', 'w')
+black_file = open(black_list_file, 'w')
+credit_file = open(course_file, 'w')
 def get_cred(b):
     b = b[1].get_text().split("\r\n")
     b = [a.strip() for a in b]

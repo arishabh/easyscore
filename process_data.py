@@ -27,6 +27,7 @@ with open(course_file, "r") as f:
 
 with open(black_list_file, "r") as f:
     black_list = [l.strip("\n") for l in f]
+    black_list = []
 
 def add_instructor(data, course):
     new_inst = Instructor(data[9])
@@ -69,6 +70,7 @@ for i in range(1, total_files+1):
                     all_courses[ind].instructors[ind2] = add_term(data, all_courses[ind].instructors[ind2])
         data = []
 
+"""
 for c in all_courses:
     for i in c.instructors:
         i.calc_data()
@@ -89,6 +91,7 @@ for c in all_courses:
     c.rate()
 
 
+
 with open(stat_file, "w+") as f:
     f.write("Mean: " + str(mean(all_scores)) + "\n")
     f.write("Max: " + str(max(all_scores)) + "\n")
@@ -96,6 +99,7 @@ with open(stat_file, "w+") as f:
     f.write("Median: " + str(median(all_scores)) + "\n")
     f.write("Stardard Deviation: " + str(stdev(all_scores)) + "\n")
     f.write("Time taken for program: " + str(time()-start)) 
+"""
 
 with open(main_file, "w+") as f:
     for course in all_courses:

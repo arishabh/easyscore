@@ -1,3 +1,13 @@
 AAAD-A132	[0, 1, 12]		https://utilities.registrar.indiana.edu/course-browser/prl/soc4205/AAAD/AAAD-A132.shtml	3	0	[]	{}
-AAAD-A150	[0, 12]		https://utilities.registrar.indiana.edu/course-browser/prl/soc4208/AAAD/AAAD-A150.shtml	3	0	[]	{}
+AAAD-A150	[0, 12]		https://utilities.registrar.indiana.edu/course-browser/prl/soc4208/AAAD/AAAD-A150.shtml	3	1	[]	{}
 AAAD-A169	[0, 12]		https://utilities.registrar.indiana.edu/course-browser/prl/soc4205/AAAD/AAAD-A169.shtml	3	0	[]	{}
+AAAD-A265	[1, 2, 12]		https://utilities.registrar.indiana.edu/course-browser/prl/soc4205/AAAD/AAAD-A265.shtml	3	0	[]	{}
+AAAD-A388	[8, 0]		https://utilities.registrar.indiana.edu/course-browser/prl/soc4205/AAAD/AAAD-A388.shtml	3	0	[]	{}
+AADM-Y750	[10]		https://utilities.registrar.indiana.edu/course-browser/prl/soc4208/AADM/AADM-Y750.shtml	3	1	['Redman,Miranda Darlene']	{}
+AFRI-L100	[12]		https://utilities.registrar.indiana.edu/course-browser/prl/soc4208/AFRI/AFRI-L100.shtml	3	1	['Sow,Amadou Beidy']	{}
+AFRI-L202	[12]		https://utilities.registrar.indiana.edu/course-browser/prl/soc4202/AFRI/AFRI-L202.shtml	0	0	[]	{}
+AFRI-S90	[]		https://utilities.registrar.indiana.edu/course-browser/prl/soc4202/AFRI/AFRI-S90.shtml	0	0	[]	{}
+AMST-A100	[0, 1, 12]		https://utilities.registrar.indiana.edu/course-browser/prl/soc4208/AMST/AMST-A100.shtml	3	1	['Lee,Sonia Song-Ha', 'Mowatt,Rasul A']	{}
+AMST-A201	[1, 2, 12]		https://utilities.registrar.indiana.edu/course-browser/prl/soc4208/AMST/AMST-A201.shtml	3	1	['Frazier,Lessie Jo']	{}
+ANAT-A215	[3, 12]	Students must take lecture exams 4:50-5:50pm, Fridays ...	https://utilities.registrar.indiana.edu/course-browser/prl/soc4208/ANAT/ANAT-A215.shtml	5	1	["O'Loughlin,Valerie D"]	{"O'Loughlin,Valerie D": [[1], ['F', 'M', 'W']]}
+ANTH-A122	[1, 2, 12]		https://utilities.registrar.indiana.edu/course-browser/prl/soc4208/ANTH/ANTH-A122.shtml	3	1	['Robinson,Jennifer Meta']	{}

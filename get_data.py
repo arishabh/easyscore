@@ -30,13 +30,13 @@ for i in range(len(all_courses)):
             timing_flag = True
             flag = True
             # with open(courses_folder_path+c.name, "w+") as f: f.write(b[1].get_text())
-            sem = 1 if('soc4202' in u) else 0
+            sem = 1 if(url[0][0].split('/')[-2] in u) else 0
             cr = b[1].findChild().get_text().split('(')[1][:-4].split('-')[-1]
             b = b[1].get_text().split("\r\n")
             for cont in b:
                 st = cont.strip()
                 st2 = st.split()
-                if('soc4202' in u):
+                if(url[0][0].split('/')[-2] in u):
                     try:
                         int(st2[-1]); int(st2[-2]); int(st2[-3])
                         inst = st2[-5:-3]

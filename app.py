@@ -8,17 +8,17 @@ app = Flask(__name__)
 @app.route('/',methods=['POST', 'GET'])
 def index():
     if request.method == 'POST':
-        keyword = request.form['keyword']
-        dep = request.form['dept']
-        req = request.form['requirement']
-        sub = request.form['subject']
-        code = request.form['code']
-        inst = request.form['instrname']
-        cr = request.form['credit']
-        level = request.form['level']
-        timing = request.form['timing']
-        days = request.form.getlist("day")
-        next_sem = request.form['next_sem']
+        keyword = str(request.form['keyword'])
+        dep = str(request.form['dept'])
+        req = str(request.form['requirement'])
+        sub = str(request.form['subject'])
+        code = str(request.form['code'])
+        inst = str(request.form['instrname'])
+        cr = str(request.form['credit'])
+        level = str(request.form['level'])
+        timing = str(request.form['timing'])
+        days = map(str, request.form.getlist("day"))
+        next_sem = str(request.form['next_sem'])
         with open("info/misc/search.txt", "a+") as f:
             f.write(str(datetime.now().strftime("%d/%m/%Y %H:%M:%S")) + "\t" + dep + "\t" + req + "\t" + sub + "\t" + code + "\t" + inst + "\t" + cr + "\t" + level + "\t" + str(next_sem) + "\n")
         all_courses = search_all(dep, sub, code, inst, req, level, cr, next_sem, keyword, timing, days)
@@ -31,17 +31,17 @@ def index():
 @app.route('/result', methods=['POST', 'GET'])
 def output():
     if request.method == 'POST':
-        keyword = request.form['keyword']
-        dep = request.form['dept']
-        req = request.form['requirement']
-        sub = request.form['subject']
-        code = request.form['code']
-        inst = request.form['instrname']
-        cr = request.form['credit']
-        level = request.form['level']
-        timing = request.form['timing']
-        days = request.form.getlist("day")
-        next_sem = request.form['next_sem']
+        keyword = str(request.form['keyword'])
+        dep = str(request.form['dept'])
+        req = str(request.form['requirement'])
+        sub = str(request.form['subject'])
+        code = str(request.form['code'])
+        inst = str(request.form['instrname'])
+        cr = str(request.form['credit'])
+        level = str(request.form['level'])
+        timing = str(request.form['timing'])
+        days = map(str, request.form.getlist("day"))
+        next_sem = str(request.form['next_sem'])
         with open("info/misc/search.txt", "a+") as f:
             f.write(str(datetime.now().strftime("%d/%m/%Y %H:%M:%S")) + "\t" + dep + "\t" + req + "\t" + sub + "\t" + code + "\t" + inst + "\t" + cr + "\t" + level + "\t" + str(next_sem) + "\n")
         all_courses = search_all(dep, sub, code, inst, req, level, cr, next_sem, keyword, timing, days)
@@ -54,17 +54,17 @@ def output():
 @app.route('/mobile', methods=['POST', 'GET'])
 def mobile():
     if request.method == 'POST':
-        keyword = request.form['keyword']
-        dep = request.form['dept']
-        req = request.form['requirement']
-        sub = request.form['subject']
-        code = request.form['code']
-        inst = request.form['instrname']
-        cr = request.form['credit']
-        level = request.form['level']
-        timing = request.form['timing']
-        days = request.form.getlist("day")
-        next_sem = request.form['next_sem']
+        keyword = str(request.form['keyword'])
+        dep = str(request.form['dept'])
+        req = str(request.form['requirement'])
+        sub = str(request.form['subject'])
+        code = str(request.form['code'])
+        inst = str(request.form['instrname'])
+        cr = str(request.form['credit'])
+        level = str(request.form['level'])
+        timing = str(request.form['timing'])
+        days = map(str, request.form.getlist("day"))
+        next_sem = str(request.form['next_sem'])
         with open("info/misc/search.txt", "a+") as f:
             f.write(str(datetime.now().strftime("%d/%m/%Y %H:%M:%S")) + "\t" + dep + "\t" + req + "\t" + sub + "\t" + code + "\t" + inst + "\t" + cr + "\t" + level + "\t" + str(next_sem) + "\n")
         all_courses = search_all(dep, sub, code, inst, req, level, cr, next_sem, keyword, timing, days)

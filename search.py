@@ -7,7 +7,7 @@ raw_data = []
 filtered = []
 with open(scrape_file, "r") as f:
     for lines in f:
-        raw_data.append(lines[:-1])
+        raw_data.append(str(lines[:-1]))
 
 def search_all(dep='', sub='', code='', inst='', credit='', level='', cr='', next_sem='', keyword='', timings='', days=[], raw_data=raw_data):
     all_courses = []

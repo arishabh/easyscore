@@ -17,7 +17,7 @@ def index():
         cr = str(request.form['credit'])
         level = str(request.form['level'])
         timing = str(request.form['timing'])
-        days = map(str, request.form.getlist("day"))
+        days = list(map(str, request.form.getlist("day")))
         next_sem = str(request.form['next_sem'])
         with open("info/misc/search.txt", "a+") as f:
             f.write(str(datetime.now().strftime("%d/%m/%Y %H:%M:%S")) + "\t" + dep + "\t" + req + "\t" + sub + "\t" + code + "\t" + inst + "\t" + cr + "\t" + level + "\t" + str(next_sem) + "\n")
@@ -40,8 +40,8 @@ def output():
         cr = str(request.form['credit'])
         level = str(request.form['level'])
         timing = str(request.form['timing'])
-        days = map(str, request.form.getlist("day"))
-        next_sem = str(request.form['next_sem'])
+        days = list(map(str, request.form.getlist("day")))
+        next_sem = (request.form['next_sem'])
         with open("info/misc/search.txt", "a+") as f:
             f.write(str(datetime.now().strftime("%d/%m/%Y %H:%M:%S")) + "\t" + dep + "\t" + req + "\t" + sub + "\t" + code + "\t" + inst + "\t" + cr + "\t" + level + "\t" + str(next_sem) + "\n")
         all_courses = search_all(dep, sub, code, inst, req, level, cr, next_sem, keyword, timing, days)

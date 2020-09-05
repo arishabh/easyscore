@@ -232,7 +232,6 @@
                 {{ course.preq }}
         </div>
         {% endif %}
-        {% if course.instructors != [] %}
         {% for i in course.instructors %}
             <div class="column11">
                 <input type='submit' form='form' value='{{ i.name }} ({{ i.range }}, {{ i.sems }} sem.){% if i.next_sem == 1 %}**{% endif %}' class="teacher" id="teacher" onclick="inst(this.value)"> 
@@ -267,7 +266,6 @@
                 <p id="myBar" class='bar'></p>
             </div>
         {% endfor %}
-        {% endif %}
     </div>
     <hr>
 {% endfor %}

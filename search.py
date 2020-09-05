@@ -53,7 +53,7 @@ def search_all(dep='', sub='', code='', inst='', credit='', level='', cr='', nex
             filtered2 = []
             for d in filtered:
                 f = list(filter(lambda x: (int(timings) in literal_eval(x.split('|')[7].split('\z')[0])[0]), d.split('\t')[1:]))
-                if f == []: continue
+                if not f: continue
                 filtered2.append(d.split('\t')[0])
                 for x in f: filtered2[-1] += '\t' + x
             filtered = filtered2
@@ -62,6 +62,7 @@ def search_all(dep='', sub='', code='', inst='', credit='', level='', cr='', nex
             filtered2 = []
             for d in filtered:
                 f = list(filter(lambda x: (any(y in literal_eval(x.split('|')[7].split('\z')[0])[1] for y in days)), d.split('\t')[1:]))
+                if not f: continue
                 filtered2.append(d.split('\t')[0])
                 for x in f: filtered2[-1] += '\t' + x
             filtered = filtered2
@@ -100,7 +101,7 @@ def search_all(dep='', sub='', code='', inst='', credit='', level='', cr='', nex
             new_course.add_inst(new_inst)
         all_courses.append(new_course)
     all_courses.sort(reverse=True)
-    print("Time taken: " + str(time()-start))
+    print("Time taken: " + str(time()-start)," Len: ", len(all_courses))
     return all_courses
 
 

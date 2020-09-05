@@ -54,3 +54,4 @@ courses_folder_path='info/courses'
 next_sem = ["https://utilities.registrar.indiana.edu/course-browser/prl/soc4208/", ".shtml"]
 last_sem = ["https://utilities.registrar.indiana.edu/course-browser/prl/soc4205/", ".shtml"]
 last_last_sem = ["https://utilities.registrar.indiana.edu/course-browser/prl/soc4202/", ".shtml"]
+next_sem_name = "Fall 2020"

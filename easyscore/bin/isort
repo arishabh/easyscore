@@ -1,4 +1,4 @@
-#!/home/rishabh/iu_prof/easyscore/bin/python3.7
+#!/home/me/easyscore/easyscore/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys

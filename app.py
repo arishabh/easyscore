@@ -1,9 +1,10 @@
-from flask import Flask, render_template, request, redirect
+from flask import Flask, render_template, request
 from search import search_all
 from general import credits_inv
 from datetime import datetime
 
 app = Flask(__name__)
+
 
 @app.route('/',methods=['POST', 'GET'])
 def index():
@@ -26,7 +27,7 @@ def index():
             all_courses = all_courses[:40]
         return render_template('result.html', all_courses=all_courses, credits_inv=credits_inv, inp=[dep, req, sub, code, inst, cr, level, int(next_sem), keyword, timing, days])
     else:
-        return render_template('index.html')      
+        return render_template('index.html')
 
 @app.route('/result', methods=['POST', 'GET'])
 def output():
@@ -51,6 +52,7 @@ def output():
     else:
         return render_template('result.html')
 
+
 @app.route('/mobile', methods=['POST', 'GET'])
 def mobile():
     if request.method == 'POST':
@@ -74,6 +76,7 @@ def mobile():
     else:
         return render_template('mobile.html')
 
+
 @app.route('/mobile_result', methods=['POST', 'GET'])
 def mobile_output():
     if request.method == 'POST':
@@ -95,7 +98,7 @@ def mobile_output():
             all_courses = all_courses[:40]
         return render_template('mobile_result.html', all_courses=all_courses, credits_inv=credits_inv, inp=[dep, req, sub, code, inst, cr, level, int(next_sem), keyword, timing, days])
     else:
-        return render_template('mobile_result.html') 
+        return render_template('mobile_result.html')
 
 if __name__ == "__main__":
     app.run(debug=True)

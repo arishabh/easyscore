@@ -15,25 +15,26 @@ class Term:
         self.cum_gpa = float(cum_gpa)
         self.sect_gpa = float(sect_gpa)
         self.sect_desc = desc
-    
+
     def to_string(self):
         return ("\t\t" + self.term + " - " + str(self.sect_desc) + " - " + str(self.total_students) + " " + str(self.grades_perc) + " " + str(self.grade_dist) + " CGPA: " + str(self.cum_gpa) + " Sect: " + str(self.sect_gpa) + "\n")
 
     def to_string2(self):
         return ("\z" + self.term + "|" + str(self.sect_desc) + "|" + str(self.total_students) + "|" + str(self.grades_perc) + "|" + str(self.grade_dist) + "|" + str(self.cum_gpa) + "|" + str(self.sect_gpa))
 
+
 class Instructor:
     def __init__(self, name):
         self.name = name
         self.terms = []
         self.rating = 0
-        self.avg_grades = [0,0,0,0]
+        self.avg_grades = [0, 0, 0, 0]
         self.range = ""
         self.sems = 0
         self.avg_std = 0
         self.next_sem = 0
-        self.timings = [[],[]]
-    
+        self.timings = [[], []]
+
     def add_term(self, term):
         self.terms.append(term)
 
@@ -41,8 +42,10 @@ class Instructor:
         return self.terms[-1]
 
     def __lt__(self, other):
-        if self.rating == other.rating: return self.sems < other.sems
-        else: return self.rating < other.rating
+        if self.rating == other.rating:
+            return self.sems < other.sems
+        else:
+            return self.rating < other.rating
 
     def rate(self):
         factor = 10
@@ -60,7 +63,7 @@ class Instructor:
         grades1 = [0]*13
         grades2 = [0]*13
         for term in self.terms:
-            if(int(term.term[-4:])>=(curr_year-grey)):
+            if(int(term.term[-4:]) >= (curr_year-grey)):
                 grades1 = [grades1[j] + int(term.grade_dist[j]) for j in range(13)]
                 total1 += term.total_students
             else:
@@ -72,9 +75,9 @@ class Instructor:
             rating1 = 100*grades1[0]/total1
             for i in range(12):
                 rating1 += (96-(diff*i))*(grades1[i+1]/total1)
-        
+
         if(total2 != 0):
-            rating2 = 100*grades2[0]/total2 
+            rating2 = 100*grades2[0]/total2
             for i in range(12):
                 rating2 += (96-(diff*i))*(grades2[i+1]/total2)
         if rating1 == 0: rating1 = rating2
@@ -84,7 +87,7 @@ class Instructor:
         self.rating = round(self.rating, 2)
         self.rating = min(100, self.rating)
         self.rating = max(0, self.rating)
-    
+
     def calc_data(self):
         lowest = 30000
         highest = 0
@@ -166,9 +169,10 @@ class Course:
     def add_inst(self, inst):
         self.instructors.append(inst)
         self.instructor_names.append(inst.name)
-    
-    def equals(course):
+
+    def equals(self, course):
         flag = (self.department == c.department) and (self.name == c.name)
+        return equals
 
     def to_string(self):
         out = self.name + " " + self.desc + " " + str(self.credit) + " " + str(self.rating) + " " + str(self.sems) + " " + self.preq + ":\n"
@@ -186,6 +190,4 @@ class Course:
     def rate(self):
         total = 0
         for i in self.instructors: total += i.rating
-        self.rating = round(total/len(self.instructors), 2)
-
-    
+        self.rating = round(total/len(self.instructors), 2) 

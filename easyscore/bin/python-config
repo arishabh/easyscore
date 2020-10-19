@@ -1,4 +1,4 @@
-#!/home/rishabh/iu_prof/easyscore/bin/python
+#!/home/me/easyscore/easyscore/bin/python
 
 import sys
 import getopt

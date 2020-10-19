@@ -9,7 +9,7 @@
 		flag = 1;
 	}  
 </script>
-<title>EasyScore Results</title>
+<title>TheEasyScore Results</title>
 {% endblock %}
 {% block body %}
 <style>
@@ -19,7 +19,7 @@
 </style>
 <div class="row1" style="width: 90%"> 
     <div class='column'>
-        <a href='/'><h1 class='web-name'>EasyScore</h1></a>
+        <a href='/'><h1 class='web-name'>TheEasyScore</h1></a>
         <h1 class='result_title'>Results<br>
             <span style="font-size: 33%; cursor: auto; color: black;">Next semester instructor</span>
             <span style="font-size: 40%; cursor: auto;">**</span>
@@ -145,7 +145,7 @@
                             </div>
                             <div class="form-item-input">
                                 <select name="next_sem" id="next_sem">
-                                    <option value="0">All past semesters</option><option value="1">Fall 2020 Courses only</option>			
+					<option value="0">All past semesters</option><option value="1">{{ next_sem_name }} Courses only</option>			
                                 </select>
                             </div>
                         </div>
@@ -232,10 +232,6 @@
                 {{ course.preq }}
         </div>
         {% endif %}
-        {% if course.instructors == [] %}
-        <div class="column11" style="width: 75%;">
-            <strong><p class='teacher' style="color: black; font-size: 15px; text-indent: 0;">The Instructor/s teaching this course next semester have not taught this course before</p></strong></div>
-        {% else %}
         {% for i in course.instructors %}
             <div class="column11">
                 <input type='submit' form='form' value='{{ i.name }} ({{ i.range }}, {{ i.sems }} sem.){% if i.next_sem == 1 %}**{% endif %}' class="teacher" id="teacher" onclick="inst(this.value)"> 
@@ -270,7 +266,6 @@
                 <p id="myBar" class='bar'></p>
             </div>
         {% endfor %}
-        {% endif %}
     </div>
     <hr>
 {% endfor %}

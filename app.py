@@ -1,7 +1,8 @@
 from flask import Flask, render_template, request
 from search import search_all
-from general import credits_inv
+from general import credits_inv, next_sem_name
 from datetime import datetime
+print(next_sem_name)
 
 app = Flask(__name__)
 
@@ -25,9 +26,9 @@ def index():
         all_courses = search_all(dep, sub, code, inst, req, level, cr, next_sem, keyword, timing, days)
         if len(all_courses)>40:
             all_courses = all_courses[:40]
-        return render_template('result.html', all_courses=all_courses, credits_inv=credits_inv, inp=[dep, req, sub, code, inst, cr, level, int(next_sem), keyword, timing, days])
+        return render_template('result.html', all_courses=all_courses, credits_inv=credits_inv, inp=[dep, req, sub, code, inst, cr, level, int(next_sem), keyword, timing, days], next_sem_name=next_sem_name)
     else:
-        return render_template('index.html')
+        return render_template('index.html', next_sem_name=next_sem_name)      
 
 @app.route('/result', methods=['POST', 'GET'])
 def output():
@@ -48,7 +49,7 @@ def output():
         all_courses = search_all(dep, sub, code, inst, req, level, cr, next_sem, keyword, timing, days)
         if len(all_courses)>40:
             all_courses = all_courses[:40]
-        return render_template('result.html', all_courses=all_courses, credits_inv=credits_inv, inp=[dep, req, sub, code, inst, cr, level, int(next_sem), keyword, timing, days])
+        return render_template('result.html', all_courses=all_courses, credits_inv=credits_inv, inp=[dep, req, sub, code, inst, cr, level, int(next_sem), keyword, timing, days], next_sem_name=next_sem_name)
     else:
         return render_template('result.html')
 

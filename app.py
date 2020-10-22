@@ -1,7 +1,8 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, redirect, url_for
 from search import search_all
 from general import credits_inv, next_sem_name
 from datetime import datetime
+from ast import literal_eval
 print(next_sem_name)
 
 app = Flask(__name__)
@@ -21,17 +22,34 @@ def index():
         timing = str(request.form['timing'])
         days = list(map(str, request.form.getlist("day")))
         next_sem = str(request.form['next_sem'])
+
+        search_query = "&&".join([keyword, dep, req, sub, code, inst, cr, level, timing, str(days), next_sem])
+        search_query.replace(' ', '$')
+        url = '/results&searchquery=' + search_query
+        return redirect(url)
+    else:
+        return render_template('index.html', next_sem_name=next_sem_name)      
+
+@app.route('/results&searchquery=<query>', methods=['POST', 'GET'])
+def output(query):
+    if query:
+        elements = query.split("&&")
+        keyword = elements[0].replace("$", " ")
+        dep = elements[1].replace("$", " ")
+        req = elements[2].replace("$", " ")
+        sub = elements[3].replace("$", " ")
+        code = elements[4].replace("$", " ")
+        inst = elements[5].replace("$", " ")
+        cr = elements[6].replace("$", " ")
+        level = elements[7].replace("$", " ")
+        timing = elements[8].replace("$", " ")
+        days = literal_eval(elements[9].replace("$", " "))
+        next_sem = elements[10].replace("$", " ")
         with open("info/misc/search.txt", "a+") as f:
             f.write(str(datetime.now().strftime("%d/%m/%Y %H:%M:%S")) + "\t" + dep + "\t" + req + "\t" + sub + "\t" + code + "\t" + inst + "\t" + cr + "\t" + level + "\t" + str(next_sem) + "\n")
         all_courses = search_all(dep, sub, code, inst, req, level, cr, next_sem, keyword, timing, days)
         if len(all_courses)>40:
             all_courses = all_courses[:40]
-        return render_template('result.html', all_courses=all_courses, credits_inv=credits_inv, inp=[dep, req, sub, code, inst, cr, level, int(next_sem), keyword, timing, days], next_sem_name=next_sem_name)
-    else:
-        return render_template('index.html', next_sem_name=next_sem_name)      
-
-@app.route('/result', methods=['POST', 'GET'])
-def output():
     if request.method == 'POST':
         keyword = str(request.form['keyword'])
         dep = str(request.form['dept'])
@@ -44,14 +62,13 @@ def output():
         timing = str(request.form['timing'])
         days = list(map(str, request.form.getlist("day")))
         next_sem = (request.form['next_sem'])
-        with open("info/misc/search.txt", "a+") as f:
-            f.write(str(datetime.now().strftime("%d/%m/%Y %H:%M:%S")) + "\t" + dep + "\t" + req + "\t" + sub + "\t" + code + "\t" + inst + "\t" + cr + "\t" + level + "\t" + str(next_sem) + "\n")
-        all_courses = search_all(dep, sub, code, inst, req, level, cr, next_sem, keyword, timing, days)
-        if len(all_courses)>40:
-            all_courses = all_courses[:40]
-        return render_template('result.html', all_courses=all_courses, credits_inv=credits_inv, inp=[dep, req, sub, code, inst, cr, level, int(next_sem), keyword, timing, days], next_sem_name=next_sem_name)
+
+        search_query = "&&".join([keyword, dep, req, sub, code, inst, cr, level, timing, str(days), next_sem])
+        search_query.replace(' ', '$')
+        url = '/results&searchquery=' + search_query
+        return redirect(url)
     else:
-        return render_template('result.html')
+        return render_template('result.html', all_courses=all_courses, credits_inv=credits_inv, inp=[dep, req, sub, code, inst, cr, level, int(next_sem), keyword, timing, days], next_sem_name=next_sem_name)
 
 
 @app.route('/mobile', methods=['POST', 'GET'])

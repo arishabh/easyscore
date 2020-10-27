@@ -140,8 +140,8 @@ class Course:
         self.preq = ''
         self.url= ''
         self.cr = 0
-        self.next_sem = 0;
-        self.new_teacher = 0;
+        self.next_sem = 0
+        self.new_teacher = 0
     
     def __lt__(self, other):
         if (self.rating == other.rating):
@@ -171,8 +171,8 @@ class Course:
         self.instructor_names.append(inst.name)
 
     def equals(self, course):
-        flag = (self.department == c.department) and (self.name == c.name)
-        return equals
+        flag = (self.department == course.department) and (self.name == course.name)
+        return flag
 
     def to_string(self):
         out = self.name + " " + self.desc + " " + str(self.credit) + " " + str(self.rating) + " " + str(self.sems) + " " + self.preq + ":\n"

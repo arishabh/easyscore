@@ -67,7 +67,9 @@ def search_all(dep='', sub='', code='', inst='', credit='', level='', cr='', nex
                 for x in f: filtered2[-1] += '\t' + x
             filtered = filtered2
     
-    if(keyword != ''): filtered=list(filter(lambda x: (all(str.upper(word) in x.split('|')[3] for word in keyword.split())), filtered))
+    if(keyword != ''): 
+        keyword = keyword.replace("-", " ") 
+        filtered=list(filter(lambda x: (all(str.upper(word) in str.upper(x.split('|')[3]) or str.upper(word) in str.upper(x.split('|')[0]) or str.upper(word) in str.upper(x.split('|')[1])  or str.upper(word) in str.upper(x.split('|')[2])for word in keyword.split())), filtered))
     
     for raw in filtered:
         raw1 = raw.split('\t')

@@ -22,7 +22,7 @@ def index():
         url = '/results&searchquery=' + search_query
         return redirect(url)
     else:
-        return render_template('index.html', next_sem_name=next_sem_name)      
+        return render_template('index.html', next_sem_name=next_sem_name)
 
 @app.route('/results&searchquery=<query>', methods=['POST', 'GET'])
 def output(query):
@@ -31,10 +31,10 @@ def output(query):
         query = query.replace("=", ":")
         query = query.replace('_', ' ')
         elements = literal_eval("{" + query + "}")
-        print(elements)
         keyword = elements.get("keyword")
         dep = elements.get("dept")
         req = elements.get("requirement")
+        elements["requirement"] = credits_inv[int(req)]
         sub = elements.get("subject")
         code = elements.get("code")
         inst = elements.get("instrname")
@@ -43,9 +43,8 @@ def output(query):
         timing = elements.get("timing")
         days = elements.get("days")
         next_sem = elements.get("next sem")
-        print(next_sem)
         with open("info/misc/search.txt", "a+") as f:
-            f.write(str(datetime.now().strftime("%d/%m/%Y %H:%M:%S")) + "\t" + dep + "\t" + req + "\t" + sub + "\t" + code + "\t" + inst + "\t" + cr + "\t" + level + "\t" + str(next_sem) + "\n")
+            f.write(str(datetime.now().strftime("%d/%m/%Y %H:%M:%S")) + str(elements))
         all_courses = search_all(dep, sub, code, inst, req, level, cr, next_sem, keyword, timing, days)
         if len(all_courses)>40:
             all_courses = all_courses[:40]
@@ -62,54 +61,6 @@ def output(query):
         return redirect(url)
     else:
         return render_template('result.html', all_courses=all_courses, credits_inv=credits_inv, inp=[dep, req, sub, code, inst, cr, level, int(next_sem), keyword, timing, days], next_sem_name=next_sem_name)
-
-
-@app.route('/mobile', methods=['POST', 'GET'])
-def mobile():
-    if request.method == 'POST':
-        keyword = str(request.form['keyword'])
-        dep = str(request.form['dept'])
-        req = str(request.form['requirement'])
-        sub = str(request.form['subject'])
-        code = str(request.form['code'])
-        inst = str(request.form['instrname'])
-        cr = str(request.form['credit'])
-        level = str(request.form['level'])
-        timing = str(request.form['timing'])
-        days = map(str, request.form.getlist("day"))
-        next_sem = str(request.form['next_sem'])
-        with open("info/misc/search.txt", "a+") as f:
-            f.write(str(datetime.now().strftime("%d/%m/%Y %H:%M:%S")) + "\t" + dep + "\t" + req + "\t" + sub + "\t" + code + "\t" + inst + "\t" + cr + "\t" + level + "\t" + str(next_sem) + "\n")
-        all_courses = search_all(dep, sub, code, inst, req, level, cr, next_sem, keyword, timing, days)
-        if len(all_courses)>40:
-            all_courses = all_courses[:40]
-        return render_template('mobile_result.html', all_courses=all_courses, credits_inv=credits_inv, inp=[dep, req, sub, code, inst, cr, level, int(next_sem), keyword, timing, days])
-    else:
-        return render_template('mobile.html')
-
-
-@app.route('/mobile_result', methods=['POST', 'GET'])
-def mobile_output():
-    if request.method == 'POST':
-        keyword = request.form['keyword']
-        dep = request.form['dept']
-        req = request.form['requirement']
-        sub = request.form['subject']
-        code = request.form['code']
-        inst = request.form['instrname']
-        cr = request.form['credit']
-        level = request.form['level']
-        timing = request.form['timing']
-        days = request.form.getlist("day")
-        next_sem = request.form['next_sem']
-        with open("info/misc/search.txt", "a+") as f:
-            f.write(str(datetime.now().strftime("%d/%m/%Y %H:%M:%S")) + "\t" + dep + "\t" + req + "\t" + sub + "\t" + code + "\t" + inst + "\t" + cr + "\t" + level + "\t" + str(next_sem) + "\n")
-        all_courses = search_all(dep, sub, code, inst, req, level, cr, next_sem, keyword, timing, days)
-        if len(all_courses)>40:
-            all_courses = all_courses[:40]
-        return render_template('mobile_result.html', all_courses=all_courses, credits_inv=credits_inv, inp=[dep, req, sub, code, inst, cr, level, int(next_sem), keyword, timing, days])
-    else:
-        return render_template('mobile_result.html')
 
 if __name__ == "__main__":
     app.run(debug=True)

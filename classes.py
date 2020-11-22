@@ -1,3 +1,5 @@
+import json
+
 class Term:
     def __init__(self, name):
         self.term = name
@@ -19,8 +21,15 @@ class Term:
     def to_string(self):
         return ("\t\t" + self.term + " - " + str(self.sect_desc) + " - " + str(self.total_students) + " " + str(self.grades_perc) + " " + str(self.grade_dist) + " CGPA: " + str(self.cum_gpa) + " Sect: " + str(self.sect_gpa) + "\n")
 
-    def to_string2(self):
-        return ("\z" + self.term + "|" + str(self.sect_desc) + "|" + str(self.total_students) + "|" + str(self.grades_perc) + "|" + str(self.grade_dist) + "|" + str(self.cum_gpa) + "|" + str(self.sect_gpa))
+    def to_json(self):
+        output = {"term": self.term, 
+                "section_description": self.sect_desc,
+                "total_students": self.total_students,
+                "grade_percentage": self.grades_perc,
+                "grade_distribution": self.grade_dist,
+                "cumilative_gpa": self.cum_gpa,
+                "section_gpa": self.sect_gpa}
+        return json.dumps(output)
 
 
 class Instructor:
@@ -120,11 +129,22 @@ class Instructor:
             out += term.to_string()
         return out
 
-    def to_string2(self):
-        out = "\t" + str(self.name) + "|" + str(self.rating) + "|" + str(self.avg_grades) + "|" + self.range + "|" + str(self.sems) + "|" + str(self.avg_std) + '|' + str(self.next_sem) + '|' + str(self.timings)
+    def to_json(self):
+        output = {"name": self.name, 
+                "rating": self.rating, 
+                "average_grades": self.avg_grades, 
+                "years_taught": self.range, 
+                "semesters_taught": self.sems,
+                "average_number_of_students": self.avg_std,
+                "is_teaching_next_sem": self.next_sem,
+                "timings": self.timings,
+                "past_terms": []}
         for term in self.terms:
-            out += term.to_string2()
-        return out
+            output["past_terms"].append(json.loads(term.to_json()))
+        
+        return json.dumps(output)
+
+
 class Course:
     def __init__(self):
         self.sub = ""
@@ -137,11 +157,11 @@ class Course:
         self.credit = []
         self.rating = 0
         self.sems = 0
-        self.preq = ''
+        self.notes = ''
         self.url= ''
         self.cr = 0
         self.next_sem = 0
-        self.new_teacher = 0
+        self.new_instructor = 0
     
     def __lt__(self, other):
         if (self.rating == other.rating):
@@ -175,17 +195,31 @@ class Course:
         return flag
 
     def to_string(self):
-        out = self.name + " " + self.desc + " " + str(self.credit) + " " + str(self.rating) + " " + str(self.sems) + " " + self.preq + ":\n"
+        out = self.name + " " + self.desc + " " + str(self.credit) + " " + str(self.rating) + " " + str(self.sems) + " " + self.notes + ":\n"
         for inst in self.instructors:
             out += inst.to_string()
         return out
 
-    def to_string2(self):
-        out = self.department + "|" + self.sub + "|" + str(self.code) + "|" + self.desc + "|" + self.name + "|" + str(self.credit) + "|" + str(self.rating) + "|" + str(self.sems) + "|" + self.preq + '|' + self.url + "|" + str(self.cr) + "|" + str(self.next_sem) + '|' + str(self.new_teacher)
+    def to_json(self):
+        output = {"full_code": self.name,
+                "department": self.department,
+                "subject": self.sub,
+                "code": self.code,
+                "name": self.desc,
+                "credits": self.cr,
+                "credits_fulfilled": self.credit,
+                "rating": self.rating,
+                "semesters_taught": self.sems,
+                "notes": self.notes,
+                "url": self.url,
+                "taught_next_semester": self.next_sem,
+                "new_instructor": self.new_instructor,
+                "instructors": []}
+
         for inst in self.instructors:
-            out += inst.to_string2()
-        out += "\n"
-        return out
+            output["instructors"].append(json.loads(inst.to_json()))
+
+        return json.dumps(output)
 
     def rate(self):
         total = 0

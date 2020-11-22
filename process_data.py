@@ -6,7 +6,7 @@ all_course_names = []
 data = []
 black_list = []
 course_credits = {}
-course_preqs = {}
+course_notes = {}
 course_urls = {}
 course_cr = {}
 course_next_sem = {}
@@ -14,11 +14,11 @@ instruct = {}
 timings = {}
 all_scores = []
 
-with open(course_file, "r") as f:
+with open(scrape_file, "r") as f:
     for line in f:
         d = line[:-1].split('\t')
         course_credits[d[0]] = literal_eval(d[1])
-        course_preqs[d[0]] = d[2]
+        course_notes[d[0]] = d[2]
         course_urls[d[0]] = d[3]
         course_cr[d[0]] = d[4]
         course_next_sem[d[0]] = d[5]
@@ -81,11 +81,11 @@ for c in all_courses:
         except:
             i.timings = [[],[]]
     c.credit = course_credits[c.name]
-    c.preq = course_preqs[c.name]
+    c.preq = course_notes[c.name]
     c.url = course_urls[c.name]
     c.cr = course_cr[c.name]
     c.next_sem = course_next_sem[c.name]
-    if(instruct[c.name] == []): c.new_teacher = 1
+    if(instruct[c.name] == []): c.new_instructor = 1
     c.instructors.sort(reverse=True)
     c.rate()
 
@@ -101,8 +101,8 @@ with open(main_file, "w+") as f:
     for course in all_courses:
         f.write(course.to_string())
 
-with open(scrape_file, "w+") as f:
+with open(final_file, "w+") as f:
     for course in all_courses:
-        f.write(course.to_string2())
+        f.write(course.to_json())
     
 print("time taken: " +str(time()-start))

@@ -1,19 +1,19 @@
 from process_data import all_courses
+import json
 from general import *
 
 a = []
 black = []
 black_file = open(black_list_file, 'w')
-credit_file = open(course_file, 'w')
-url = [next_sem, last_sem, last_last_sem]
+scrape_file = open(scrape_file, 'w')
+urls = [next_sem, last_sem, last_last_sem]
 
 print(len(all_courses))
-for i in range(len(all_courses)):
+online = 'ARR'
+for i, c in enumerate(all_courses):
     flag = False
-    online = 'ARR'
-    c = all_courses[i]
     credit = []
-    preq = ''
+    notes = ''
     instruct = []
     seen = []
     cr = 0
@@ -23,20 +23,20 @@ for i in range(len(all_courses)):
     elif(c.code >= 300 and c.code <= 399): credit.append(credits['300+'])
     elif(c.code >= 400 and c.code <= 499): credit.append(credits['400+'])
     elif(c.code >= 500): credit.append(credits['Grad'])
-    for i in range(len(url)):
-        u = url[i][0] + c.department + "/" + c.name + url[i][1]
+    for i, url in enumerate(urls):
+        u = url[0] + c.department + "/" + c.name + url[1]
         b = bs(get(u).content, "lxml").findAll("pre")
         if (b != []):
             timing_flag = True
             flag = True
             # with open(courses_folder_path+c.name, "w+") as f: f.write(b[1].get_text())
-            sem = 1 if(url[0][0].split('/')[-2] in u) else 0
-            cr = b[1].findChild().get_text().split('(')[1][:-4].split('-')[-1]
+            sem = 1 if(url[0].split('/')[-2] in u) else 0
+            cr = int(b[1].findChild().get_text().split('(')[1][:-4].split('-')[-1])
             b = b[1].get_text().split("\r\n")
             for cont in b:
                 st = cont.strip()
                 st2 = st.split()
-                if(url[0][0].split('/')[-2] in u):
+                if(url[0].split('/')[-2] in u):
                     try:
                         int(st2[-1]); int(st2[-2]); int(st2[-3])
                         inst = st2[-5:-3]
@@ -86,17 +86,25 @@ for i in range(len(all_courses)):
                 elif('English Composition' in st): credit.append(6)
                 elif('Mathematical Modeling' in st): credit.append(7)
                 elif('Intensive Writing' in st): credit.append(11)
-                if ((st.startswith(c.sub[-1] + " " + str(c.code))) or (st.startswith(c.sub[-1] + str(c.code) + ":"))) and (preq == ""):
+                if ((st.startswith(c.sub[-1] + " " + str(c.code))) or (st.startswith(c.sub[-1] + str(c.code) + ":"))) and (notes == ""):
                     st2 = ":".join(st.split(':')[1:])
-                    preq = st2[1:]
+                    notes = st2[1:]
                     n = b[b.index(cont)+1].strip()
                     try:
                         if (str.islower(n[0]) or (type(st2[-1]) == int) or (st2.endswith('or')) or (st2.endswith('and'))):
-                            preq += ' ...'
-                    except: preq = preq
+                            notes += ' ...'
+                    except: notes = notes
             
             break
     if(not flag): black_file.write(c.name + "\n")
-    credit_file.write(c.name + '\t' + str(list(set(credit))) + "\t" + preq + "\t" + u + "\t" + str(cr) + "\t" + str(sem) + "\t" + str(instruct) + "\t" + str(timings) + "\n")
-    print(all_courses.index(c))
 
+    output = {"course_name":c.name, 
+            "credits_fulfilled": list(set(credit)), 
+            "notes": notes, "url": u, 
+            "number_credits": cr, 
+            "next_sem": sem, 
+            "instructors": instruct, 
+            "timings": timings} # making dictionary for the json output
+
+    scrape_file.write(json.dumps(output))
+    print(all_courses.index(c))

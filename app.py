@@ -1,8 +1,8 @@
-from flask import Flask, render_template, request, redirect, url_for
-from search import search_all
-from general import credits_inv, next_sem_name
 from datetime import datetime
 from ast import literal_eval
+from flask import Flask, render_template, request, redirect
+from search import search_all
+from general import credits_inv, next_sem_name
 print(next_sem_name)
 
 app = Flask(__name__)
@@ -21,8 +21,7 @@ def index():
         search_query = search_query.replace(' ', '_')
         url = '/results&searchquery=' + search_query
         return redirect(url)
-    else:
-        return render_template('index.html', next_sem_name=next_sem_name)
+    return render_template('index.html', next_sem_name=next_sem_name)
 
 @app.route('/results&searchquery=<query>', methods=['POST', 'GET'])
 def output(query):
@@ -59,8 +58,7 @@ def output(query):
         search_query = search_query.replace(' ', '_')
         url = '/results&searchquery=' + search_query
         return redirect(url)
-    else:
-        return render_template('result.html', all_courses=all_courses, credits_inv=credits_inv, inp=[dep, req, sub, code, inst, cr, level, int(next_sem), keyword, timing, days], next_sem_name=next_sem_name)
+    return render_template('result.html', all_courses=all_courses, credits_inv=credits_inv, inp=[dep, req, sub, code, inst, cr, level, int(next_sem), keyword, timing, days], next_sem_name=next_sem_name)
 
 if __name__ == "__main__":
     app.run(debug=True)

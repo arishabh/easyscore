@@ -5,8 +5,9 @@ from bs4 import BeautifulSoup as bs
 from time import time
 from statistics import mean, median, stdev
 from ast import literal_eval
+import json
 
-VERSION = "v10"
+VERSION = "v11"
 
 credits = {'A&H Breadth of Inquiry credit':0,
         'Diversity in U.S. credit':1,
@@ -43,8 +44,8 @@ total_files = 11
 raw_data_file = path+"raw_data/"
 main_file = path+"data/data_"+VERSION+".txt"
 stat_file = path+"stat/stat_"+VERSION+".txt"
+final_file = path+"final/final_"+VERSION+".txt"
 scrape_file = path+"scrape/scrape_"+VERSION+".txt"
-course_file = path+"misc/course.txt"
 black_list_file = path+"misc/black_list.txt"
 teachers_name_file = path+"misc/teachers_name.txt"
 searches_file = "info/misc/search.txt"
@@ -54,4 +55,4 @@ courses_folder_path='info/courses'
 next_sem = ["https://utilities.registrar.indiana.edu/course-browser/prl/soc4208/", ".shtml"]
 last_sem = ["https://utilities.registrar.indiana.edu/course-browser/prl/soc4205/", ".shtml"]
 last_last_sem = ["https://utilities.registrar.indiana.edu/course-browser/prl/soc4202/", ".shtml"]
-nxt_sem_name = "Fall 2020"
+next_sem_name = "Spring 2021"

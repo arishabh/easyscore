@@ -34,7 +34,6 @@ def output(query):
         keyword = elements.get("keyword")
         dep = elements.get("dept")
         req = elements.get("requirement")
-        print("husneoasuhsao",req)
         elements["requirement"] = credits_inv[int(req)] if req else ''
         sub = elements.get("subject")
         code = elements.get("code")

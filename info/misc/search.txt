@@ -5538,3 +5538,4 @@
 24/11/2020 22:13:05					margaret graves			0
 24/11/2020 22:14:41			arth-a	226				0
 24/11/2020 22:20:14			hist-d	200				0
+25/11/2020 11:37:18{'keyword': 'math', 'subject': '', 'code': '', 'instrname': '', 'requirement': '', 'dept': '', 'level': '', 'credit': '', 'timing': '', 'next sem': '0', 'days': []}

@@ -6,6 +6,7 @@ from ast import literal_eval
 print(next_sem_name)
 
 app = Flask(__name__)
+app.debug = True
 
 
 @app.route('/',methods=['POST', 'GET'])

@@ -4,49 +4,34 @@ from process_data import all_courses
 
 final_courses = []
 black_list = []
-course_credits = {}
-course_notes = {}
-course_urls = {}
-course_cr = {}
-course_next_sem = {}
-instruct = {}
-timings = {}
 all_scores = []
 
 all_info = []
 
-with open(path+"scrape/scrape_v10.txt", "r") as f:
-    for line in f:
-        d = line[:-1].split('\t')
-        all_info.append(d)
-        course_credits[d[0]] = literal_eval(d[1])
-        course_notes[d[0]] = d[2]
-        course_urls[d[0]] = d[3]
-        course_cr[d[0]] = float(d[4])
-        course_next_sem[d[0]] = int(d[5])
-        instruct[d[0]] = literal_eval(d[6])
-        timings[d[0]] = literal_eval(d[7])
+with open(scrape_file, "r") as f:
+    all_info = json.load(f)
 
 with open(black_list_file, "r") as f:
     black_list = [l.strip("\n") for l in f]
 
 for c in all_courses:
-    if c.name not in instruct: continue
+    if c.name in black_list: continue
+    this_info = all_info[c.name]
     for i in c.instructors:
         i.calc_data()
         all_scores.append(i.rating)
         c.sems += len(i.terms)
-        if(i.name in instruct[c.name]): i.next_sem = 1
+        if(i.name in this_info["instructors"]): i.next_sem = 1
         try:
-            i.timings = timings[c.name][i.name] 
+            i.timings = this_info["timings"][i.name] 
         except:
             i.timings = [[],[]]
-    c.credit = course_credits[c.name]
-    c.preq = course_notes[c.name]
-    c.url = course_urls[c.name]
-    c.cr = course_cr[c.name]
-    c.next_sem = course_next_sem[c.name]
-    if(instruct[c.name] == []): c.new_instructor = 1
+    c.credit = this_info["credits_fulfilled"]
+    c.preq = this_info["notes"]
+    c.url = this_info["url"]
+    c.cr = this_info["number_credits"]
+    c.next_sem = this_info["next_sem"]
+    if(this_info[c.name] == []): c.new_instructor = 1
     c.instructors.sort(reverse=True)
     c.rate()
     final_courses.append(c)
@@ -63,6 +48,6 @@ with open(final_file, "w+") as f:
     json_data = {"courses": []}
     for course in all_courses:
         json_data["courses"].append(json.loads(course.to_json()))
-    json.dump(json_data, f, indent=2, sort_keys=True)
+    json.dump(json_data, f, indent=1)
     
 print("time taken: " +str(time()-start))

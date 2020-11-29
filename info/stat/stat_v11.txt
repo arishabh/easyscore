@@ -3,4 +3,4 @@ Max: 100
 Min: 0
 Median: 82.58
 Stardard Deviation: 14.245083353760021
-Time taken for program: 14.61694884300232
+Time taken for program: 13.289402484893799

@@ -40,7 +40,6 @@ credits_inv = ['A&H credit',
         'Honors']
 
 path = "info/"
-total_files = 11
 raw_data_file = path+"raw_data/"
 main_file = path+"data/data_"+VERSION+".txt"
 stat_file = path+"stat/stat_"+VERSION+".txt"
@@ -52,7 +51,7 @@ searches_file = "info/misc/search.txt"
 search_excel_file = "info/misc/searches.xls"
 courses_folder_path='info/courses'
 
-next_sem = ["https://utilities.registrar.indiana.edu/course-browser/prl/soc4208/", ".shtml"]
-last_sem = ["https://utilities.registrar.indiana.edu/course-browser/prl/soc4205/", ".shtml"]
-last_last_sem = ["https://utilities.registrar.indiana.edu/course-browser/prl/soc4202/", ".shtml"]
+next_sem = ["https://utilities.registrar.indiana.edu/course-browser/prl/soc4212/", ".shtml"]
+last_sem = ["https://utilities.registrar.indiana.edu/course-browser/prl/soc4208/", ".shtml"]
+last_last_sem = ["https://utilities.registrar.indiana.edu/course-browser/prl/soc4205/", ".shtml"]
 next_sem_name = "Spring 2021"

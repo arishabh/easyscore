@@ -1,14 +1,17 @@
 import json
 
 class Term:
-    def __init__(self, name):
-        self.term = name
-        self.cum_gpa = 0
-        self.sect_gpa = 0
-        self.grades_perc = []
-        self.total_students = 0
-        self.grade_dist = []
-        self.sect_desc = ""
+    def __init__(self, name="", json_inp=''):
+        if json_inp:
+            self.from_json(json_inp)
+        else:
+            self.term = name
+            self.cum_gpa = 0
+            self.sect_gpa = 0
+            self.grades_perc = []
+            self.total_students = 0
+            self.grade_dist = []
+            self.sect_desc = ""
 
     def set_all(self, gr, cum_gpa, sect_gpa, tot, grade, desc):
         self.grades_perc = gr
@@ -30,19 +33,31 @@ class Term:
                 "cumilative_gpa": self.cum_gpa,
                 "section_gpa": self.sect_gpa}
         return json.dumps(output)
-
+    
+    def from_json(self, inp):
+        inp = json.loads(inp)
+        self.term = inp.get("term")
+        self.sect_desc = inp.get("section_description")
+        self.total_students = inp.get("total_students")
+        self.grades_perc = inp.get("grade_precentage")
+        self.grade_dist = inp.get("grade_distribution")
+        self.cum_gpa = inp.get("cumilative_gpa")
+        self.sect_gpa = inp.get("section_gpa")
 
 class Instructor:
-    def __init__(self, name):
-        self.name = name
-        self.terms = []
-        self.rating = 0
-        self.avg_grades = [0, 0, 0, 0]
-        self.range = ""
-        self.sems = 0
-        self.avg_std = 0
-        self.next_sem = 0
-        self.timings = [[], []]
+    def __init__(self, name="", json_inp=''):
+        if json_inp:
+            self.from_json(json_inp)
+        else:
+            self.name = name
+            self.terms = []
+            self.rating = 0
+            self.avg_grades = [0, 0, 0, 0]
+            self.range = ""
+            self.sems = 0
+            self.avg_std = 0
+            self.next_sem = 0
+            self.timings = [[], []]
 
     def add_term(self, term):
         self.terms.append(term)
@@ -51,10 +66,15 @@ class Instructor:
         return self.terms[-1]
 
     def __lt__(self, other):
-        if self.rating == other.rating:
-            return self.sems < other.sems
-        else:
+        latest_year = int(self.range.split("-")[-1])
+        other_latest_year = int(other.range.split("-")[-1])
+        if latest_year == other_latest_year:
             return self.rating < other.rating
+        else:
+            return latest_year < other_latest_year
+    
+    def __eq__(self, other):
+        return other in self.name
 
     def rate(self):
         factor = 10
@@ -136,7 +156,7 @@ class Instructor:
                 "years_taught": self.range, 
                 "semesters_taught": self.sems,
                 "average_number_of_students": self.avg_std,
-                "is_teaching_next_sem": self.next_sem,
+                "is_teaching_next_semester": self.next_sem,
                 "timings": self.timings,
                 "past_terms": []}
         for term in self.terms:
@@ -144,24 +164,38 @@ class Instructor:
         
         return json.dumps(output)
 
+    def from_json(self, inp):
+        inp = json.loads(inp)
+        self.name = inp.get("name")
+        self.rating = inp.get("rating")
+        self.avg_grades = inp.get("average_grades")
+        self.range = inp.get("years_taught")
+        self.sems = inp.get("semesters_taught")
+        self.avg_std = inp.get("average_number_of_students")
+        self.next_sem = inp.get("is_teaching_next_semester")
+        self.timings = inp.get("timings")
+        self.terms = [Term(json_inp=term) for term in inp.get("past_sems")]
 
 class Course:
-    def __init__(self):
-        self.sub = ""
-        self.instructors = []
-        self.desc = ""
-        self.department = ""
-        self.code = 0
-        self.name = ""
-        self.instructor_names = []
-        self.credit = []
-        self.rating = 0
-        self.sems = 0
-        self.notes = ''
-        self.url= ''
-        self.cr = 0
-        self.next_sem = 0
-        self.new_instructor = 0
+    def __init__(self, json_inp=''):
+        if json_inp:
+            self.from_json(json_inp)
+        else:
+            self.sub = ""
+            self.instructors = []
+            self.desc = ""
+            self.department = ""
+            self.code = 0
+            self.name = ""
+            self.instructor_names = []
+            self.credit = []
+            self.rating = 0
+            self.sems = 0
+            self.notes = ''
+            self.url= ''
+            self.cr = 0
+            self.next_sem = 0
+            self.new_instructor = 0
     
     def __lt__(self, other):
         if (self.rating == other.rating):
@@ -219,7 +253,22 @@ class Course:
         for inst in self.instructors:
             output["instructors"].append(json.loads(inst.to_json()))
 
-        return json.dumps(output)
+    def from_json(self, inp):
+        inp = json.loads(inp)
+        self.sub = inp.get("subject")
+        self.desc = inp.get("name")
+        self.code = inp.get("code")
+        self.department = inp.get("department")
+        self.cr = inp.get("credits")
+        self.name = inp.get("full_code")
+        self.credit = inp.get("credits_fulfilled")
+        self.rating = inp.get("rating")
+        self.sems = inp.get("semesters_taught")
+        self.notes = inp.get("notes")
+        self.url = inp.get("url")
+        self.next_sem = inp.get("taught_next_semester")
+        self.new_instructor = inp.get("new_instructor")
+        self.next_sem = [Instructor(json_inp=inst) for inst in inp.get("instructors")]
 
     def rate(self):
         total = 0

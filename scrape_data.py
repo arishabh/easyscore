@@ -6,7 +6,7 @@ a = []
 black = []
 black_file = open(black_list_file, 'w')
 urls = [next_sem, last_sem, last_last_sem]
-courses_data = {"courses": []}
+courses_data = {}
 
 print(len(all_courses))
 online = 'ARR'
@@ -98,14 +98,13 @@ for i, c in enumerate(all_courses):
             break
     if(not flag): black_file.write(c.name + "\n")
 
-    output = {"course_name":c.name, 
-            "credits_fulfilled": list(set(credit)), 
+    output = {"credits_fulfilled": list(set(credit)), 
             "notes": notes, "url": u, 
             "number_credits": cr, 
             "next_sem": sem, 
             "instructors": instruct, 
             "timings": timings} # making dictionary for the json output
-    courses_data["courses"].append(output)
+    courses_data[c.name] = output
 
     print(all_courses.index(c))
 

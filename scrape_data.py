@@ -5,8 +5,8 @@ from general import *
 a = []
 black = []
 black_file = open(black_list_file, 'w')
-scrape_file = open(scrape_file, 'w')
 urls = [next_sem, last_sem, last_last_sem]
+courses_data = {"courses": []}
 
 print(len(all_courses))
 online = 'ARR'
@@ -105,6 +105,9 @@ for i, c in enumerate(all_courses):
             "next_sem": sem, 
             "instructors": instruct, 
             "timings": timings} # making dictionary for the json output
+    courses_data["courses"].append(output)
 
-    scrape_file.write(json.dumps(output))
     print(all_courses.index(c))
+
+with open(scrape_file) as f:
+    json.dump(courses_data, f, indent=4, sort_keys=True)

@@ -19,28 +19,28 @@ def search_all(dep='', sub='', code='', inst='', credit_fulfill='', level='', cr
         for course in filtered:
             flag = True
             for word in words:
-                if not ((word in course.get("name")) or (word in course.get("full_code")) or (word in course.get("instructors"))):
+                if not ((word in course["name"]) or (word in course["full_code"]) or (word in course["instructors"])):
                     flag = False
                     break
             if flag: new_filtered.append(course)
         filtered = new_filtered
 
     if(credit_fulfill and credit_fulfill != 'ANY'): 
-        filtered = list(filter(lambda d: (int(credit_fulfill) in d.get("credits_fulfilled")), filtered))
+        filtered = list(filter(lambda d: (int(credit_fulfill) in d["credits_fulfilled"]), filtered))
     if(level and level != 'ANY'): 
-        filtered = list(filter(lambda d: (int(level) in d.get("credits_fulfilled")), filtered))
+        filtered = list(filter(lambda d: (int(level) in d["credits_fulfilled"]), filtered))
 
-    if(cr and cr != "ANY"): 
+    if(cr and cr != "ANY"):
         if(float(cr) < 7):
-            filtered=list(filter(lambda x: x.get("credits") == float(cr), filtered))
+            filtered=list(filter(lambda x: x["credits"] == float(cr), filtered))
         else:
-            filtered=list(filter(lambda x: x.get("credits") >= 7, filtered))
+            filtered=list(filter(lambda x: x["credits"] >= 7, filtered))
 
     if(next_sem == '1'):
-        filtered=list(filter(lambda x: (x.get("taught_next_semester") == 1), filtered))
+        filtered=list(filter(lambda x: (x["taught_next_semester"] == 1), filtered))
         filtered2 = []
         for d in filtered:
-            filtered_inst = list(filter(lambda x: (x.get("is_teaching_next_semester") == 1), d.get("instructors")))
+            filtered_inst = list(filter(lambda x: (x["is_teaching_next_semester"] == 1), d["instructors"]))
             if not filtered_inst: continue
             d["instructors"] = filtered_inst
             filtered2.append(d)
@@ -49,7 +49,7 @@ def search_all(dep='', sub='', code='', inst='', credit_fulfill='', level='', cr
         if(timings and timings != 'ANY'):
             filtered2 = []
             for d in filtered:
-                f = list(filter(lambda x: (int(timings) in x.get("timings")[0]), d.get("instructors")))
+                f = list(filter(lambda x: (int(timings) in x["timings"][0]), d["instructors"]))
                 if not f: continue
                 d["instructors"] = f
                 filtered2.append(d)
@@ -58,7 +58,7 @@ def search_all(dep='', sub='', code='', inst='', credit_fulfill='', level='', cr
         if(days != [] and days != 'ANY'):
             filtered2 = []
             for d in filtered:
-                f = list(filter(lambda x: (any(y in x.get("timings")[1] for y in days)), d.get("instructors")))
+                f = list(filter(lambda x: (any(y in x["timings"][1] for y in days)), d["instructors"]))
                 if not f: continue
                 d["instructors"] = f
                 filtered2.append(d)

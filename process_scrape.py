@@ -15,25 +15,23 @@ all_scores = []
 
 all_info = []
 
-with open(scrape_file, "r") as f:
+with open(path+"scrape/scrape_v10.txt", "r") as f:
     for line in f:
-        d = json.loads(line[:-1].split('\t'))
-        print(d)
+        d = line[:-1].split('\t')
         all_info.append(d)
         course_credits[d[0]] = literal_eval(d[1])
         course_notes[d[0]] = d[2]
         course_urls[d[0]] = d[3]
-        course_cr[d[0]] = d[4]
+        course_cr[d[0]] = float(d[4])
         course_next_sem[d[0]] = int(d[5])
         instruct[d[0]] = literal_eval(d[6])
         timings[d[0]] = literal_eval(d[7])
 
 with open(black_list_file, "r") as f:
     black_list = [l.strip("\n") for l in f]
-    black_list = []
 
 for c in all_courses:
-    if c.name in black_list: continue
+    if c.name not in instruct: continue
     for i in c.instructors:
         i.calc_data()
         all_scores.append(i.rating)
@@ -61,12 +59,10 @@ with open(stat_file, "w+") as f:
     f.write("Stardard Deviation: " + str(stdev(all_scores)) + "\n")
     f.write("Time taken for program: " + str(time()-start)) 
 
-with open(main_file, "w+") as f:
-    for course in all_courses:
-        f.write(course.to_string())
-
 with open(final_file, "w+") as f:
+    json_data = {"courses": []}
     for course in all_courses:
-        f.write(course.to_json())
+        json_data["courses"].append(json.loads(course.to_json()))
+    json.dump(json_data, f, indent=2, sort_keys=True)
     
 print("time taken: " +str(time()-start))

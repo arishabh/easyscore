@@ -30,18 +30,18 @@ def output(query):
         query = query.replace("=", ":")
         query = query.replace('_', ' ')
         elements = literal_eval("{" + query + "}")
-        keyword = elements.get("keyword")
-        dep = elements.get("dept")
-        req = elements.get("requirement")
+        keyword = elements["keyword"]
+        dep = elements["dept"]
+        req = elements["requirement"]
         elements["requirement"] = credits_inv[int(req)]
-        sub = elements.get("subject")
-        code = elements.get("code")
-        inst = elements.get("instrname")
-        cr = elements.get("level")
-        level = elements.get("credit")
-        timing = elements.get("timing")
-        days = elements.get("days")
-        next_sem = elements.get("next sem")
+        sub = elements["subject"]
+        code = elements["code"]
+        inst = elements["instrname"]
+        cr = elements["level"]
+        level = elements["credit"]
+        timing = elements["timing"]
+        days = elements["days"]
+        next_sem = elements["next sem"]
         with open("info/misc/search.txt", "a+") as f:
             f.write(str(datetime.now().strftime("%d/%m/%Y %H:%M:%S")) + str(elements))
         all_courses = search_all(dep, sub, code, inst, req, level, cr, next_sem, keyword, timing, days)

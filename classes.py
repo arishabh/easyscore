@@ -36,13 +36,13 @@ class Term:
     
     def from_json(self, inp):
         inp = json.loads(inp)
-        self.term = inp.get("term")
-        self.sect_desc = inp.get("section_description")
-        self.total_students = inp.get("total_students")
-        self.grades_perc = inp.get("grade_precentage")
-        self.grade_dist = inp.get("grade_distribution")
-        self.cum_gpa = inp.get("cumilative_gpa")
-        self.sect_gpa = inp.get("section_gpa")
+        self.term = inp["term"]
+        self.sect_desc = inp["section_description"]
+        self.total_students = inp["total_students"]
+        self.grades_perc = inp["grade_precentage"]
+        self.grade_dist = inp["grade_distribution"]
+        self.cum_gpa = inp["cumilative_gpa"]
+        self.sect_gpa = inp["section_gpa"]
 
 class Instructor:
     def __init__(self, name="", json_inp=''):
@@ -166,15 +166,15 @@ class Instructor:
 
     def from_json(self, inp):
         inp = json.loads(inp)
-        self.name = inp.get("name")
-        self.rating = inp.get("rating")
-        self.avg_grades = inp.get("average_grades")
-        self.range = inp.get("years_taught")
-        self.sems = inp.get("semesters_taught")
-        self.avg_std = inp.get("average_number_of_students")
-        self.next_sem = inp.get("is_teaching_next_semester")
-        self.timings = inp.get("timings")
-        self.terms = [Term(json_inp=term) for term in inp.get("past_sems")]
+        self.name = inp["name"]
+        self.rating = inp["rating"]
+        self.avg_grades = inp["average_grades"]
+        self.range = inp["years_taught"]
+        self.sems = inp["semesters_taught"]
+        self.avg_std = inp["average_number_of_students"]
+        self.next_sem = inp["is_teaching_next_semester"]
+        self.timings = inp["timings"]
+        self.terms = [Term(json_inp=term) for term in inp["past_sems"]]
 
 class Course:
     def __init__(self, json_inp=''):
@@ -253,22 +253,24 @@ class Course:
         for inst in self.instructors:
             output["instructors"].append(json.loads(inst.to_json()))
 
+        return json.dumps(output)
+
     def from_json(self, inp):
         inp = json.loads(inp)
-        self.sub = inp.get("subject")
-        self.desc = inp.get("name")
-        self.code = inp.get("code")
-        self.department = inp.get("department")
-        self.cr = inp.get("credits")
-        self.name = inp.get("full_code")
-        self.credit = inp.get("credits_fulfilled")
-        self.rating = inp.get("rating")
-        self.sems = inp.get("semesters_taught")
-        self.notes = inp.get("notes")
-        self.url = inp.get("url")
-        self.next_sem = inp.get("taught_next_semester")
-        self.new_instructor = inp.get("new_instructor")
-        self.next_sem = [Instructor(json_inp=inst) for inst in inp.get("instructors")]
+        self.sub = inp["subject"]
+        self.desc = inp["name"]
+        self.code = inp["code"]
+        self.department = inp["department"]
+        self.cr = inp["credits"]
+        self.name = inp["full_code"]
+        self.credit = inp["credits_fulfilled"]
+        self.rating = inp["rating"]
+        self.sems = inp["semesters_taught"]
+        self.notes = inp["notes"]
+        self.url = inp["url"]
+        self.next_sem = inp["taught_next_semester"]
+        self.new_instructor = inp["new_instructor"]
+        self.next_sem = [Instructor(json_inp=inst) for inst in inp["instructors"]]
 
     def rate(self):
         total = 0

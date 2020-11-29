@@ -3,7 +3,6 @@ start = time()
 from process_data import all_courses
 
 final_courses = []
-data = []
 black_list = []
 course_credits = {}
 course_notes = {}

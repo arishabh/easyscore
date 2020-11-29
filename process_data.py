@@ -3,6 +3,7 @@ from os import listdir
 
 all_courses = []
 all_course_names = []
+data = []
 
 def add_instructor(data, course):
     new_inst = Instructor(data[9])

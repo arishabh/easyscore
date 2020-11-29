@@ -31,7 +31,7 @@ for i, c in enumerate(all_courses):
             flag = True
             # with open(courses_folder_path+c.name, "w+") as f: f.write(b[1].get_text())
             sem = 1 if(url[0].split('/')[-2] in u) else 0
-            cr = int(b[1].findChild().get_text().split('(')[1][:-4].split('-')[-1])
+            cr = float(b[1].findChild().get_text().split('(')[1][:-4].split('-')[-1])
             b = b[1].get_text().split("\r\n")
             for cont in b:
                 st = cont.strip()

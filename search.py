@@ -32,9 +32,9 @@ def search_all(dep='', sub='', code='', inst='', credit_fulfill='', level='', cr
 
     if(cr and cr != "ANY"): 
         if(float(cr) < 7):
-            filtered=list(filter(lambda x: float(x.split('|')[10]) == float(cr), filtered))
+            filtered=list(filter(lambda x: x.get("credits") == float(cr), filtered))
         else:
-            filtered=list(filter(lambda x: float(x.split('|')[10]) >= 7, filtered))
+            filtered=list(filter(lambda x: x.get("credits") >= 7, filtered))
 
     if(next_sem == '1'):
         filtered=list(filter(lambda x: (x.get("taught_next_semester") == 1), filtered))

@@ -64,8 +64,5 @@ def search_all(dep='', sub='', code='', inst='', credit_fulfill='', level='', cr
                 filtered2.append(d)
             filtered = filtered2
     
-    for raw in filtered:
-        all_courses.append(Course(json_inp=raw))
-    all_courses.sort(reverse=True)
     print("Time taken: " + str(time()-start)," Len: ", len(all_courses))
     return all_courses

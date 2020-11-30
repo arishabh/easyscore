@@ -12,7 +12,8 @@ print(len(all_courses))
 online = 'ARR'
 start = time()
 for i, c in enumerate(all_courses):
-    if i == 10: print("Average time remaining =", ((time()-start)*((len(all_courses)-10)/10))/60)
+    if i % 500 == 10: 
+        print("Estimated time remaining =", ((time()-start)*((len(all_courses)-i)/i))/60, "min")
     flag = False
     credit = []
     notes = ''
@@ -47,29 +48,29 @@ for i, c in enumerate(all_courses):
                                 if(inst not in seen):
                                     seen.append(inst)
                                     instruct.append(i.name)
-                                time = st2[-9]
-                                if(time != online):
+                                time_bracket = st2[-9]
+                                if(time_bracket != online):
                                     days = list(st2[-8]) if ('D' not in st2[-8]) else (list('MTWRF') + st2[-8][1:])
-                                    full = time.split('-')[0]
-                                    time = int(full[:2])
+                                    full = time_bracket.split('-')[0]
+                                    time_bracket = int(full[:2])
                                     if(full[-1] == 'A'):
-                                        if(time >= 6 and time <= 10): 
+                                        if(time_bracket >= 6 and time_bracket <= 10): 
                                             try: 
                                                 timings[i.name][0].append(1)
                                                 timings[i.name][1] += days
                                             except: timings[i.name] = [[1], days]
-                                        elif(time >= 11):
+                                        elif(time_bracket >= 11):
                                             try: 
                                                 timings[i.name][0].append(2)
                                                 timings[i.name][1] += days
                                             except: timings[i.name] = [[2], days]
                                     elif(full[-1] == 'P'):
-                                        if(time <= 4):
+                                        if(time_bracket <= 4):
                                             try: 
                                                 timings[i.name][0].append(2)
                                                 timings[i.name][1] += days
                                             except: timings[i.name] = [[2], days]
-                                        elif(time >= 5 and time <= 11):
+                                        elif(time_bracket >= 5 and time_bracket <= 11):
                                             try: 
                                                 timings[i.name][0].append(3)
                                                 timings[i.name][1] += days
@@ -110,5 +111,5 @@ for i, c in enumerate(all_courses):
 
     print(all_courses.index(c))
 
-with open(scrape_file) as f:
+with open(scrape_file, "w+") as f:
     json.dump(courses_data, f, indent=4, sort_keys=True)

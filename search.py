@@ -1,13 +1,11 @@
 from classes import *
 from general import *
 
-all_courses = []
 filtered = []
 with open(final_file, "r") as f:
-    for line in f:
-        filtered.append(json.loads(line))
+    filtered = json.load(f)["courses"]
 
-def search_all(dep='', sub='', code='', inst='', credit_fulfill='', level='', cr='', next_sem='', keyword='', timings='', days=[], filtered=filtered):
+def search_all(credit_fulfill='', level='', cr='', next_sem='', keyword='', timings='', days=[], filtered=filtered):
     all_courses = []
     start = time()
     if(timings or days): next_sem = '1'
@@ -15,18 +13,18 @@ def search_all(dep='', sub='', code='', inst='', credit_fulfill='', level='', cr
     # keyword search: Course name, course code, instructor (first and last) name
     if keyword:
         new_filtered = []
-        words = keyword.split()
+        words = keyword.lower().split()
         for course in filtered:
-            flag = True
             for word in words:
-                if not ((word in course["name"]) or (word in course["full_code"]) or (word in course["instructors"])):
-                    flag = False
+                word = word.strip()
+                if not((word in course["name"].lower()) or (word in course["full_code"].lower()) or any(word in i["name"] for i in course["instructors"])):
                     break
-            if flag: new_filtered.append(course)
+            else: new_filtered.append(course)
         filtered = new_filtered
 
     if(credit_fulfill and credit_fulfill != 'ANY'): 
         filtered = list(filter(lambda d: (int(credit_fulfill) in d["credits_fulfilled"]), filtered))
+
     if(level and level != 'ANY'): 
         filtered = list(filter(lambda d: (int(level) in d["credits_fulfilled"]), filtered))
 
@@ -64,5 +62,5 @@ def search_all(dep='', sub='', code='', inst='', credit_fulfill='', level='', cr
                 filtered2.append(d)
             filtered = filtered2
     
-    print("Time taken: " + str(time()-start)," Len: ", len(all_courses))
-    return all_courses
+    print("Time taken: " + str(time()-start)," Len: ", len(filtered))
+    return {"courses": filtered}

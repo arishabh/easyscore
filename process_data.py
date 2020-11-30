@@ -22,12 +22,14 @@ def add_term(data, inst):
 for csv_file in listdir(raw_data_file):
     info = read_csv(raw_data_file+csv_file, low_memory=False, header=0).values
     for raw_data in info:
+        data=[]
         for elem in raw_data:
             try:
                 data.append(elem.strip())
             except:
                 data.append(elem)
         name = data[5]+str(data[6])
+        if type(data[9]) == float: continue
         if(data[10]>5):
             if(name not in all_course_names):
                 all_course_names.append(name)
@@ -44,5 +46,3 @@ for csv_file in listdir(raw_data_file):
                 else:
                     ind2 = c.instructor_names.index(data[9])
                     all_courses[ind].instructors[ind2] = add_term(data, all_courses[ind].instructors[ind2])
-        data = []
-

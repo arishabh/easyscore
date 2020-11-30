@@ -35,6 +35,7 @@ for c in all_courses:
     c.instructors.sort(reverse=True)
     c.rate()
     final_courses.append(c)
+final_courses.sort(reverse=True)
 
 with open(stat_file, "a+") as f:
     f.write("Mean: " + str(mean(all_scores)) + "\n")
@@ -46,7 +47,7 @@ with open(stat_file, "a+") as f:
 
 with open(final_file, "w+") as f:
     json_data = {"courses": []}
-    for course in all_courses:
+    for course in final_courses:
         json_data["courses"].append(json.loads(course.to_json()))
     json.dump(json_data, f)
     

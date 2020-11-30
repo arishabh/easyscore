@@ -2,7 +2,7 @@ from pandas import read_csv
 from classes import *
 from requests import get
 from bs4 import BeautifulSoup as bs
-from time import time
+from time import time, sleep
 from statistics import mean, median, stdev
 from ast import literal_eval
 import json

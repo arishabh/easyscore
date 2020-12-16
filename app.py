@@ -53,7 +53,7 @@ def output(query):
         search_query = search_query.replace(' ', '_')
         url = '/results&searchquery=' + search_query
         return redirect(url)
-    return render_template('result.html', all_courses=all_courses, credits_inv=credits_inv, inp=[dep, cr_fullfil, sub, code, inst, cr, level, next_sem, keyword, timing, days], next_sem_name=next_sem_name)
+    return render_template('result.html', all_courses=all_courses, credits_inv=credits_inv, inp=[cr_fullfil, cr, level, next_sem, keyword, timing, days], next_sem_name=next_sem_name)
 
 @app.route('/results&jsonquery=<query>', methods=['GET'])
 def json_output(query):

@@ -31,39 +31,6 @@
 		
 	<div class="grid thirds">	
 	
-		<div class="grid-item">
-			<div class="form-item">
-				<div class="form-item-label">
-					<label for="subject"></label>
-				</div>
-				<div class="form-item-input">
-					<input type="text" name="subject" id="subject" value="" placeholder="Enter course subject (CSCI-C or C)">
-
-				</div>
-			</div>
-		</div>
-				<div class="grid-item">
-			<div class="form-item">
-				<div class="form-item-label">
-					<label for="number"></label>
-				</div>
-				<div class="form-item-input">
-					<input type="text" name="code" id="code" value="" placeholder="Enter course number (212)">
-
-				</div>
-			</div>
-		</div>
-				<div class="grid-item">
-			<div class="form-item">
-				<div class="form-item-label">
-					<label for="name"></label>
-				</div>
-				<div class="form-item-input">
-					<input type="text" name="instrname" id="instrname" value="" placeholder="Enter teacher name (Albus Dumbledore or Albus)">
-				</div>
-			</div>
-		</div>
-
 			<div class="grid-item">
 			<div class="form-item">
 				<div class="form-item-label">
@@ -210,12 +177,8 @@ function closeNav() {
 }
 $(document).ready(function(){
 	$("#clear").click(function(){
-		$("#dept option[value='']").attr('selected', 'selected');
 		$("#keyword").val('');
 		$("#requirement").val('');
-		$('#subject').val('');
-		$('#code').val('');
-		$('#instrname').val('');
 		$("#credit").val('');
 		$("#level").val('');
 		$("#next_sem").val(0);

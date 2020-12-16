@@ -59,7 +59,7 @@ def output(query):
     return render_template('result.html', all_courses=all_courses, credits_inv=credits_inv, inp=[dep, cr_fullfil, sub, code, inst, cr, level, next_sem, keyword, timing, days], next_sem_name=next_sem_name)
 
 @app.route('/results&jsonquery=<query>', methods=['GET'])
-def output(query):
+def json_output(query):
     if query:
         query = query.replace("&", ",")
         query = query.replace("=", ":")

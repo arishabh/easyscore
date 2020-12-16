@@ -31,11 +31,7 @@ def output(query):
         query = query.replace('_', ' ')
         elements = literal_eval("{" + query + "}")
         keyword = elements["keyword"]
-        dep = elements["dept"]
         cr_fullfil = elements["requirement"]
-        sub = elements["subject"]
-        code = elements["code"]
-        inst = elements["instrname"]
         cr = elements["level"]
         level = elements["credit"]
         timing = elements["timing"]
@@ -67,11 +63,7 @@ def json_output(query):
         query = query.replace('_', ' ')
         elements = literal_eval("{" + query + "}")
         keyword = elements["keyword"]
-        dep = elements["dept"]
         cr_fullfil = elements["requirement"]
-        sub = elements["subject"]
-        code = elements["code"]
-        inst = elements["instrname"]
         cr = elements["level"]
         level = elements["credit"]
         timing = elements["timing"]

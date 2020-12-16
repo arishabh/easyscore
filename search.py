@@ -29,7 +29,7 @@ def search_all(credit_fulfill='', level='', cr='', next_sem='', keyword='', timi
         filtered = list(filter(lambda d: (int(level) in d["credits_fulfilled"]), filtered))
 
     if(cr and cr != "ANY"):
-        if(float(cr) < 7):
+        if(cr < 7):
             filtered=list(filter(lambda x: x["credits"] == float(cr), filtered))
         else:
             filtered=list(filter(lambda x: x["credits"] >= 7, filtered))

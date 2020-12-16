@@ -20,7 +20,7 @@ for i, c in enumerate(all_courses):
     seen = []
     cr = 0
     timings = {}
-    sem = 0
+    sem = False
     if(c.code >= 100 and c.code <= 299): credit.append(credits['100-299'])
     elif(c.code >= 300 and c.code <= 399): credit.append(credits['300+'])
     elif(c.code >= 400 and c.code <= 499): credit.append(credits['400+'])
@@ -28,10 +28,10 @@ for i, c in enumerate(all_courses):
     for i, url in enumerate(urls):
         u = url[0] + c.department + "/" + c.name + url[1]
         b = bs(get(u).content, "lxml").findAll("pre")
-        if not b: break
+        if not b: continue
         timing_flag = True
         # with open(courses_folder_path+c.name, "w+") as f: f.write(b[1].get_text())
-        sem = 1 if(url[0].split('/')[-2] in u) else 0
+        sem = True if(url[0].split('/')[-2] in u) else False
         cr = float(b[1].findChild().get_text().split('(')[1][:-4].split('-')[-1])
         b = b[1].get_text().split("\r\n")
         for cont in b:

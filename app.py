@@ -13,9 +13,9 @@ def index():
     if request.method == 'POST':
         days = list(map(str, request.form.getlist("day")))
         search_query = dict(request.form)
+        search_query.pop('dept')
         search_query['days'] = days
         search_query = str(search_query)[1:-1]
-        search_query.pop('dept')
 
         search_query = search_query.replace(",", "&")
         search_query = search_query.replace(":", "=")
@@ -46,9 +46,9 @@ def output(query):
     if request.method == 'POST':
         days = list(map(str, request.form.getlist("day")))
         search_query = dict(request.form)
+        search_query.pop('dept')
         search_query['days'] = days
         search_query = str(search_query)[1:-1]
-        search_query.pop('dept')
 
         search_query = search_query.replace(",", "&")
         search_query = search_query.replace(":", "=")

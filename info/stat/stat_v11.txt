@@ -58,4 +58,24 @@ Max: 100
 Min: 0
 Median: 82.11
 Stardard Deviation: 14.743365632205542
-Time taken for program: 13.503591537475586
+Time taken for program: 13.503591537475586Mean: 79.06160375810289
+Max: 100
+Min: 0
+Median: 82.11
+Stardard Deviation: 14.743365632205542
+Time taken for program: 22.114879608154297Mean: 79.18435807230958
+Max: 100
+Min: 0
+Median: 82.27
+Stardard Deviation: 14.674667280005565
+Time taken for program: 24.293355703353882Mean: 79.18435807230958
+Max: 100
+Min: 0
+Median: 82.27
+Stardard Deviation: 14.674667280005565
+Time taken for program: 13.138749361038208Mean: 79.18435807230958
+Max: 100
+Min: 0
+Median: 82.27
+Stardard Deviation: 14.674667280005565
+Time taken for program: 12.821068525314331

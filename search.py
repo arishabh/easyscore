@@ -29,16 +29,17 @@ def search_all(credit_fulfill='', level='', cr='', next_sem='', keyword='', timi
         filtered = list(filter(lambda d: (int(level) in d["credits_fulfilled"]), filtered))
 
     if(cr and cr != "ANY"):
+        cr = float(cr)
         if(cr < 7):
-            filtered=list(filter(lambda x: x["credits"] == float(cr), filtered))
+            filtered=list(filter(lambda x: x["credits"] == cr, filtered))
         else:
             filtered=list(filter(lambda x: x["credits"] >= 7, filtered))
 
     if(next_sem == '1'):
-        filtered=list(filter(lambda x: (x["taught_next_semester"] == 1), filtered))
+        filtered=list(filter(lambda x: x["taught_next_semester"], filtered))
         filtered2 = []
         for d in filtered:
-            filtered_inst = list(filter(lambda x: (x["is_teaching_next_semester"] == 1), d["instructors"]))
+            filtered_inst = list(filter(lambda x: x["is_teaching_next_semester"], d["instructors"]))
             if not filtered_inst: continue
             d["instructors"] = filtered_inst
             filtered2.append(d)
@@ -64,3 +65,6 @@ def search_all(credit_fulfill='', level='', cr='', next_sem='', keyword='', timi
     
     print("Time taken: " + str(time()-start)," Len: ", len(filtered))
     return {"courses": filtered}
+
+def search_course(course='', filtered=filtered):
+    return {"course": filtered.get(course)}

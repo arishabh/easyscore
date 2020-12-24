@@ -1,10 +1,12 @@
 from datetime import datetime
 from ast import literal_eval
 from flask import Flask, render_template, request, redirect
-from search import search_all
+from flask_cors import CORS
+from search import search_all, search_course
 from general import credits_inv, next_sem_name
 
 app = Flask(__name__)
+CORS(app)
 app.debug = True
 
 
@@ -14,6 +16,7 @@ def index():
         days = list(map(str, request.form.getlist("day")))
         search_query = dict(request.form)
         search_query.pop('dept')
+        search_query.pop('day', None)
         search_query['days'] = days
         search_query = str(search_query)[1:-1]
 
@@ -33,8 +36,8 @@ def output(query):
         elements = literal_eval("{" + query + "}")
         keyword = elements["keyword"]
         cr_fullfil = elements["requirement"]
-        cr = elements["level"]
-        level = elements["credit"]
+        cr = elements["credit"]
+        level = elements["level"]
         timing = elements["timing"]
         days = elements["days"]
         next_sem = elements["next sem"]
@@ -47,6 +50,7 @@ def output(query):
         days = list(map(str, request.form.getlist("day")))
         search_query = dict(request.form)
         search_query.pop('dept')
+        search_query.pop('day', None)
         search_query['days'] = days
         search_query = str(search_query)[1:-1]
 
@@ -77,6 +81,11 @@ def json_output(query):
         if len(all_courses)>40:
             all_courses = all_courses[:40]
     return all_courses
+
+@app.route('/results&jsonquery=course=<query>', methods=['GET'])
+def json_course_output(query):
+    course = query.split("_")[0]
+    search_course(course)
 
 if __name__ == "__main__":
     app.run(debug=True)

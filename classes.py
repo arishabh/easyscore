@@ -19,7 +19,7 @@ class Term:
         self.grade_dist = grade
         self.cum_gpa = float(cum_gpa)
         self.sect_gpa = float(sect_gpa)
-        self.sect_desc = desc
+        self.sect_desc = desc if desc else ""
 
     def to_string(self):
         return ("\t\t" + self.term + " - " + str(self.sect_desc) + " - " + str(self.total_students) + " " + str(self.grades_perc) + " " + str(self.grade_dist) + " CGPA: " + str(self.cum_gpa) + " Sect: " + str(self.sect_gpa) + "\n")

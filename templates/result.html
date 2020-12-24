@@ -147,12 +147,8 @@
         <script type="text/javascript">
             $(function () {
                 $("#clear").bind("click", function () {
-                    $("#dept option[value='']").attr('selected', 'selected');
                     $("#keyword").val('');
                     $("#requirement").val('');
-                    $('#subject').val('');
-                    $('#code').val('');
-                    $('#instrname').val('');
                     $("#credit").val('');
                     $("#level").val('');
                     $("#next_sem").val(0);
@@ -202,17 +198,13 @@
         {% endif %}
         {% for i in course["instructors"] %}
             <div class="column11">
-                <input type='submit' form='form' value='{{ i["name"] }} ({{ i["years_taught"] }}, {{ i["semesters_taught"] }} sem.){% if i["is_teaching_next_semester"] == 1 %}**{% endif %}' class="teacher" id="teacher" onclick="inst(this.value)"> 
+                <input type='submit' form='form' value='{{ i["name"] }} ({{ i["years_taught"] }}, {{ i["semesters_taught"] }} sem.){% if (i["is_teaching_next_semester"])%}**{% endif %}' class="teacher" id="teacher" onclick="inst(this.value)"> 
                 <p class='avg_grades'>Avg. Class Size: {{i["average_number_of_students"]}} | A:{{ i["average_grades"][0] }}% | B:{{ i["average_grades"][1] }}% | C:{{ i["average_grades"][2] }}% | D:{{ i["average_grades"][3] }}%</p>
                 <script>
                     function inst(val){
                         var inst = val.split(" (")[0];
-                        $("#dept option[value='']").attr('selected', 'selected');
                         $("#keyword").val('');
                         $("#requirement").val('');
-                        $('#subject').val('');
-                        $('#code').val('');
-                        $('#instrname').val(inst);
                         $("#credit").val('');
                         $("#level").val('');
                         $("#next_sem").val(0);
@@ -239,12 +231,12 @@
 {% endfor %}
 {% endif %}
 <script type="text/javascript">
-    $("#keyword").val('{{ inp[4] }}');
-    $("#dept option[value='{{ inp[0] }}']").attr('selected', 'selected');
+    $("#dept option[value='']").attr('selected', 'selected');
     $("#requirement").val('{{ inp[0] }}');
     $("#credit").val('{{ inp[1] }}');
     $("#level").val('{{ inp[2] }}');
     $("#next_sem").val('{{ inp[3] }}');
+    $("#keyword").val('{{ inp[4] }}');
     $("#timing").val('{{ inp[5] }}');
     function check(inp, letter){
         return (inp.indexOf(letter) != -1);

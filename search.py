@@ -67,4 +67,9 @@ def search_all(credit_fulfill='', level='', cr='', next_sem='', keyword='', timi
     return {"courses": filtered}
 
 def search_course(course='', filtered=filtered):
-    return {"course": filtered.get(course)}
+    json = {}
+    for c in filtered:
+        if c["full_code"] == course:
+            json = c
+            break
+    return {"course": json}

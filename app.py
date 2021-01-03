@@ -9,7 +9,6 @@ app = Flask(__name__)
 CORS(app)
 app.debug = True
 
-
 @app.route('/', methods=['POST', 'GET'])
 def index():
     if request.method == 'POST':
@@ -82,10 +81,10 @@ def json_output(query):
             all_courses = all_courses[:40]
     return all_courses
 
-@app.route('/results&jsonquery=course=<query>', methods=['GET'])
+@app.route('/results&jsonquery/course=<query>', methods=['GET'])
 def json_course_output(query):
     course = query.split("_")[0]
-    search_course(course)
+    return search_course(course)
 
 if __name__ == "__main__":
     app.run(debug=True)

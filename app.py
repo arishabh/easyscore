@@ -1,6 +1,8 @@
 from datetime import datetime
 from ast import literal_eval
 from flask import Flask, render_template, request, redirect
+from flask_pymongo import PyMongo
+from cred import mongo_uri 
 from flask_cors import CORS
 from search import search_all, search_course
 from general import credits_inv, next_sem_name
@@ -8,7 +10,9 @@ from general import credits_inv, next_sem_name
 app = Flask(__name__)
 CORS(app)
 app.debug = True
-
+app.config['MONGO_URI'] = mongo_uri
+mongo = PyMongo(app)
+      
 
 @app.route('/', methods=['POST', 'GET'])
 def index():
@@ -82,7 +86,7 @@ def json_output(query):
             all_courses = all_courses[:40]
     return all_courses
 
-@app.route('/results&jsonquery=course=<query>', methods=['GET'])
+@app.route('/results&jsonquery/course=<query>', methods=['GET'])
 def json_course_output(query):
     course = query.split("_")[0]
     search_course(course)

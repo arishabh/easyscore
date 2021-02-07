@@ -26,6 +26,7 @@ for c in all_courses:
             i.timings = this_info["timings"][i.name] 
         except:
             i.timings = [[],[]]
+        c.days += i.timings[1]
     c.credit = this_info["credits_fulfilled"]
     c.preq = this_info["notes"]
     c.url = this_info["url"]
@@ -33,6 +34,7 @@ for c in all_courses:
     c.next_sem = this_info["next_sem"]
     if(not this_info["instructors"]): c.new_instructor = 1
     c.instructors.sort(reverse=True)
+    c.days = list(set(c.days))
     c.rate()
     final_courses.append(c)
 final_courses.sort(reverse=True)

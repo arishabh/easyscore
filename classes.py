@@ -195,6 +195,7 @@ class Course:
             self.url= ''
             self.cr = 0
             self.next_sem = 0
+            self.days = []
             self.new_instructor = 0
     
     def __lt__(self, other):
@@ -247,6 +248,7 @@ class Course:
                 "notes": self.notes,
                 "url": self.url,
                 "taught_next_semester": self.next_sem,
+                "days": self.days,
                 "new_instructor": self.new_instructor,
                 "instructors": []}
 
@@ -266,6 +268,7 @@ class Course:
         self.credit = inp["credits_fulfilled"]
         self.rating = inp["rating"]
         self.sems = inp["semesters_taught"]
+        self.days = inp["days"]
         self.notes = inp["notes"]
         self.url = inp["url"]
         self.next_sem = inp["taught_next_semester"]
@@ -274,5 +277,14 @@ class Course:
 
     def rate(self):
         total = 0
+        temp_days = []
+        if ('M' in self.days): temp_days.append('M')
+        if ('T' in self.days): temp_days.append('T')
+        if ('W' in self.days): temp_days.append('W')
+        if ('R' in self.days): temp_days.append('R')
+        if ('F' in self.days): temp_days.append('F')
+        if ('S' in self.days): temp_days.append('S')
+        if ('N' in self.days): temp_days.append('N')
+        self.days = temp_days
         for i in self.instructors: total += i.rating
         self.rating = round(total/len(self.instructors), 2) 

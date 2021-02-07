@@ -69,8 +69,8 @@ def json_output(query):
         elements = literal_eval("{" + query + "}")
         keyword = elements["keyword"]
         cr_fullfil = elements["requirement"]
-        cr = elements["level"]
-        level = elements["credit"]
+        level = elements["level"]
+        cr = elements["credit"]
         timing = elements["timing"]
         days = elements["days"]
         next_sem = elements["next sem"]

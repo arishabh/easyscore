@@ -11,9 +11,10 @@ courses_data = {}
 print(len(all_courses))
 online = 'ARR'
 start = time()
-for i, c in enumerate(all_courses):
-    if i % 500 == 10: 
-        print("Estimated time remaining =", ((time()-start)*((len(all_courses)-i)/i))/60, "min")
+for j, c in enumerate(all_courses):
+    print(j)
+    if j % 200 == 10: 
+        print("Estimated time remaining =", ((time()-start)*((len(all_courses)-j)/j))/60, "min")
     credit = []
     notes = ''
     instruct = []
@@ -28,6 +29,7 @@ for i, c in enumerate(all_courses):
     for i, url in enumerate(urls):
         u = url[0] + c.department + "/" + c.name + url[1]
         b = bs(get(u).content, "lxml").findAll("pre")
+        # print(i, "Got the data")
         if not b: continue
         timing_flag = True
         # with open(courses_folder_path+c.name, "w+") as f: f.write(b[1].get_text())
@@ -102,14 +104,14 @@ for i, c in enumerate(all_courses):
         continue
 
     output = {"credits_fulfilled": list(set(credit)), 
-            "notes": notes, "url": u, 
+            "notes": notes, 
+            "url": u, 
             "number_credits": cr, 
             "next_sem": sem, 
             "instructors": instruct, 
             "timings": timings} # making dictionary for the json output
     courses_data[c.name] = output
 
-    print(all_courses.index(c))
 
 with open(scrape_file, "w+") as f:
     json.dump(courses_data, f, indent=4, sort_keys=True)

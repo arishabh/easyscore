@@ -77,6 +77,7 @@ class Instructor:
         return other in self.name
 
     def rate(self):
+        self.fix_days()
         factor = 10
         diff = 96/11.0
         curr_year = 2019
@@ -142,6 +143,17 @@ class Instructor:
         # elif(self.sems >= 4): min(100, self.rating+1)
         if(self.avg_std > 20): min(100, self.rating+(self.avg_std-20))
         self.rating = round(self.rating, 2)
+
+    def fix_days(self):
+        temp_days = []
+        if ('M' in self.timings[1]): temp_days.append('M')
+        if ('T' in self.timings[1]): temp_days.append('T')
+        if ('W' in self.timings[1]): temp_days.append('W')
+        if ('R' in self.timings[1]): temp_days.append('R')
+        if ('F' in self.timings[1]): temp_days.append('F')
+        if ('S' in self.timings[1]): temp_days.append('S')
+        if ('N' in self.timings[1]): temp_days.append('N')
+        self.timings[1] = temp_days
 
     def to_string(self):
         out = "\t" + str(self.name) + " " + str(self.rating) + " " + str(self.avg_grades) + " " + self.range + " " + str(self.sems) + " sem." + str(self.avg_std) + ":\n"

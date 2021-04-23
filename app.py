@@ -1,12 +1,10 @@
 from datetime import datetime
 from ast import literal_eval
 from flask import Flask, render_template, request, redirect
-from flask_cors import CORS
 from search import search_all, search_course
 from general import credits_inv, next_sem_name
 
 app = Flask(__name__)
-CORS(app)
 app.debug = True
 
 @app.route('/', methods=['POST', 'GET'])

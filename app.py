@@ -3,12 +3,19 @@ from ast import literal_eval
 from flask import Flask, render_template, request, redirect
 from search import search_all, search_course
 from general import credits_inv, next_sem_name
+from flask_cors import CORS
 
-app = Flask(__name__)
+app = Flask(__name__, static_folder="../backend/the-easy-score/build", static_url_path="/")
+CORS(app)
 app.debug = True
 
 @app.route('/', methods=['POST', 'GET'])
 def index():
+    return "App is running"
+    return app.send_static_file("index.html")
+
+@app.route('/test', methods=['POST', 'GET'])
+def index_test():
     if request.method == 'POST':
         days = list(map(str, request.form.getlist("day")))
         search_query = dict(request.form)
@@ -58,7 +65,11 @@ def output(query):
         return redirect(url)
     return render_template('result.html', all_courses=all_courses, credits_inv=credits_inv, inp=[cr_fullfil, cr, level, next_sem, keyword, timing, days], next_sem_name=next_sem_name)
 
-@app.route('/results&jsonquery=<query>', methods=['GET'])
+@app.route('/api/test', methods=['GET'])
+def api_test():
+    return "API is running"
+
+@app.route('/api/<query>', methods=['GET'])
 def json_output(query):
     if query:
         query = query.replace("&", ",")
@@ -79,7 +90,7 @@ def json_output(query):
             all_courses = all_courses[:40]
     return all_courses
 
-@app.route('/results&jsonquery/course=<query>', methods=['GET'])
+@app.route('/api/course=<query>', methods=['GET'])
 def json_course_output(query):
     course = query.split("_")[0]
     return search_course(course)

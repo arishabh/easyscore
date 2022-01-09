@@ -3,9 +3,11 @@ from ast import literal_eval
 from flask import Flask, render_template, request, redirect
 from search import search_all, search_course
 from general import credits_inv, next_sem_name
+from flask_cors import CORS
 
 app = Flask(__name__)
 app.debug = True
+CORS(app)
 
 @app.route('/', methods=['POST', 'GET'])
 def index():
